@@ -1,0 +1,13 @@
+Paired Engineering uses a split licensing model.
+
+Written content, framework notes, markdown artifacts, decks, and other non-code material are licensed under:
+
+- Creative Commons Attribution 4.0 International
+- See `LICENSE-CONTENT-CC-BY-4.0.md`
+
+Scripts, workflow automation, and other small code assets are licensed under:
+
+- MIT License
+- See `LICENSE-CODE-MIT.md`
+
+If a file includes a more specific notice, that notice controls for that file.
