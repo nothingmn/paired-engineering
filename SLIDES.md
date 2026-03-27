@@ -1,6 +1,6 @@
 # Slide Decks
 
-Current slide export version: `v2.0.0`
+Current slide export version: `v2.0.1`
 
 These PowerPoint files are generated from the markdown slide-source notes.
 

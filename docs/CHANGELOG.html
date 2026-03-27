@@ -24,10 +24,26 @@
       </div>
     </section>
 
+    <section class="section search-panel" data-site-search><div class="section-header"><h2>Search the site</h2><p>Client-side search across published titles and page content. No server required.</p></div><label class="search-label" for="site-search-input">Search</label><input id="site-search-input" class="search-input" data-search-input type="search" autocomplete="off" placeholder="Try: junior, verification, manager, evidence"><p class="search-status" data-search-status>Type two or more characters to search the published package.</p><div class="search-results" data-search-results></div></section>
+
     <article class="section prose">
       <p>This file tracks public-package level changes over time.</p>
-<h2 id="200-2026-03-27">[2.0.0] - 2026-03-27</h2>
+<h2 id="201-2026-03-27">[2.0.1] - 2026-03-27</h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Lightweight client-side search across the generated Pages site</li>
+<li>Autocomplete-style result suggestions on the home page, section indexes, and rendered content pages</li>
+</ul>
 <h3 id="changed">Changed</h3>
+<ul>
+<li>Extended the generated HTML layer so the search UI appears consistently across the local review site and public Pages site</li>
+</ul>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This is a patch release focused on findability and navigation. The underlying package content and bundle structure remain the same as <code>2.0.0</code>.</li>
+</ul>
+<h2 id="200-2026-03-27">[2.0.0] - 2026-03-27</h2>
+<h3 id="changed_1">Changed</h3>
 <ul>
 <li>Repositioned the public package around the locked <code>v2</code> language architecture for <code>Paired Engineering</code></li>
 <li>Adopted <code>A practical delivery model for AI-enabled software teams.</code> as the current public category phrase baseline</li>
@@ -35,13 +51,13 @@
 <li>Refreshed the public README, landing-page copy, release notes, and generated HTML mirror so the public package reads consistently end to end</li>
 <li>Renamed several public-facing markdown and slide artifacts, making this a breaking package-surface change rather than only a content refresh</li>
 </ul>
-<h3 id="notes">Notes</h3>
+<h3 id="notes_1">Notes</h3>
 <ul>
 <li>This release is versioned as <code>2.0.0</code> because the public terminology, title system, and package-facing artifact names changed substantially enough to behave like a new public interface layer.</li>
 <li>The package still passes the full <code>full-v1</code> publication audit, but now presents that material through the stronger <code>v2</code> language layer.</li>
 </ul>
 <h2 id="100-2026-03-25">[1.0.0] - 2026-03-25</h2>
-<h3 id="added">Added</h3>
+<h3 id="added_1">Added</h3>
 <ul>
 <li>First stable <code>full-v1</code> public release package for <code>Paired Engineering</code></li>
 <li>Bundle-based public repo structure: <code>guides</code>, <code>framework</code>, <code>leadership</code>, <code>workshops</code>, <code>exercises</code>, <code>evidence</code>, and <code>slides</code></li>
@@ -49,7 +65,7 @@
 <li>Pilot evidence kit plus Microsoft 365 and Jira reference deployment material in the public export</li>
 <li>Generated PPTX decks with exported speaker notes and a reusable theme baseline</li>
 </ul>
-<h3 id="notes_1">Notes</h3>
+<h3 id="notes_2">Notes</h3>
 <ul>
 <li>This is the first release intended to be treated as a stable public package rather than only an internal packaging baseline.</li>
 <li>The package now passes both the <code>public-core</code> and <code>full-v1</code> publication audits.</li>
@@ -60,5 +76,8 @@
       <p>A practical delivery model for AI-enabled software teams.</p>
     </footer>
   </main>
+  <script>window.PE_DOCS_ROOT = ".";</script>
+<script src="assets/search-index.js"></script>
+<script src="assets/site.js"></script>
 </body>
 </html>

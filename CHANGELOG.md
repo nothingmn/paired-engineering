@@ -2,6 +2,21 @@
 
 This file tracks public-package level changes over time.
 
+## [2.0.1] - 2026-03-27
+
+### Added
+
+- Lightweight client-side search across the generated Pages site
+- Autocomplete-style result suggestions on the home page, section indexes, and rendered content pages
+
+### Changed
+
+- Extended the generated HTML layer so the search UI appears consistently across the local review site and public Pages site
+
+### Notes
+
+- This is a patch release focused on findability and navigation. The underlying package content and bundle structure remain the same as `2.0.0`.
+
 ## [2.0.0] - 2026-03-27
 
 ### Changed
