@@ -36,6 +36,19 @@ Why:
 - it creates distance from both anti-AI framing and blind-delegation hype
 - it is more memorable than `AI Enablement` alone
 
+### Public repository slug
+
+Lock:
+
+`paired-engineering`
+
+Why:
+
+- it is short and clean in a GitHub URL
+- it matches the public-facing lead name directly
+- it is more distinctive than generic `ai-enablement` naming
+- it leaves room for both thought leadership and implementation material
+
 ## Core message set
 
 ### Primary tagline
@@ -55,6 +68,18 @@ Why:
 ### GitHub repository description
 
 `A practical, research-aware framework for helping software teams use AI without outsourcing judgment.`
+
+### GitHub long description
+
+`Paired Engineering is a practical operating model for AI enablement in software delivery. It is built for teams that want to use AI seriously without drifting into either avoidance or blind delegation. The core idea is simple: AI should act as a collaborator that helps people think, compare, generate, inspect, and learn, while human judgment remains responsible for verification, decisions, and quality.`
+
+`The project brings together several layers that organizations often treat separately. It includes a public framing for the problem, leadership material for sponsoring an initial pilot, manager and Staff-engineer guidance for shaping workflows, workshop and exercise materials for building practitioner habits, and lightweight evidence tools for measuring whether adoption is actually helping. It also takes apprenticeship, onboarding, and capability-building seriously, rather than assuming AI rollout is only a tooling or productivity question.`
+
+`The stance behind the work is intentionally specific. This is not a prompt library, a vendor catalog, or a generic future-of-work essay. It is not anti-AI, but it is skeptical of shallow rollout patterns that reward prompt volume, normalize weak verification, or quietly force hard review work onto a smaller senior layer. The model argues for paired engineering over blind delegation, verification over explanation theater, and capability-building over short-term cost-cutting.`
+
+`That makes the repository useful across several audiences at once. Leaders can use it to frame a credible pilot. Managers and technical leads can use it to shape expectations, review habits, and adoption cadence. Practitioners can use it to build better day-to-day habits through workshop material, scenario exercises, and worksheet packs. Teams that want something concrete can also use the evidence kit, workbook, surveys, and reference deployment patterns to test whether their rollout is improving quality, confidence, and learning in practice.`
+
+`The repository is designed to do two things well. First, it should help people start the conversation about better AI rollout in software teams. Second, it should help adopters implement that stance with practical materials they can use, adapt, and test. The result is a framework that is meant to be read, questioned, piloted, and improved in real delivery environments rather than admired as theory alone.`
 
 ### Short intro paragraph
 
