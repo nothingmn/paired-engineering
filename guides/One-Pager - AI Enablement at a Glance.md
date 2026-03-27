@@ -30,6 +30,14 @@ Good AI enablement is also not just a cost-cutting plan. It should multiply huma
 - a lifecycle map across product, engineering, QA, architecture, delivery, DevOps, and operations
 - a tool taxonomy based on the jobs tools perform, not just vendor names
 
+## What we mean by `oversight readiness`
+
+In plain language, `oversight readiness` means whether someone can use AI in a way that helps them think better, not depend on it blindly. It asks whether they can review what the model produced, spot likely mistakes, notice when they do not understand enough yet, and slow down or ask for help when the task is unfamiliar, high risk, or hard to verify.
+
+For co-op, junior, and intermediate engineers, this protects learning, confidence, and future career strength: AI should help them build judgment faster, not skip the practice that creates it. For senior engineers, it protects mentorship, team building, and review quality: AI should reduce toil without turning valuable leadership work into prompt-to-PR cleanup debt.
+
+It is not the same as job title, years of experience, or confidence. A junior engineer may have strong oversight readiness on a familiar, reviewable task, and a senior engineer may have weak oversight readiness on a new or hard-to-check one.
+
 ## Who this is for
 
 - Staff Engineers and technical enablement leaders
