@@ -197,6 +197,14 @@ h1 {
   box-shadow: 0 10px 30px rgba(32, 48, 64, 0.08);
 }
 
+.card.copy-card {
+  min-height: 0;
+}
+
+.card.copy-card p {
+  flex: 0;
+}
+
 .card h3 {
   margin: 0;
   font-size: 1.06rem;
