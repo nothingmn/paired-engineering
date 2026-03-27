@@ -2,7 +2,7 @@
 
 A practical delivery model for AI-enabled software teams.
 
-Current public package version: `v2.0.1`
+Current public package version: `v2.0.2`
 
 ## What This Is
 

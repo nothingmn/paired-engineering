@@ -2,6 +2,17 @@
 
 This file tracks public-package level changes over time.
 
+## [2.0.2] - 2026-03-27
+
+### Changed
+
+- Made card titles clickable across the generated HTML site anywhere the shared site-card pattern is used
+- Kept the existing `Open` action row while improving discoverability and reducing click friction on section and content cards
+
+### Notes
+
+- This is a small navigation polish release on top of `2.0.1`.
+
 ## [2.0.1] - 2026-03-27
 
 ### Added

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Release Notes - v2.0.1 | Paired Engineering</title>
-  <meta name="description" content="Release Notes - v2.0.1">
+  <title>Release Notes - v2.0.2 | Paired Engineering</title>
+  <meta name="description" content="Release Notes - v2.0.2">
   <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
@@ -12,9 +12,9 @@
     <section class="hero">
       <div class="hero-band"></div>
       <div class="hero-body">
-        <p class="breadcrumbs"><a href="index.html">Home</a> / Release Notes - v2.0.1</p>
+        <p class="breadcrumbs"><a href="index.html">Home</a> / Release Notes - v2.0.2</p>
         
-        <h1>Release Notes - v2.0.1</h1>
+        <h1>Release Notes - v2.0.2</h1>
         <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
         <div class="hero-actions">
           <a class="button secondary" href="index.html">Back to section</a>
@@ -28,15 +28,13 @@
 
     <article class="section prose">
       <h2 id="summary">Summary</h2>
-<p>This patch release adds lightweight client-side search to the generated HTML site for <code>Paired Engineering</code>.</p>
-<p>The goal is simple: make it easier to find specific ideas, examples, and artifacts without leaving the site or relying on GitHub's repo search.</p>
+<p>This patch release improves navigation across the generated HTML site by making card titles clickable anywhere the shared card pattern is used.</p>
+<p>The existing <code>Open</code> row is still present, but the title itself now acts as a link too, which makes the browsing experience feel more natural and less fussy.</p>
 <h2 id="included-in-this-release">Included in this release</h2>
 <ul>
-<li>search input on the home page</li>
-<li>search input on section index pages</li>
-<li>search input on rendered content pages</li>
-<li>autocomplete-style suggestions as you type</li>
-<li>static generated search index built from published titles and page content</li>
+<li>clickable card titles on the home page</li>
+<li>clickable card titles on section index pages</li>
+<li>clickable card titles on generated directory and bundle pages</li>
 </ul>
 <h2 id="release-posture">Release posture</h2>
 <ul>
@@ -44,16 +42,10 @@
 <li>passes the <code>full-v1</code> publication audit with <code>0</code> missing export items</li>
 <li>passes exported markdown and HTML link checks with <code>0</code> broken relative links</li>
 </ul>
-<h2 id="what-changed-from-v200">What changed from v2.0.0</h2>
+<h2 id="what-changed-from-v201">What changed from v2.0.1</h2>
 <ul>
-<li>the Pages layer now includes a client-side search UI</li>
-<li>published markdown artifacts are indexed for local HTML discovery</li>
-<li>binary assets such as slide decks and workbooks can also appear in search results when relevant</li>
-</ul>
-<h2 id="known-limitations">Known limitations</h2>
-<ul>
-<li>search is intentionally lightweight and client-side only</li>
-<li>ranking is simple and tuned for practical browsing, not full-text search sophistication</li>
+<li>the shared HTML card renderer now links both the title and the <code>Open</code> row</li>
+<li>card-title hover styling now gives clearer visual feedback</li>
 </ul>
     </article>
 

@@ -1,18 +1,16 @@
-# Release Notes - v2.0.1
+# Release Notes - v2.0.2
 
 ## Summary
 
-This patch release adds lightweight client-side search to the generated HTML site for `Paired Engineering`.
+This patch release improves navigation across the generated HTML site by making card titles clickable anywhere the shared card pattern is used.
 
-The goal is simple: make it easier to find specific ideas, examples, and artifacts without leaving the site or relying on GitHub's repo search.
+The existing `Open` row is still present, but the title itself now acts as a link too, which makes the browsing experience feel more natural and less fussy.
 
 ## Included in this release
 
-- search input on the home page
-- search input on section index pages
-- search input on rendered content pages
-- autocomplete-style suggestions as you type
-- static generated search index built from published titles and page content
+- clickable card titles on the home page
+- clickable card titles on section index pages
+- clickable card titles on generated directory and bundle pages
 
 ## Release posture
 
@@ -20,13 +18,7 @@ The goal is simple: make it easier to find specific ideas, examples, and artifac
 - passes the `full-v1` publication audit with `0` missing export items
 - passes exported markdown and HTML link checks with `0` broken relative links
 
-## What changed from v2.0.0
+## What changed from v2.0.1
 
-- the Pages layer now includes a client-side search UI
-- published markdown artifacts are indexed for local HTML discovery
-- binary assets such as slide decks and workbooks can also appear in search results when relevant
-
-## Known limitations
-
-- search is intentionally lightweight and client-side only
-- ranking is simple and tuned for practical browsing, not full-text search sophistication
+- the shared HTML card renderer now links both the title and the `Open` row
+- card-title hover styling now gives clearer visual feedback
