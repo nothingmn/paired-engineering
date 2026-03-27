@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evidence Review Rubric - Initial Pilot Cohort | Paired Engineering</title>
+  <meta name="description" content="Evidence Review Rubric - Initial Pilot Cohort">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="index.html">Evidence</a> / Evidence Review Rubric - Initial Pilot Cohort</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>Evidence Review Rubric - Initial Pilot Cohort</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/evidence/Evidence%20Review%20Rubric%20-%20Initial%20Pilot%20Cohort.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../guides/index.html">Guides</a><a href="../framework/index.html">Framework</a><a href="../leadership/index.html">Leadership</a><a href="../workshops/index.html">Workshops</a><a href="../exercises/index.html">Exercises</a><a href="index.html">Evidence</a><a href="../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <h2 id="purpose">Purpose</h2>
+<p>This rubric is for sampled review of real pilot cases. It is meant to assess quality of AI-assisted work, not to evaluate employee worth.</p>
+<h2 id="how-to-use-this-rubric">How to use this rubric</h2>
+<ul>
+<li>Review a small sample of cases each week.</li>
+<li>Use it on target pilot workflows only.</li>
+<li>Score the case on a <code>0-2</code> scale per category.</li>
+<li>Aggregate results at workflow or team level rather than turning the score into an individual leaderboard.</li>
+<li>Capture a short note on what the case teaches, not just what it scored.</li>
+</ul>
+<h2 id="reviewer-prerequisites">Reviewer prerequisites</h2>
+<ul>
+<li>The reviewer should understand the target workflow well enough to judge verification quality.</li>
+<li>The reviewer should know whether the task was familiar or unfamiliar, low or high risk, and easy or hard to verify.</li>
+<li>The reviewer should have enough context to see whether the output created cleanup later.</li>
+</ul>
+<h2 id="sample-size-guidance">Sample size guidance</h2>
+<ul>
+<li><code>5-10</code> sampled cases per week across the pilot is usually enough for a small initial pilot cohort.</li>
+<li>Bias the sample toward important workflows, unfamiliar work, and suspected failure modes.</li>
+</ul>
+<h2 id="sampling-pattern">Sampling pattern</h2>
+<p>If possible, aim for a mixed weekly sample:</p>
+<ul>
+<li><code>1-2</code> cases that appear strong</li>
+<li><code>1-2</code> cases that appear mixed</li>
+<li><code>1-2</code> cases that triggered concern, review burden, or soft-signal unease</li>
+</ul>
+<p>Do not sample only the best-looking cases.</p>
+<h2 id="case-metadata">Case metadata</h2>
+<ul>
+<li>date</li>
+<li>role</li>
+<li>team</li>
+<li>workflow</li>
+<li>workflow mode: <code>learning</code> or <code>delivery</code></li>
+<li>AI surface used: chat, IDE assistant, repo-aware assistant, other</li>
+<li>task familiarity: <code>F1</code>, <code>F2</code>, or <code>F3</code></li>
+<li>task risk: <code>R1</code>, <code>R2</code>, or <code>R3</code></li>
+<li>verification difficulty: low, medium, or high</li>
+<li>reviewer</li>
+<li>artifact or case link</li>
+</ul>
+<h2 id="scoring-scale">Scoring scale</h2>
+<ul>
+<li><code>0</code>: weak or unsafe</li>
+<li><code>1</code>: mixed or incomplete</li>
+<li><code>2</code>: strong and appropriate</li>
+</ul>
+<h2 id="rubric-categories">Rubric categories</h2>
+<h3 id="1-workflow-fit">1. Workflow fit</h3>
+<p>Question:</p>
+<p>Was AI used in a workflow-appropriate way for the task, role, and risk level?</p>
+<ul>
+<li><code>0</code>: AI use was poorly matched to the workflow or risk context</li>
+<li><code>1</code>: AI use was partly appropriate but included avoidable misuse or drift</li>
+<li><code>2</code>: AI use fit the workflow and risk context well</li>
+</ul>
+<h3 id="2-explanation-ability">2. Explanation ability</h3>
+<p>Question:</p>
+<p>Could the participant explain the AI-assisted output or reasoning in their own words?</p>
+<ul>
+<li><code>0</code>: could not explain key parts or relied on vague repetition</li>
+<li><code>1</code>: partial explanation with notable gaps</li>
+<li><code>2</code>: clear explanation of what happened, why it happened, and what could fail</li>
+</ul>
+<h3 id="3-verification-quality">3. Verification quality</h3>
+<p>Question:</p>
+<p>Did the participant use appropriate checks before trusting or shipping the result?</p>
+<ul>
+<li><code>0</code>: weak or absent verification</li>
+<li><code>1</code>: some verification, but missing important checks</li>
+<li><code>2</code>: verification matched the task, risk, and likely failure modes</li>
+</ul>
+<h3 id="4-risk-handling">4. Risk handling</h3>
+<p>Question:</p>
+<p>Did the participant handle privacy, security, policy, and verification difficulty appropriately?</p>
+<ul>
+<li><code>0</code>: ignored or mishandled key risk factors</li>
+<li><code>1</code>: recognized some risks but handled them inconsistently</li>
+<li><code>2</code>: handled major risks appropriately and escalated when needed</li>
+</ul>
+<h3 id="5-downstream-quality">5. Downstream quality</h3>
+<p>Question:</p>
+<p>Did the output create unnecessary rework, confusion, or review burden?</p>
+<ul>
+<li><code>0</code>: created significant downstream issues</li>
+<li><code>1</code>: mixed result with some cleanup or preventable burden</li>
+<li><code>2</code>: output was useful without obvious hidden cost</li>
+</ul>
+<h2 id="optional-notes">Optional notes</h2>
+<ul>
+<li>strongest part of the case</li>
+<li>biggest concern</li>
+<li>what the team should learn from this example</li>
+<li>whether this should become a good-example or bad-example case in the enablement library</li>
+<li>what follow-up action is needed, if any</li>
+</ul>
+<h2 id="immediate-escalation-override">Immediate escalation override</h2>
+<p>Do not hide serious problems inside an average score.</p>
+<p>Escalate immediately if:</p>
+<ul>
+<li>a high-risk case scores <code>0</code> on <code>Verification quality</code></li>
+<li>a case shows a privacy, security, or policy exception</li>
+<li>the participant could not explain a high-impact output that was still trusted or shipped</li>
+</ul>
+<h2 id="interpretation">Interpretation</h2>
+<ul>
+<li><code>0-3</code>: weak case, likely indicates misuse or major gaps</li>
+<li><code>4-7</code>: mixed case, usable for coaching and refinement</li>
+<li><code>8-10</code>: strong case, candidate for reuse as an example</li>
+</ul>
+<p>Interpret totals cautiously.</p>
+<p>The notes and red flags matter as much as the sum.</p>
+<h2 id="what-not-to-do">What not to do</h2>
+<ul>
+<li>do not use the rubric as an employee rating system</li>
+<li>do not review every case</li>
+<li>do not score without enough context to understand the task and constraints</li>
+<li>do not reduce the review to only throughput</li>
+</ul>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

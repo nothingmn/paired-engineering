@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pilot Evidence Model - Practical Metrics and Lightweight Collection | Paired Engineering</title>
+  <meta name="description" content="Pilot Evidence Model - Practical Metrics and Lightweight Collection">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="index.html">Framework</a> / Pilot Evidence Model - Practical Metrics and Lightweight Collection</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>Pilot Evidence Model - Practical Metrics and Lightweight Collection</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/framework/Pilot%20Evidence%20Model%20-%20Practical%20Metrics%20and%20Lightweight%20Collection.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../guides/index.html">Guides</a><a href="index.html">Framework</a><a href="../leadership/index.html">Leadership</a><a href="../workshops/index.html">Workshops</a><a href="../exercises/index.html">Exercises</a><a href="../evidence/index.html">Evidence</a><a href="../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <p>This note defines a practical measurement model for the initial pilot cohort.</p>
+<p>The goal is to collect enough evidence to make better rollout decisions without creating a heavy reporting burden or turning the pilot into surveillance.</p>
+<h2 id="measurement-posture">Measurement posture</h2>
+<p>The pilot should not try to measure everything.</p>
+<p>It should measure:</p>
+<ul>
+<li>whether target workflows are improving</li>
+<li>whether review and verification quality are holding</li>
+<li>whether people are learning better habits, not just using the tool more</li>
+<li>whether the rollout is producing hidden costs such as rework, false confidence, or policy issues</li>
+</ul>
+<h2 id="principles">Principles</h2>
+<ul>
+<li>Prefer workflow-level metrics over vanity activity metrics.</li>
+<li>Prefer existing systems over new measurement tooling.</li>
+<li>Prefer small sampled reviews over blanket inspection of everything.</li>
+<li>Prefer a short list of metrics that will change decisions.</li>
+<li>Measure teams and workflows, not individual worth.</li>
+<li>Treat privacy and trust as part of measurement design.</li>
+<li>Treat soft qualitative signals as valid early warnings, but not as standalone proof.</li>
+</ul>
+<h2 id="can-a-professional-workplace-measure-this">Can a professional workplace measure this?</h2>
+<p>Yes, but only if the scope stays narrow.</p>
+<p>A workplace can usually measure enough for the pilot if it:</p>
+<ul>
+<li>chooses a small set of target workflows</li>
+<li>establishes a simple baseline before rollout</li>
+<li>samples artifacts instead of trying to review everything</li>
+<li>uses existing tools such as issue tracking, pull requests, defect logs, survey forms, and workshop follow-up</li>
+</ul>
+<p>It becomes wasteful when the program:</p>
+<ul>
+<li>instruments every action</li>
+<li>tries to prove everything statistically in a tiny pilot</li>
+<li>turns measurement into manager surveillance</li>
+<li>tracks tool activity instead of work quality and learning</li>
+</ul>
+<h2 id="recommended-measurement-stack">Recommended measurement stack</h2>
+<p>Use existing workplace systems first.</p>
+<p>The kit should run as a small operating routine, not as a reporting side project.</p>
+<p>Use <a href="../evidence/Pilot%20Evidence%20Operations%20Guide%20-%20Initial%20Pilot%20Cohort.html">Pilot Evidence Operations Guide - Initial Pilot Cohort</a> for the weekly cadence, ownership model, and action thresholds.</p>
+<p>If a real workplace needs a concrete default stack rather than more abstraction, start from <a href="../evidence/Pilot%20Evidence%20Reference%20Deployment%20-%20Microsoft%20365%20and%20Jira.html">Pilot Evidence Reference Deployment - Microsoft 365 and Jira</a> and adapt from there.</p>
+<h3 id="existing-systems-to-use">Existing systems to use</h3>
+<ul>
+<li>issue tracker for workflow timing, status changes, and target workflow tagging</li>
+<li>source control and code review system for review rounds, reopened pull requests, and sampled review quality</li>
+<li>defect or incident tracker for escaped defects, rollback events, and follow-up fixes</li>
+<li>workshop attendance and office-hours log for enablement participation</li>
+<li>lightweight form or survey tool for confidence, usefulness, and retrieval checks</li>
+<li>simple spreadsheet or table for sampled evidence reviews</li>
+</ul>
+<h3 id="do-not-buy-new-tools-first">Do not buy new tools first</h3>
+<p>For the initial pilot cohort, new measurement platforms are usually unnecessary.</p>
+<p>If the pilot cannot be measured with existing workflow systems and a small amount of manual sampling, the scope is probably too broad.</p>
+<h2 id="metric-tiers">Metric tiers</h2>
+<h3 id="tier-1-core-metrics-that-should-be-easy-to-collect">Tier 1. Core metrics that should be easy to collect</h3>
+<p>These are the default pilot metrics.</p>
+<h4 id="1-target-workflow-throughput">1. Target workflow throughput</h4>
+<p>Definition:</p>
+<ul>
+<li>median cycle time for the selected pilot workflows before and during the pilot</li>
+</ul>
+<p>Why it matters:</p>
+<ul>
+<li>shows whether the workflow is moving faster or slower</li>
+</ul>
+<p>How to collect:</p>
+<ul>
+<li>issue tracker timestamps</li>
+</ul>
+<h4 id="2-downstream-rework">2. Downstream rework</h4>
+<p>Definition:</p>
+<ul>
+<li>follow-up fixes, reopened work items, or meaningful rework within a defined window after completion</li>
+</ul>
+<p>Why it matters:</p>
+<ul>
+<li>catches false productivity where speed is purchased with cleanup later</li>
+</ul>
+<p>How to collect:</p>
+<ul>
+<li>issue tracker, pull requests, defect tracker</li>
+</ul>
+<h4 id="3-review-burden">3. Review burden</h4>
+<p>Definition:</p>
+<ul>
+<li>review rounds, major revision requests, or reviewer-reported difficulty on pilot workflow outputs</li>
+</ul>
+<p>Why it matters:</p>
+<ul>
+<li>catches hidden cost shifted onto leads and reviewers</li>
+</ul>
+<p>How to collect:</p>
+<ul>
+<li>code review system and light reviewer check-in</li>
+</ul>
+<h4 id="4-guardrail-exceptions">4. Guardrail exceptions</h4>
+<p>Definition:</p>
+<ul>
+<li>privacy, security, policy, or workflow-boundary exceptions in the pilot</li>
+</ul>
+<p>Why it matters:</p>
+<ul>
+<li>makes safety visible without pretending everything is solved by enablement</li>
+</ul>
+<p>How to collect:</p>
+<ul>
+<li>simple incident log or exception tracker</li>
+</ul>
+<h4 id="5-retrieval-follow-up-score">5. Retrieval follow-up score</h4>
+<p>Definition:</p>
+<ul>
+<li>short follow-up checks after workshops or demos on key workflow and verification concepts</li>
+</ul>
+<p>Why it matters:</p>
+<ul>
+<li>gives a lightweight signal of retention rather than only in-session understanding</li>
+</ul>
+<p>How to collect:</p>
+<ul>
+<li>short form, quiz, or office-hours checkpoint</li>
+</ul>
+<h4 id="6-confidence-calibration-check">6. Confidence calibration check</h4>
+<p>Definition:</p>
+<ul>
+<li>whether participant confidence matches sampled output quality and verification quality</li>
+</ul>
+<p>Why it matters:</p>
+<ul>
+<li>helps distinguish real capability growth from fluent overconfidence</li>
+</ul>
+<p>How to collect:</p>
+<ul>
+<li>short self-rating plus sampled artifact review</li>
+</ul>
+<h4 id="7-manager-and-peer-support-uptake">7. Manager and peer support uptake</h4>
+<p>Definition:</p>
+<ul>
+<li>whether managers and peers are using the coaching prompts, office hours, and review language designed for the pilot</li>
+</ul>
+<p>Why it matters:</p>
+<ul>
+<li>transfer into work usually fails without environmental support</li>
+</ul>
+<p>How to collect:</p>
+<ul>
+<li>attendance logs, checklist completion, or short manager pulse</li>
+</ul>
+<h3 id="tier-2-high-value-sampled-metrics">Tier 2. High-value sampled metrics</h3>
+<p>These are worth collecting, but only on samples.</p>
+<h4 id="8-adoption-quality-score">8. Adoption quality score</h4>
+<p>Definition:</p>
+<ul>
+<li>a sampled rubric score for whether AI was used in a workflow-appropriate, well-verified, non-blind way</li>
+</ul>
+<p>Why it matters:</p>
+<ul>
+<li>measures quality of use rather than tool activity</li>
+</ul>
+<p>How to collect:</p>
+<ul>
+<li>review a small sample of artifacts or cases each week</li>
+</ul>
+<h4 id="9-explanation-ability">9. Explanation ability</h4>
+<p>Definition:</p>
+<ul>
+<li>whether participants can explain sampled AI-assisted output in their own words</li>
+</ul>
+<p>Why it matters:</p>
+<ul>
+<li>supports the mastery-building side of the rollout</li>
+</ul>
+<p>How to collect:</p>
+<ul>
+<li>short debrief, review conversation, or workshop check</li>
+</ul>
+<h4 id="10-verification-quality">10. Verification quality</h4>
+<p>Definition:</p>
+<ul>
+<li>whether the participant used appropriate checks for the workflow and risk level</li>
+</ul>
+<p>Why it matters:</p>
+<ul>
+<li>makes the paired-engineering stance measurable</li>
+</ul>
+<p>How to collect:</p>
+<ul>
+<li>sampled rubric, peer review prompt, or facilitator review</li>
+</ul>
+<p>Reference:</p>
+<ul>
+<li>use <a href="Verification%20Standards%20by%20Artifact%20and%20Work%20Type.html">Verification Standards by Artifact and Work Type</a> to define what counts as appropriate verification for the artifact being reviewed</li>
+</ul>
+<h4 id="11-good-and-bad-usage-examples">11. Good and bad usage examples</h4>
+<p>Definition:</p>
+<ul>
+<li>small curated set of real examples showing strong use, overreliance, and failure modes</li>
+</ul>
+<p>Why it matters:</p>
+<ul>
+<li>helps the pilot learn faster than raw numbers alone</li>
+</ul>
+<p>How to collect:</p>
+<ul>
+<li>enablement lead captures a small number of reviewed cases</li>
+</ul>
+<h4 id="12-soft-operating-signals">12. Soft operating signals</h4>
+<p>Definition:</p>
+<ul>
+<li>lightweight qualitative signals from managers, technical leads, reviewers, or participants that something feels heavier, less trustworthy, or more confusing than the dashboard suggests</li>
+</ul>
+<p>Why it matters:</p>
+<ul>
+<li>weak rollout patterns often show up as intuition, friction, or unease before they become visible in harder metrics</li>
+</ul>
+<p>How to collect:</p>
+<ul>
+<li>short weekly manager or technical-lead notes</li>
+<li>retro themes</li>
+<li>office-hours observations</li>
+<li>facilitator notes from sampled reviews</li>
+</ul>
+<p>Caution:</p>
+<ul>
+<li>do not treat these signals as proof on their own</li>
+<li>use them to decide where to inspect more closely</li>
+<li>compare them against artifact samples, review burden, rework, and explanation quality</li>
+</ul>
+<h2 id="proposed-kpi-set-for-the-initial-pilot-cohort">Proposed KPI set for the initial pilot cohort</h2>
+<p>If we want a compact KPI set, I would start with these seven:</p>
+<ul>
+<li>target workflow median cycle time</li>
+<li>downstream rework rate</li>
+<li>review burden on pilot outputs</li>
+<li>guardrail exception count</li>
+<li>adoption quality score from sampled cases</li>
+<li>retrieval follow-up score</li>
+<li>confidence calibration check</li>
+</ul>
+<p>This is small enough to manage and broad enough to avoid the trap of measuring only throughput.</p>
+<h2 id="what-not-to-use-as-primary-kpis">What not to use as primary KPIs</h2>
+<p>Weak or misleading defaults:</p>
+<ul>
+<li>tool opens</li>
+<li>prompt count</li>
+<li>message volume</li>
+<li>lines of code generated</li>
+<li>commit count</li>
+<li>pull request count alone</li>
+<li>self-reported productivity without outcome checks</li>
+</ul>
+<p>These can be useful context at most, but they should not drive pilot decisions.</p>
+<p>Practice-based field signal:</p>
+<ul>
+<li>In Field Observation - Anonymous Large-Enterprise AI Enablement Interview Signals, an engineering manager from a large organization described weekly CTO reporting on Copilot adoption using <code>five requests per day</code> and <code>60 percent</code> uptake as the key story.</li>
+<li>The useful lesson is not that the organization is unserious.</li>
+<li>The useful lesson is that even serious programs can drift toward easy activity dashboards when leadership wants simple adoption numbers.</li>
+</ul>
+<h2 id="lightweight-collection-cadence">Lightweight collection cadence</h2>
+<h3 id="before-the-pilot">Before the pilot</h3>
+<ul>
+<li>tag the target workflows</li>
+<li>collect a short baseline</li>
+<li>define the sampled review rubric</li>
+</ul>
+<h3 id="weekly-during-the-pilot">Weekly during the pilot</h3>
+<ul>
+<li>update core workflow metrics</li>
+<li>review a small sample of artifacts or cases</li>
+<li>record good and bad examples</li>
+<li>capture office-hours and manager-support activity</li>
+</ul>
+<h3 id="after-each-workshop-or-learning-event">After each workshop or learning event</h3>
+<ul>
+<li>run one short retrieval check</li>
+<li>capture a confidence rating</li>
+<li>compare a small sample of confidence to actual quality</li>
+</ul>
+<h3 id="at-pilot-close">At pilot close</h3>
+<ul>
+<li>compare baseline to pilot outcomes</li>
+<li>review hidden costs and side effects</li>
+<li>decide refine, pause, or scale</li>
+</ul>
+<h2 id="minimum-viable-build">Minimum viable build</h2>
+<p>If the pilot team has limited capacity, the minimum viable build is:</p>
+<ul>
+<li>pre-pilot survey</li>
+<li>weekly pulse</li>
+<li>shared evidence sheet</li>
+<li>sampled case rubric</li>
+<li>post-pilot survey</li>
+</ul>
+<p>Anything beyond that should earn its keep by changing decisions.</p>
+<h2 id="simple-rubric-suggestion-for-sampled-cases">Simple rubric suggestion for sampled cases</h2>
+<p>Each sampled case can be reviewed on a <code>0-2</code> scale for:</p>
+<ul>
+<li>workflow fit</li>
+<li>explanation ability</li>
+<li>verification quality</li>
+<li>risk handling</li>
+<li>downstream quality</li>
+</ul>
+<p>This keeps the review light while still structured enough to compare cases.</p>
+<h2 id="how-not-to-waste-time">How not to waste time</h2>
+<ul>
+<li>choose <code>2-4</code> target workflows per role at most</li>
+<li>sample cases instead of auditing everything</li>
+<li>keep follow-up checks short</li>
+<li>use one shared evidence sheet instead of many disconnected trackers</li>
+<li>stop collecting any metric that is not changing decisions</li>
+</ul>
+<h2 id="what-this-measurement-model-protects">What this measurement model protects</h2>
+<ul>
+<li>signal over noise</li>
+<li>learning over vanity</li>
+<li>quality over mere activity</li>
+<li>realistic evidence collection in a live workplace</li>
+</ul>
+<h2 id="current-operational-follow-through">Current operational follow-through</h2>
+<ul>
+<li><a href="../evidence/Pilot%20Evidence%20Kit%20-%20Initial%20Pilot%20Cohort.html">Pilot Evidence Kit - Initial Pilot Cohort</a> carries the practical artifact set</li>
+<li><a href="../evidence/Pilot%20Evidence%20Operations%20Guide%20-%20Initial%20Pilot%20Cohort.html">Pilot Evidence Operations Guide - Initial Pilot Cohort</a> defines cadence, ownership, and reporting rhythm</li>
+<li><a href="../evidence/Pilot%20Evidence%20Reference%20Deployment%20-%20Microsoft%20365%20and%20Jira.html">Pilot Evidence Reference Deployment - Microsoft 365 and Jira</a> shows one concrete enterprise-stack translation</li>
+</ul>
+<h2 id="what-remains-contextual">What remains contextual</h2>
+<ul>
+<li>tailoring the kit to the actual tool stack, privacy posture, and reporting rhythm of a named workplace</li>
+<li>deciding which KPIs are truly feasible in a specific delivery environment</li>
+<li>calibrating whether the sampling and cadence feel honest after real pilot use</li>
+</ul>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

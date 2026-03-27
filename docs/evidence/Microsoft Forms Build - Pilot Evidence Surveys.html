@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Microsoft Forms Build - Pilot Evidence Surveys | Paired Engineering</title>
+  <meta name="description" content="Microsoft Forms Build - Pilot Evidence Surveys">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="index.html">Evidence</a> / Microsoft Forms Build - Pilot Evidence Surveys</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>Microsoft Forms Build - Pilot Evidence Surveys</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/evidence/Microsoft%20Forms%20Build%20-%20Pilot%20Evidence%20Surveys.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../guides/index.html">Guides</a><a href="../framework/index.html">Framework</a><a href="../leadership/index.html">Leadership</a><a href="../workshops/index.html">Workshops</a><a href="../exercises/index.html">Exercises</a><a href="index.html">Evidence</a><a href="../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <h2 id="purpose">Purpose</h2>
+<p>This note turns the survey drafts into a concrete Microsoft Forms build.</p>
+<p>It assumes Microsoft Forms is the chosen survey surface for the initial pilot cohort.</p>
+<h2 id="global-settings">Global settings</h2>
+<p>Use these defaults unless privacy, HR, or tenant policy requires something stricter.</p>
+<h3 id="pre-pilot-and-post-pilot-surveys">Pre-pilot and post-pilot surveys</h3>
+<ul>
+<li>responders: people in the organization only</li>
+<li>responses per person: one</li>
+<li>form owner: technical enablement lead</li>
+<li>sharing: pilot team only</li>
+<li>public link: off</li>
+</ul>
+<h3 id="weekly-pulse">Weekly pulse</h3>
+<ul>
+<li>responders: people in the organization only</li>
+<li>responses per person: multiple across the life of the form</li>
+<li>include a <code>Week starting</code> field so weekly results can be grouped</li>
+<li>do not rebuild the form every week unless the organization strongly prefers that</li>
+</ul>
+<h3 id="identity-handling">Identity handling</h3>
+<ul>
+<li>do not ask for names in the form body</li>
+<li>if the tenant records respondent identity automatically, restrict raw exports to the enablement lead and one backup</li>
+<li>publish only de-identified or aggregate results</li>
+</ul>
+<h2 id="form-1-pre-pilot-survey">Form 1. Pre-pilot survey</h2>
+<p>Form name:</p>
+<p><code>AI Enablement - Pre-Pilot Survey - Initial Pilot Cohort</code></p>
+<p>Fields:</p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Type</th>
+<th>Required?</th>
+<th>Suggested setting</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Role</td>
+<td>choice</td>
+<td>yes</td>
+<td>single answer</td>
+</tr>
+<tr>
+<td>Team</td>
+<td>choice or text</td>
+<td>yes</td>
+<td>choice if stable list exists</td>
+</tr>
+<tr>
+<td>Matching code</td>
+<td>text</td>
+<td>no</td>
+<td>short answer</td>
+</tr>
+<tr>
+<td>Familiarity with approved AI tools</td>
+<td>rating</td>
+<td>yes</td>
+<td><code>1-5</code></td>
+</tr>
+<tr>
+<td>Confidence in verifying AI-assisted output</td>
+<td>rating</td>
+<td>yes</td>
+<td><code>1-5</code></td>
+</tr>
+<tr>
+<td>Confidence in explaining AI-assisted output</td>
+<td>rating</td>
+<td>yes</td>
+<td><code>1-5</code></td>
+</tr>
+<tr>
+<td>Current frequency of AI use</td>
+<td>choice</td>
+<td>yes</td>
+<td><code>0-4</code> scale labels</td>
+</tr>
+<tr>
+<td>Frequency of independent verification</td>
+<td>rating</td>
+<td>yes</td>
+<td><code>1-5</code></td>
+</tr>
+<tr>
+<td>Top concerns</td>
+<td>choice</td>
+<td>yes</td>
+<td>multiple answers, limit in prompt text</td>
+</tr>
+<tr>
+<td>Support from manager or peers</td>
+<td>rating</td>
+<td>yes</td>
+<td><code>1-5</code></td>
+</tr>
+<tr>
+<td>Workflow most worth improving</td>
+<td>text</td>
+<td>no</td>
+<td>long answer</td>
+</tr>
+<tr>
+<td>What would make the pilot unsafe or wasteful</td>
+<td>text</td>
+<td>no</td>
+<td>long answer</td>
+</tr>
+</tbody>
+</table>
+<h2 id="form-2-post-pilot-survey">Form 2. Post-pilot survey</h2>
+<p>Form name:</p>
+<p><code>AI Enablement - Post-Pilot Survey - Initial Pilot Cohort</code></p>
+<p>Fields:</p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Type</th>
+<th>Required?</th>
+<th>Suggested setting</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Role</td>
+<td>choice</td>
+<td>yes</td>
+<td>align with pre-pilot</td>
+</tr>
+<tr>
+<td>Team</td>
+<td>choice or text</td>
+<td>yes</td>
+<td>align with pre-pilot</td>
+</tr>
+<tr>
+<td>Matching code</td>
+<td>text</td>
+<td>no</td>
+<td>same pattern as pre</td>
+</tr>
+<tr>
+<td>Pilot workflows personally used</td>
+<td>choice or text</td>
+<td>yes</td>
+<td>multi-select if workflow list is stable</td>
+</tr>
+<tr>
+<td>Confidence in verifying AI-assisted output</td>
+<td>rating</td>
+<td>yes</td>
+<td><code>1-5</code></td>
+</tr>
+<tr>
+<td>Confidence in explaining AI-assisted output</td>
+<td>rating</td>
+<td>yes</td>
+<td><code>1-5</code></td>
+</tr>
+<tr>
+<td>Workflow effect overall</td>
+<td>choice</td>
+<td>yes</td>
+<td><code>-2</code> to <code>+2</code> labels</td>
+</tr>
+<tr>
+<td>Time saved but cleanup created</td>
+<td>rating</td>
+<td>yes</td>
+<td><code>1-5</code></td>
+</tr>
+<tr>
+<td>Meaningful AI mistakes caught</td>
+<td>rating</td>
+<td>yes</td>
+<td><code>1-5</code></td>
+</tr>
+<tr>
+<td>More likely to use explanation and verification</td>
+<td>rating</td>
+<td>yes</td>
+<td><code>1-5</code></td>
+</tr>
+<tr>
+<td>Manager or peer support helpful</td>
+<td>rating</td>
+<td>yes</td>
+<td><code>1-5</code></td>
+</tr>
+<tr>
+<td>Most valuable workflow and why</td>
+<td>text</td>
+<td>no</td>
+<td>long answer</td>
+</tr>
+<tr>
+<td>Most risk, confusion, or wasted effort</td>
+<td>text</td>
+<td>no</td>
+<td>long answer</td>
+</tr>
+<tr>
+<td>What to change first next version</td>
+<td>text</td>
+<td>no</td>
+<td>long answer</td>
+</tr>
+</tbody>
+</table>
+<h2 id="form-3-weekly-pulse">Form 3. Weekly pulse</h2>
+<p>Form name:</p>
+<p><code>AI Enablement - Weekly Pilot Pulse - Initial Pilot Cohort</code></p>
+<p>Fields:</p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Type</th>
+<th>Required?</th>
+<th>Suggested setting</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Week starting</td>
+<td>date or choice</td>
+<td>yes</td>
+<td>use one standard weekly anchor</td>
+</tr>
+<tr>
+<td>Most-used target workflow this week</td>
+<td>choice</td>
+<td>yes</td>
+<td>controlled list preferred</td>
+</tr>
+<tr>
+<td>Overall effect this week</td>
+<td>choice</td>
+<td>yes</td>
+<td>single answer</td>
+</tr>
+<tr>
+<td>Verification confidence</td>
+<td>rating</td>
+<td>yes</td>
+<td><code>1-5</code></td>
+</tr>
+<tr>
+<td>Rework or near-miss severity</td>
+<td>choice</td>
+<td>yes</td>
+<td>none / minor / moderate / major</td>
+</tr>
+<tr>
+<td>Short note on what happened</td>
+<td>text</td>
+<td>no</td>
+<td>long answer</td>
+</tr>
+<tr>
+<td>Most useful support next week</td>
+<td>choice</td>
+<td>yes</td>
+<td>single answer</td>
+</tr>
+</tbody>
+</table>
+<p>Optional manager or technical-lead version:</p>
+<ul>
+<li>use the same form with <code>Role</code> as the first field, or</li>
+<li>create a second small pulse if the organization wants separate access control</li>
+</ul>
+<h2 id="optional-form-4-retrieval-check">Optional Form 4. Retrieval check</h2>
+<p>Form name:</p>
+<p><code>AI Enablement - Retrieval Check</code></p>
+<p>Keep this to <code>1-3</code> questions after a workshop, demo, or office-hours burst.</p>
+<p>Suggested fields:</p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Type</th>
+<th>Required?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Session or topic</td>
+<td>choice</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>One verification step you would not skip</td>
+<td>text</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>When should this workflow stay in learning mode</td>
+<td>text or choice</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Confidence applying this next week</td>
+<td>rating <code>1-5</code></td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="export-routine">Export routine</h2>
+<ul>
+<li>export the pre-pilot survey once after kickoff closes</li>
+<li>export the weekly pulse once per week on the same day</li>
+<li>export the post-pilot survey once at pilot close</li>
+<li>keep raw exports in the restricted <code>Forms Exports</code> folder</li>
+<li>paste only aggregated or de-identified results into the shared workbook</li>
+</ul>
+<h2 id="build-guardrails">Build guardrails</h2>
+<ul>
+<li>do not keep adding optional questions because the form feels too short</li>
+<li>do not ask for employee identifiers in the question set</li>
+<li>do not let the weekly pulse become a mini-retrospective</li>
+<li>do not use Forms as the system of record for decisions; the workbook remains the operational tracker</li>
+</ul>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

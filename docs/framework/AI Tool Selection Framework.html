@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Tool Selection Framework | Paired Engineering</title>
+  <meta name="description" content="AI Tool Selection Framework">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="index.html">Framework</a> / AI Tool Selection Framework</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>AI Tool Selection Framework</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/framework/AI%20Tool%20Selection%20Framework.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../guides/index.html">Guides</a><a href="index.html">Framework</a><a href="../leadership/index.html">Leadership</a><a href="../workshops/index.html">Workshops</a><a href="../exercises/index.html">Exercises</a><a href="../evidence/index.html">Evidence</a><a href="../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <p>This note defines how to choose AI tools for software-delivery organizations without reducing the decision to vendor hype, personal preference, or isolated demos.</p>
+<p>The taxonomy note explains <code>what kind of tool this is</code>.</p>
+<p>This note explains <code>how to decide whether a specific tool is a good fit</code>.</p>
+<h2 id="core-principle">Core principle</h2>
+<p>Pick tools by workflow fit and operational constraints, not by model prestige alone.</p>
+<p>A strong model inside the wrong operating surface is often less valuable than a slightly weaker tool that fits the real workflow and governance environment.</p>
+<h2 id="what-this-note-is-trying-to-prevent">What this note is trying to prevent</h2>
+<p>Weak tool selection often looks like this:</p>
+<ul>
+<li>leadership picks the most impressive demo</li>
+<li>engineers are expected to use one tool for every job</li>
+<li>the tool cannot act on the systems where work actually lives</li>
+<li>the organization buys automation power before it buys review, audit, and rollback discipline</li>
+<li>the success story becomes licenses, prompts, or logo count instead of workflow improvement</li>
+</ul>
+<h2 id="universal-selection-criteria">Universal selection criteria</h2>
+<p>These criteria matter across almost every tool category.</p>
+<h3 id="1-workflow-fit">1. Workflow fit</h3>
+<p>Ask:</p>
+<ul>
+<li>which specific workflow problem does this tool improve</li>
+<li>where in the lifecycle will it actually be used</li>
+<li>who will use it</li>
+<li>what current friction does it reduce</li>
+</ul>
+<p>If the answer is vague, the tool is probably being selected too early.</p>
+<h3 id="2-edit-surface-and-actionability">2. Edit surface and actionability</h3>
+<p>Ask:</p>
+<ul>
+<li>can the tool work directly in the surface where the team already works</li>
+<li>can it edit code, tickets, wiki pages, pull requests, or runbooks where appropriate</li>
+<li>does it only generate text in a separate chat window</li>
+</ul>
+<p>This matters a lot.</p>
+<p>For many roles, a tool that cannot touch the real work surface remains a thinking aid rather than a workflow accelerator.</p>
+<h3 id="3-context-quality">3. Context quality</h3>
+<p>Ask:</p>
+<ul>
+<li>what context can the tool see</li>
+<li>how fresh is that context</li>
+<li>does it understand the repository, backlog, wiki, incidents, or architecture notes</li>
+<li>can it point back to source material</li>
+</ul>
+<p>Poor context quality often creates persuasive but low-value output.</p>
+<h3 id="4-verification-support">4. Verification support</h3>
+<p>Ask:</p>
+<ul>
+<li>does the tool help the user verify the output</li>
+<li>does it provide traceability, citations, diff visibility, test hooks, or source links</li>
+<li>does it encourage reviewable work or opaque generation</li>
+</ul>
+<p>Selection should favor tools that make verification easier, not just generation faster.</p>
+<h3 id="5-security-and-privacy-fit">5. Security and privacy fit</h3>
+<p>Ask:</p>
+<ul>
+<li>what data will the tool see</li>
+<li>what leaves the environment</li>
+<li>what retention rules exist</li>
+<li>how are permissions, secrets, and internal systems handled</li>
+</ul>
+<p>This is a design input, not a late approval checkbox.</p>
+<h3 id="6-auditability-and-control">6. Auditability and control</h3>
+<p>Ask:</p>
+<ul>
+<li>can we understand what the tool changed or suggested</li>
+<li>can we see the diff, source, command, or action history</li>
+<li>can we require approvals where needed</li>
+</ul>
+<p>Opaque action without usable review is a poor fit for high-risk work.</p>
+<h3 id="7-reversibility">7. Reversibility</h3>
+<p>Ask:</p>
+<ul>
+<li>if the tool behaves badly, how easy is it to undo</li>
+<li>can we contain its changes</li>
+<li>are dry-run, rollback, or approval gates available</li>
+</ul>
+<p>The more autonomous the tool, the more this matters.</p>
+<h3 id="8-adoption-friction">8. Adoption friction</h3>
+<p>Ask:</p>
+<ul>
+<li>how much workflow switching does the tool require</li>
+<li>how much new behavior must users learn</li>
+<li>is the tool easy to try safely in bounded work</li>
+</ul>
+<p>Friction matters because even good tools fail if they are awkward to use in the real delivery rhythm.</p>
+<h3 id="9-administrative-burden">9. Administrative burden</h3>
+<p>Ask:</p>
+<ul>
+<li>how much setup, maintenance, indexing, governance, or enablement overhead does the tool create</li>
+<li>who owns the integration and support burden</li>
+</ul>
+<p>A tool that saves minutes for users but creates hours of platform burden may not be worth it.</p>
+<h3 id="10-cost-model">10. Cost model</h3>
+<p>Ask:</p>
+<ul>
+<li>what is the license or usage cost</li>
+<li>does the pricing align with the expected workflow value</li>
+<li>will integration behavior create runaway token or seat costs</li>
+</ul>
+<p>Cost matters, but should be considered against workflow value, governance burden, and review burden together.</p>
+<h3 id="11-portability-and-lock-in">11. Portability and lock-in</h3>
+<p>Ask:</p>
+<ul>
+<li>can the organization change models or providers later</li>
+<li>are prompts, workflows, data connectors, and artifacts portable</li>
+<li>does the tool create a fragile dependency on one vendor surface</li>
+</ul>
+<p>This is especially important for strategic or large-scale rollout decisions.</p>
+<h2 id="category-specific-criteria">Category-specific criteria</h2>
+<p>Use these criteria in addition to the universal set.</p>
+<h3 id="conversational-reasoning-partners">Conversational reasoning partners</h3>
+<p>Strong criteria:</p>
+<ul>
+<li>good source grounding</li>
+<li>easy export into canonical artifacts</li>
+<li>low friction for bounded questioning</li>
+<li>strong explanation and critique quality</li>
+</ul>
+<p>Weak fit signal:</p>
+<ul>
+<li>the tool becomes a substitute for durable documentation or decision logging</li>
+</ul>
+<h3 id="artifact-drafting-assistants">Artifact drafting assistants</h3>
+<p>Strong criteria:</p>
+<ul>
+<li>version awareness</li>
+<li>ability to compare drafts</li>
+<li>support for structured output</li>
+<li>easy write-back into the canonical documentation system</li>
+</ul>
+<p>Weak fit signal:</p>
+<ul>
+<li>the tool mainly produces long polished drafts with little help reducing scope or exposing ambiguity</li>
+</ul>
+<h3 id="ide-copilots-and-inline-coding-tools">IDE copilots and inline coding tools</h3>
+<p>Strong criteria:</p>
+<ul>
+<li>direct code editing</li>
+<li>clear diff visibility</li>
+<li>repository context</li>
+<li>test-aware usage</li>
+<li>low friction inside the editor</li>
+</ul>
+<p>Weak fit signal:</p>
+<ul>
+<li>completion speed is high but code review burden rises sharply</li>
+</ul>
+<h3 id="repository-aware-engineering-assistants">Repository-aware engineering assistants</h3>
+<p>Strong criteria:</p>
+<ul>
+<li>fresh indexing</li>
+<li>source links to symbols, files, commits, and tests</li>
+<li>ability to answer “where” and “why” questions inside the codebase</li>
+<li>support for onboarding and debugging</li>
+</ul>
+<p>Weak fit signal:</p>
+<ul>
+<li>confident answers without usable traceability</li>
+</ul>
+<h3 id="agentic-coding-and-task-execution-tools">Agentic coding and task-execution tools</h3>
+<p>Strong criteria:</p>
+<ul>
+<li>bounded task definition</li>
+<li>approval controls</li>
+<li>rollback path</li>
+<li>environment and permission boundaries</li>
+<li>reliable diff or change review</li>
+</ul>
+<p>Weak fit signal:</p>
+<ul>
+<li>the tool can act widely but cannot be constrained or reviewed well</li>
+</ul>
+<h3 id="retrieval-and-knowledge-access-tools">Retrieval and knowledge access tools</h3>
+<p>Strong criteria:</p>
+<ul>
+<li>permission-aware retrieval</li>
+<li>freshness of indexed sources</li>
+<li>citation or source linking</li>
+<li>support for canonical artifacts rather than chat memory alone</li>
+</ul>
+<p>Weak fit signal:</p>
+<ul>
+<li>the knowledge base itself is stale, contradictory, or too noisy to retrieve well</li>
+</ul>
+<h3 id="quality-test-and-evaluation-helpers">Quality, test, and evaluation helpers</h3>
+<p>Strong criteria:</p>
+<ul>
+<li>traceability back to requirement, defect, or risk</li>
+<li>useful comparison views</li>
+<li>clear false-positive handling</li>
+<li>integration with test and review workflows</li>
+</ul>
+<p>Weak fit signal:</p>
+<ul>
+<li>the tool produces a large quantity of issues or tests without helping the team understand quality impact</li>
+</ul>
+<h3 id="devops-platform-and-infrastructure-assistants">DevOps, platform, and infrastructure assistants</h3>
+<p>Strong criteria:</p>
+<ul>
+<li>audit trail</li>
+<li>secrets safety</li>
+<li>environment awareness</li>
+<li>rollback or dry-run support</li>
+<li>compatibility with current delivery controls</li>
+</ul>
+<p>Weak fit signal:</p>
+<ul>
+<li>the tool speeds up pipeline or IaC edits but weakens operational trust</li>
+</ul>
+<h3 id="observability-and-incident-analysis-assistants">Observability and incident-analysis assistants</h3>
+<p>Strong criteria:</p>
+<ul>
+<li>evidence links to logs, traces, metrics, and alerts</li>
+<li>timeline and correlation support</li>
+<li>clear separation between hypothesis and confirmed cause</li>
+</ul>
+<p>Weak fit signal:</p>
+<ul>
+<li>the tool creates polished but weak root-cause narratives</li>
+</ul>
+<h3 id="mlops-and-model-lifecycle-assistants">MLOps and model-lifecycle assistants</h3>
+<p>Strong criteria:</p>
+<ul>
+<li>evaluation support</li>
+<li>versioning</li>
+<li>prompt or workflow traceability</li>
+<li>dataset and experiment governance</li>
+<li>release control for AI-enabled product behavior</li>
+</ul>
+<p>Weak fit signal:</p>
+<ul>
+<li>the tool accelerates experimentation but weakens reproducibility or governance</li>
+</ul>
+<h3 id="planning-meeting-and-synthesis-tools">Planning, meeting, and synthesis tools</h3>
+<p>Strong criteria:</p>
+<ul>
+<li>clear action extraction</li>
+<li>decision capture</li>
+<li>easy promotion of output into canonical artifacts</li>
+<li>low privacy surprise</li>
+</ul>
+<p>Weak fit signal:</p>
+<ul>
+<li>meetings get summarized, but unresolved issues quietly disappear</li>
+</ul>
+<h3 id="local-and-private-model-setups">Local and private model setups</h3>
+<p>Strong criteria:</p>
+<ul>
+<li>strong privacy fit</li>
+<li>acceptable performance</li>
+<li>sustainable hosting burden</li>
+<li>clear model update and support path</li>
+</ul>
+<p>Weak fit signal:</p>
+<ul>
+<li>privacy improves but operational burden overwhelms the value</li>
+</ul>
+<h2 id="role-specific-minimums">Role-specific minimums</h2>
+<p>These are not absolute rules, but they are good defaults.</p>
+<h3 id="developers">Developers</h3>
+<p>Usually high-value criteria:</p>
+<ul>
+<li>direct code editing or diff generation</li>
+<li>repository awareness</li>
+<li>test-aware workflow support</li>
+<li>pull-request or review compatibility</li>
+</ul>
+<h3 id="product-owners-and-product-managers">Product owners and product managers</h3>
+<p>Usually high-value criteria:</p>
+<ul>
+<li>ability to work with the backlog system</li>
+<li>ability to draft or update canonical requirement artifacts</li>
+<li>change comparison</li>
+<li>ambiguity detection</li>
+<li>wiki or documentation integration where that is the real source of truth</li>
+</ul>
+<h3 id="qa-and-sdet">QA and SDET</h3>
+<p>Usually high-value criteria:</p>
+<ul>
+<li>traceability from requirements or defects to test assets</li>
+<li>support for failure analysis</li>
+<li>compatibility with test management or issue systems</li>
+<li>easy review of generated test suggestions</li>
+</ul>
+<h3 id="architects-and-staff-engineers">Architects and Staff Engineers</h3>
+<p>Usually high-value criteria:</p>
+<ul>
+<li>strong source grounding</li>
+<li>design and dependency context</li>
+<li>ADR or decision-log compatibility</li>
+<li>explicit handling of unknowns and tradeoffs</li>
+</ul>
+<h3 id="devops-platform-and-sre">DevOps, platform, and SRE</h3>
+<p>Usually high-value criteria:</p>
+<ul>
+<li>infrastructure-aware context</li>
+<li>environment and secret safety</li>
+<li>runbook and pipeline compatibility</li>
+<li>strong auditability and rollback</li>
+</ul>
+<h2 id="lightweight-selection-process">Lightweight selection process</h2>
+<p>Do not over-engineer this.</p>
+<h3 id="step-1-pick-the-workflow-first">Step 1. Pick the workflow first</h3>
+<p>Choose <code>2-4</code> real workflows.</p>
+<p>Examples:</p>
+<ul>
+<li>debugging a service regression</li>
+<li>drafting and refining backlog items</li>
+<li>updating runbooks</li>
+<li>triaging flaky tests</li>
+</ul>
+<h3 id="step-2-define-must-haves-and-nice-to-haves">Step 2. Define must-haves and nice-to-haves</h3>
+<p>For each workflow, decide:</p>
+<ul>
+<li>what the tool absolutely must support</li>
+<li>what would be helpful but optional</li>
+<li>what would disqualify the tool</li>
+</ul>
+<h3 id="step-3-score-the-candidate-simply">Step 3. Score the candidate simply</h3>
+<p>Use a simple <code>1-5</code> scale for:</p>
+<ul>
+<li>workflow fit</li>
+<li>edit surface fit</li>
+<li>context quality</li>
+<li>verification support</li>
+<li>security and privacy fit</li>
+<li>admin burden</li>
+<li>cost-value fit</li>
+</ul>
+<h3 id="step-4-pilot-the-top-candidates">Step 4. Pilot the top candidates</h3>
+<p>Use a bounded pilot with sampled review, not a broad rollout.</p>
+<h3 id="step-5-review-the-hidden-costs">Step 5. Review the hidden costs</h3>
+<p>Do not look only at apparent speed.</p>
+<p>Also review:</p>
+<ul>
+<li>review burden</li>
+<li>rework</li>
+<li>onboarding friction</li>
+<li>user confusion</li>
+<li>governance overhead</li>
+</ul>
+<h2 id="anti-patterns">Anti-patterns</h2>
+<ul>
+<li>choosing a tool because the model brand is strong</li>
+<li>standardizing on one tool before workflows are understood</li>
+<li>requiring teams to leave their real work surfaces for everything</li>
+<li>buying agentic power before approval, rollback, and review are ready</li>
+<li>ignoring wiki, backlog, repo, or ticket integration for roles that live in those systems</li>
+<li>measuring tool choice success by seats, prompts, or message counts</li>
+</ul>
+<h2 id="relationship-to-market-examples">Relationship to market examples</h2>
+<p>Modern tool examples can be useful as reference points.</p>
+<p>They should stay secondary to this framework.</p>
+<p>The durable guidance is:</p>
+<ul>
+<li>choose by job performed</li>
+<li>choose by workflow fit</li>
+<li>choose by governance fit</li>
+<li>choose by verification support</li>
+</ul>
+<p>Then use current market examples only to show what kinds of tools currently fit those shapes.</p>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

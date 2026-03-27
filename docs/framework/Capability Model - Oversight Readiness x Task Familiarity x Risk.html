@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Capability Model - Oversight Readiness x Task Familiarity x Risk | Paired Engineering</title>
+  <meta name="description" content="Capability Model - Oversight Readiness x Task Familiarity x Risk">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="index.html">Framework</a> / Capability Model - Oversight Readiness x Task Familiarity x Risk</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>Capability Model - Oversight Readiness x Task Familiarity x Risk</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/framework/Capability%20Model%20-%20Oversight%20Readiness%20x%20Task%20Familiarity%20x%20Risk.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../guides/index.html">Guides</a><a href="index.html">Framework</a><a href="../leadership/index.html">Leadership</a><a href="../workshops/index.html">Workshops</a><a href="../exercises/index.html">Exercises</a><a href="../evidence/index.html">Evidence</a><a href="../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <p>This note operationalizes <code>capability-aware adoption</code> for the project. It is the control system for deciding how much AI leverage is appropriate in a given situation.</p>
+<p><code>Oversight readiness</code> is now the preferred project term for the construct stack that sits behind this dimension. The current note title is retained temporarily for continuity while related notes are updated.</p>
+<h2 id="why-this-model-exists">Why this model exists</h2>
+<p>Job title alone is too blunt. Safe and useful AI adoption depends on at least three variables, plus an explicit verification check:</p>
+<ul>
+<li>oversight readiness</li>
+<li>task familiarity</li>
+<li>task risk</li>
+</ul>
+<p>The same engineer can safely use AI very differently depending on what they are doing.</p>
+<h2 id="core-dimensions">Core dimensions</h2>
+<h3 id="oversight-readiness">Oversight readiness</h3>
+<ul>
+<li>
+<p><code>E1 Assisted learner</code>
+  The engineer is still building core mental models and often cannot reliably spot subtle errors without support.</p>
+</li>
+<li>
+<p><code>E2 Independent practitioner</code>
+  The engineer can complete normal work independently and verify common output, but still benefits from scaffolding on unfamiliar work.</p>
+</li>
+<li>
+<p><code>E3 Oversight-capable engineer</code>
+  The engineer can reason about tradeoffs, detect deeper problems, review generated output critically, and coach others.</p>
+</li>
+</ul>
+<p>Oversight readiness here does not mean age, title, confidence, or years employed by default. It means task-relevant judgment, verification discipline, self-awareness about what the engineer does not yet know, and the ability to slow down when the task demands it.</p>
+<p>A career-changing junior developer may have strong oversight-readiness traits for AI-assisted work even while still building technical depth. Likewise, a nominally senior engineer may have weak oversight readiness for a specific task if unfamiliarity, overconfidence, or weak verification habits are present.</p>
+<h3 id="task-familiarity">Task familiarity</h3>
+<ul>
+<li>
+<p><code>F1 New</code>
+  New library, framework, architecture pattern, domain, or workflow</p>
+</li>
+<li>
+<p><code>F2 Known</code>
+  Some prior experience exists, but not enough for fluent judgment under pressure</p>
+</li>
+<li>
+<p><code>F3 Routine</code>
+  The engineer can already execute and review the work reliably</p>
+</li>
+</ul>
+<h3 id="task-risk">Task risk</h3>
+<ul>
+<li>
+<p><code>R1 Low</code>
+  Localized, reversible, easy to review, low data sensitivity</p>
+</li>
+<li>
+<p><code>R2 Medium</code>
+  Meaningful downstream effects, moderate coordination or review burden</p>
+</li>
+<li>
+<p><code>R3 High</code>
+  Sensitive data, security, compliance, architecture-critical logic, production reliability, or decisions with expensive rework</p>
+</li>
+</ul>
+<h2 id="verification-difficulty-as-a-risk-amplifier">Verification difficulty as a risk amplifier</h2>
+<p>Verification difficulty is not a separate oversight-readiness band, but it is a control check that changes how the model should be applied.</p>
+<ul>
+<li>If it is hard to tell whether output is correct before downstream use, treat the task as at least one risk level higher.</li>
+<li>When verification is difficult, prefer smaller steps, external sources, tests, peer review, or stakeholder review.</li>
+<li>Requirements drafting, architecture reasoning, root-cause analysis, and policy interpretation can look fast and low-friction while still being hard to verify well.</li>
+</ul>
+<h2 id="two-operating-modes">Two operating modes</h2>
+<h3 id="learning-mode">Learning mode</h3>
+<p>Use when the main goal is building understanding, not just finishing faster.</p>
+<p>Default behaviors:</p>
+<ul>
+<li>explanation-first prompting</li>
+<li>independent attempt before full-solution prompting</li>
+<li>code reading and modification after generation</li>
+<li>explicit reasoning checks</li>
+</ul>
+<h3 id="delivery-mode">Delivery mode</h3>
+<p>Use when the main goal is safe, efficient execution on work the engineer can already oversee.</p>
+<p>Default behaviors:</p>
+<ul>
+<li>bounded acceleration</li>
+<li>stronger use of drafting and transformation workflows</li>
+<li>verification remains mandatory</li>
+<li>review burden is tracked</li>
+</ul>
+<h2 id="default-guidance-by-combination">Default guidance by combination</h2>
+<h3 id="e1-assisted-learner">E1 Assisted learner</h3>
+<ul>
+<li>
+<p><code>F1 New + any risk</code>
+  Default: learning mode
+  Rule: no blind delegation
+  Allowed: explanation, walkthroughs, concept checks, partial examples, debugging with explanation</p>
+</li>
+<li>
+<p><code>F2 Known + R1 or R2</code>
+  Default: learning mode with guided acceleration
+  Allowed: draft generation if the engineer must explain and modify the result</p>
+</li>
+<li>
+<p><code>F3 Routine + R1</code>
+  Default: light delivery mode
+  Allowed: higher leverage on bounded tasks, but verification remains explicit</p>
+</li>
+<li>
+<p><code>Any + R3</code>
+  Default: stricter review, limited generation, strong human oversight</p>
+</li>
+</ul>
+<h3 id="e2-independent-practitioner">E2 Independent practitioner</h3>
+<ul>
+<li>
+<p><code>F1 New + R1 or R2</code>
+  Default: hybrid mode
+  Allowed: generate, explain, compare options, then implement</p>
+</li>
+<li>
+<p><code>F2 Known + R1 or R2</code>
+  Default: guided delivery mode
+  Allowed: drafting, transformation, test help, debugging support, design alternatives</p>
+</li>
+<li>
+<p><code>F3 Routine + R1</code>
+  Default: delivery mode
+  Allowed: strong acceleration if review quality stays high</p>
+</li>
+<li>
+<p><code>Any + R3</code>
+  Default: delivery mode with tighter guardrails and second-review expectations</p>
+</li>
+</ul>
+<h3 id="e3-oversight-capable-engineer">E3 Oversight-capable engineer</h3>
+<ul>
+<li>
+<p><code>F1 New + R1 or R2</code>
+  Default: exploratory paired use
+  Allowed: fast exploration, but still with reasoning checks because unfamiliarity matters</p>
+</li>
+<li>
+<p><code>F2 Known or F3 Routine + R1</code>
+  Default: leverage-oriented delivery mode
+  Allowed: strong acceleration, pattern extraction, automation, review support, workflow optimization</p>
+</li>
+<li>
+<p><code>Any + R3</code>
+  Default: constrained delivery mode
+  Allowed: assistance for exploration, drafts, and review support, but not uncritical acceptance</p>
+</li>
+</ul>
+<h2 id="red-line-rules">Red-line rules</h2>
+<ul>
+<li>No engineer should rely on opaque generation for <code>R3</code> work without strong review.</li>
+<li><code>E1</code> engineers should not use full-solution generation as the default path on <code>F1 New</code> work.</li>
+<li>“I can use it because I’m senior” is not enough justification when the task is unfamiliar or high risk.</li>
+<li>Explanation-first does not mean trusting the model's own explanation as sufficient verification.</li>
+<li>Low-observability work should not stay in <code>R1</code> just because no immediate failure is visible.</li>
+<li>High output speed is not a success condition if explanation ability and review quality degrade.</li>
+</ul>
+<h2 id="progression-signals">Progression signals</h2>
+<p>An engineer can move toward higher-leverage patterns when they can:</p>
+<ul>
+<li>explain generated code in their own words</li>
+<li>modify it safely</li>
+<li>predict likely failure modes</li>
+<li>catch non-obvious mistakes</li>
+<li>choose when not to use AI</li>
+<li>notice when they are overconfident or under-informed</li>
+<li>slow down and ask for review when the task exceeds their current oversight ability</li>
+</ul>
+<h2 id="what-this-model-protects">What this model protects</h2>
+<ul>
+<li>mastery-building for less experienced engineers</li>
+<li>safe leverage for stronger engineers</li>
+<li>better matching between workflow and real oversight ability</li>
+<li>better caution on tasks that are easy to generate but hard to evaluate</li>
+</ul>
+<h2 id="current-uses-of-the-model">Current uses of the model</h2>
+<ul>
+<li><a href="Rollout%20Matrix%20-%20Capability%20Rules%20by%20Phase.html">Rollout Matrix - Capability Rules by Phase</a> applies the model to rollout stages</li>
+<li><a href="Rollout%20Matrix%20-%20Role-Specific%20Workflows%20by%20Phase.html">Rollout Matrix - Role-Specific Workflows by Phase</a> applies it to concrete workflow choices</li>
+<li><a href="Manager%20and%20Technical-Lead%20Operating%20Model%20for%20AI%20Enablement.html">Manager and Technical-Lead Operating Model for AI Enablement</a> and <a href="Software-Specific%20Apprenticeship%20and%20Onboarding%20for%20AI-Enabled%20Teams.html">Software-Specific Apprenticeship and Onboarding for AI-Enabled Teams</a> use it to shape coaching, task ladders, and learning-mode defaults</li>
+<li>Capability Model Validation - Evidence and Edge Cases continues the validation lane</li>
+</ul>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

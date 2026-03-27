@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practitioner Playbook - Paired Engineering with AI | Paired Engineering</title>
+  <meta name="description" content="Practitioner Playbook - Paired Engineering with AI">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="index.html">Workshops</a> / Practitioner Playbook - Paired Engineering with AI</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>Practitioner Playbook - Paired Engineering with AI</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/workshops/Practitioner%20Playbook%20-%20Paired%20Engineering%20with%20AI.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../guides/index.html">Guides</a><a href="../framework/index.html">Framework</a><a href="../leadership/index.html">Leadership</a><a href="index.html">Workshops</a><a href="../exercises/index.html">Exercises</a><a href="../evidence/index.html">Evidence</a><a href="../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <h2 id="audience">Audience</h2>
+<p>Developers, QA, SDET, architects, and product owners working inside the first AI enablement pilot.</p>
+<h2 id="core-stance">Core stance</h2>
+<p>Use AI as a paired-engineering aid that improves understanding, debugging, review, and workflow execution.</p>
+<p>Do not use AI as a substitute for judgment.</p>
+<h2 id="two-working-modes">Two working modes</h2>
+<h3 id="learning-mode">Learning mode</h3>
+<p>Use this when:</p>
+<ul>
+<li>the task is unfamiliar</li>
+<li>you are still building mental models</li>
+<li>the cost of misunderstanding is meaningful</li>
+</ul>
+<p>Default behaviors:</p>
+<ul>
+<li>ask for explanation before asking for full solutions</li>
+<li>attempt part of the task yourself first</li>
+<li>read and modify generated output</li>
+<li>explain the result back in your own words</li>
+</ul>
+<h3 id="delivery-mode">Delivery mode</h3>
+<p>Use this when:</p>
+<ul>
+<li>the task is familiar</li>
+<li>the work is bounded</li>
+<li>you can verify the output reliably</li>
+</ul>
+<p>Default behaviors:</p>
+<ul>
+<li>use AI to draft, transform, summarize, or compare options</li>
+<li>verify with tests, review, or direct system feedback</li>
+<li>track whether acceleration creates hidden cleanup or review work</li>
+</ul>
+<h2 id="capability-aware-defaults">Capability-aware defaults</h2>
+<ul>
+<li><code>E1 Assisted learner</code>: explanation-first by default; no blind delegation on new work</li>
+<li><code>E2 Independent practitioner</code>: guided acceleration is acceptable when the work is familiar enough to verify</li>
+<li><code>E3 Oversight-capable engineer</code>: stronger leverage is acceptable on bounded work, but unfamiliarity and high risk still override seniority</li>
+</ul>
+<h2 id="verification-rule">Verification rule</h2>
+<p>If it is hard to tell whether the output is correct before downstream use, treat the task as riskier than it first appears.</p>
+<p>That means:</p>
+<ul>
+<li>smaller steps</li>
+<li>stronger review</li>
+<li>external sources</li>
+<li>tests</li>
+<li>peer or stakeholder checks</li>
+</ul>
+<h2 id="role-workflows">Role workflows</h2>
+<h3 id="developers">Developers</h3>
+<p>Good starter workflows:</p>
+<ul>
+<li>bounded debugging support</li>
+<li>code explanation on unfamiliar modules</li>
+<li>unit test drafting</li>
+<li>localized refactoring suggestions</li>
+</ul>
+<p>Use extra caution on:</p>
+<ul>
+<li>new frameworks</li>
+<li>architecture-heavy refactors</li>
+<li>production-critical logic</li>
+</ul>
+<h3 id="qa-and-sdet">QA and SDET</h3>
+<p>Good starter workflows:</p>
+<ul>
+<li>failure triage</li>
+<li>exploratory test idea generation</li>
+<li>flaky test investigation</li>
+<li>automation maintenance support</li>
+</ul>
+<p>Use extra caution on:</p>
+<ul>
+<li>fabricated root-cause narratives</li>
+<li>privacy-sensitive test data</li>
+<li>weakly verified test generation</li>
+</ul>
+<h3 id="architects">Architects</h3>
+<p>Good starter workflows:</p>
+<ul>
+<li>option comparison</li>
+<li>dependency and risk review</li>
+<li>architecture question generation</li>
+<li>ADR drafting support</li>
+</ul>
+<p>Use extra caution on:</p>
+<ul>
+<li>elegant but shallow rationales</li>
+<li>unsupported tradeoff claims</li>
+<li>premature convergence on one design</li>
+</ul>
+<h3 id="product-owners">Product owners</h3>
+<p>Good starter workflows:</p>
+<ul>
+<li>backlog clarification</li>
+<li>acceptance criteria drafting</li>
+<li>ambiguity detection</li>
+<li>stakeholder question generation</li>
+</ul>
+<p>Use extra caution on:</p>
+<ul>
+<li>requirements that sound crisp but are semantically wrong</li>
+<li>domain assumptions the model cannot truly know</li>
+<li>stakeholder language that hides unresolved decisions</li>
+</ul>
+<h2 id="anti-patterns">Anti-patterns</h2>
+<ul>
+<li>asking for the full answer before you understand the problem</li>
+<li>accepting a fluent explanation as proof</li>
+<li>using AI on high-risk work without a stronger review path</li>
+<li>measuring success by prompt count or code volume</li>
+<li>copying senior habits without senior oversight ability</li>
+</ul>
+<h2 id="what-good-looks-like">What good looks like</h2>
+<ul>
+<li>you can explain the output in your own words</li>
+<li>you can modify it safely</li>
+<li>you know what to verify and how</li>
+<li>you know when to stop using AI and think independently</li>
+<li>your use of AI reduces friction without increasing downstream confusion</li>
+</ul>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

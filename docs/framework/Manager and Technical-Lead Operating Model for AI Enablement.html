@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manager and Technical-Lead Operating Model for AI Enablement | Paired Engineering</title>
+  <meta name="description" content="Manager and Technical-Lead Operating Model for AI Enablement">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="index.html">Framework</a> / Manager and Technical-Lead Operating Model for AI Enablement</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>Manager and Technical-Lead Operating Model for AI Enablement</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/framework/Manager%20and%20Technical-Lead%20Operating%20Model%20for%20AI%20Enablement.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../guides/index.html">Guides</a><a href="index.html">Framework</a><a href="../leadership/index.html">Leadership</a><a href="../workshops/index.html">Workshops</a><a href="../exercises/index.html">Exercises</a><a href="../evidence/index.html">Evidence</a><a href="../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <p>This note defines what managers and technical leads should actually do to make AI enablement work in live software delivery.</p>
+<p>The project already has rollout phases, verification standards, and a capability model.</p>
+<p>This note fills the operational gap between those ideas and day-to-day team behavior.</p>
+<h2 id="evidence-posture">Evidence posture</h2>
+<ul>
+<li><code>evidence-backed</code>: transfer of learning improves when managers and peers reinforce new practices in real work rather than treating training as a one-time event.</li>
+<li><code>evidence-backed</code>: software apprenticeship depends on social support, progressive responsibility, and guided practice, not only access to documents or tools.</li>
+<li><code>practice-based</code>: the exact weekly operating model for AI enablement inside software teams is still emerging, so some of the concrete role guidance below is principled operating design rather than settled science.</li>
+</ul>
+<h2 id="what-this-note-is-trying-to-prevent">What this note is trying to prevent</h2>
+<p>Weak AI rollout often fails in one of two ways:</p>
+<ul>
+<li>managers treat adoption as a usage-number problem</li>
+<li>technical leads treat it as a prompt-quality problem</li>
+</ul>
+<p>Both are too shallow.</p>
+<p>Good AI enablement needs:</p>
+<ul>
+<li>workflow selection</li>
+<li>coaching</li>
+<li>verification discipline</li>
+<li>review hygiene</li>
+<li>escalation</li>
+<li>apprenticeship protection</li>
+</ul>
+<h2 id="core-principle">Core principle</h2>
+<p>Managers and technical leads do not own the same problem.</p>
+<p>They should support the same outcome from different angles.</p>
+<h3 id="managers-primarily-own">Managers primarily own</h3>
+<ul>
+<li>priority and time allocation</li>
+<li>local incentives and expectations</li>
+<li>psychological safety and team norms</li>
+<li>whether enablement work survives contact with delivery pressure</li>
+<li>whether apprenticeship and review burden stay visible</li>
+</ul>
+<h3 id="technical-leads-primarily-own">Technical leads primarily own</h3>
+<ul>
+<li>workflow quality</li>
+<li>technical examples and standards</li>
+<li>verification expectations</li>
+<li>review and escalation quality</li>
+<li>modeling good AI-assisted working habits in real engineering work</li>
+</ul>
+<h3 id="shared-ownership">Shared ownership</h3>
+<ul>
+<li>deciding where learning mode versus delivery mode applies</li>
+<li>preventing unsafe shortcuts from becoming the local norm</li>
+<li>keeping review debt visible</li>
+<li>making sure lower-oversight-readiness engineers are growing rather than borrowing capability</li>
+</ul>
+<h2 id="role-breakdown">Role breakdown</h2>
+<h3 id="engineering-manager">Engineering manager</h3>
+<p>The manager should not be the chief prompt auditor.</p>
+<p>The manager's job is to make good behavior possible and bad incentives less likely.</p>
+<p>Key responsibilities:</p>
+<ul>
+<li>protect time for pilot workflows, office hours, and follow-up</li>
+<li>reinforce that success is not measured by raw prompt volume</li>
+<li>ask about workflow quality, verification, and hidden cleanup</li>
+<li>notice whether strong engineers are absorbing silent review debt</li>
+<li>keep apprenticeship and onboarding in scope when workload design changes</li>
+<li>make it safe for people to admit confusion, overreliance, or failed experiments</li>
+</ul>
+<h3 id="technical-lead-or-staff-engineer">Technical lead or Staff Engineer</h3>
+<p>The technical lead should not act like a human lint rule for AI output.</p>
+<p>The lead's job is to define what good looks like and model it in real work.</p>
+<p>Key responsibilities:</p>
+<ul>
+<li>choose bounded workflows worth piloting</li>
+<li>define what evidence counts as verification for each artifact type</li>
+<li>show examples of good AI-assisted reasoning, not only good prompts</li>
+<li>review sampled cases for quality, risk handling, and explanation ability</li>
+<li>identify when a task looks easy to generate but hard to verify</li>
+<li>stop unsafe patterns before they become team habit</li>
+</ul>
+<h3 id="technical-enablement-lead-if-present">Technical enablement lead, if present</h3>
+<p>Some organizations also have a central enablement lead or enablement function.</p>
+<p>That role should:</p>
+<ul>
+<li>curate patterns and examples across teams</li>
+<li>run office hours and learning loops</li>
+<li>translate local findings into standards, templates, and guidance</li>
+<li>help managers and leads stay aligned without owning their line responsibilities</li>
+</ul>
+<h2 id="default-weekly-operating-cadence">Default weekly operating cadence</h2>
+<p>This is the simplest useful cadence for an initial pilot cohort.</p>
+<h3 id="manager-weekly-check">Manager weekly check</h3>
+<p><code>15-20</code> minutes during normal delivery rhythm.</p>
+<p>Questions to ask:</p>
+<ul>
+<li>which workflow did the team actually use AI on this week</li>
+<li>where did it help and where did it create cleanup</li>
+<li>where was verification hard</li>
+<li>did anyone feel pushed toward delivery mode when learning mode was more appropriate</li>
+<li>did review burden spike for any lead or senior engineer</li>
+</ul>
+<h3 id="technical-lead-weekly-review">Technical-lead weekly review</h3>
+<p><code>30-45</code> minutes with a small sampled set of cases.</p>
+<p>Review for:</p>
+<ul>
+<li>workflow fit</li>
+<li>verification quality</li>
+<li>explanation ability</li>
+<li>risk handling</li>
+<li>downstream quality</li>
+</ul>
+<p>The goal is not to inspect everything.</p>
+<p>The goal is to keep a live view of whether local habits are getting better or worse.</p>
+<h3 id="joint-manager-and-lead-sync">Joint manager and lead sync</h3>
+<p><code>15-30</code> minutes weekly or biweekly.</p>
+<p>Use it to decide:</p>
+<ul>
+<li>what to keep encouraging</li>
+<li>what to tighten</li>
+<li>which workflow needs better examples or boundaries</li>
+<li>whether learning-mode work is being crowded out by delivery pressure</li>
+<li>whether the team is ready to widen, pause, or narrow the pilot</li>
+</ul>
+<h2 id="soft-signals-are-still-signals">Soft signals are still signals</h2>
+<p>Managers and technical leads should not rely only on hard metrics and dashboard summaries.</p>
+<p>They should also pay attention to softer operating signals such as:</p>
+<ul>
+<li>work that feels heavier to review than expected</li>
+<li>AI-assisted output that sounds polished but still feels brittle or confusing</li>
+<li>repeated low-confidence language from practitioners</li>
+<li>silence from juniors who are moving fast but cannot explain what changed</li>
+<li>senior engineers quietly absorbing cleanup work</li>
+<li>a local sense that the team is producing more motion than clarity</li>
+</ul>
+<p>These signals matter because they often appear before stronger quantitative indicators move.</p>
+<p>They should not be treated as proof by themselves.</p>
+<p>They should be treated as inspection triggers.</p>
+<p>If a manager or lead notices a soft signal, the next step is to:</p>
+<ul>
+<li>sample the affected workflow or artifact</li>
+<li>ask what verification actually happened</li>
+<li>compare the feeling with concrete evidence such as rework, review burden, or explanation gaps</li>
+<li>decide whether the pattern should be tightened, coached, or paused</li>
+</ul>
+<h2 id="what-managers-should-say">What managers should say</h2>
+<p>Helpful language:</p>
+<ul>
+<li>show me where the workflow improved, not how many prompts were sent</li>
+<li>what feels better or worse in the work, even if the dashboard is not showing it yet</li>
+<li>what did we verify and how</li>
+<li>where do you still not trust the output</li>
+<li>which engineers need explanation-first support rather than more acceleration</li>
+<li>what is the hidden cleanup cost of this pattern</li>
+</ul>
+<p>Unhelpful language:</p>
+<ul>
+<li>why is tool usage not higher</li>
+<li>if the AI can draft it, why does this still take so long</li>
+<li>everyone should be using this the same way by now</li>
+<li>just run it through the model first and see what happens</li>
+</ul>
+<h2 id="what-technical-leads-should-model">What technical leads should model</h2>
+<p>Good lead behavior:</p>
+<ul>
+<li>narrating verification steps out loud during paired work</li>
+<li>showing when they reject or heavily modify generated output</li>
+<li>escalating low-verifiability work instead of pretending confidence</li>
+<li>keeping examples grounded in real repo and workflow constraints</li>
+<li>translating abstract AI enthusiasm into concrete engineering standards</li>
+</ul>
+<p>Bad lead behavior:</p>
+<ul>
+<li>speed theater</li>
+<li>normalizing opaque generation on unfamiliar work</li>
+<li>shaming questions or uncertainty</li>
+<li>quietly cleaning up bad AI output without teaching why it was wrong</li>
+<li>using personal skill to mask a broken team practice</li>
+</ul>
+<h2 id="phase-specific-emphasis">Phase-specific emphasis</h2>
+<h3 id="phases-1-2">Phases 1-2</h3>
+<p>Managers and leads align on:</p>
+<ul>
+<li>approved tools</li>
+<li>risky work categories</li>
+<li>target workflows</li>
+<li>initial success signals</li>
+</ul>
+<h3 id="phases-3-4">Phases 3-4</h3>
+<p>Managers and leads focus on:</p>
+<ul>
+<li>examples, coaching, and office hours</li>
+<li>keeping learning mode visible</li>
+<li>separating promising workflows from unsafe shortcuts</li>
+</ul>
+<h3 id="phases-5-6">Phases 5-6</h3>
+<p>Managers and leads focus on:</p>
+<ul>
+<li>encoding the good patterns into standards and templates</li>
+<li>checking whether the behavior survives outside enablement sessions</li>
+<li>deciding what should scale and what should stay bounded</li>
+</ul>
+<h2 id="common-failure-modes">Common failure modes</h2>
+<h3 id="manager-failure-modes">Manager failure modes</h3>
+<ul>
+<li>treating adoption as compliance</li>
+<li>rewarding speed while ignoring verification debt</li>
+<li>squeezing out learning-mode work under delivery pressure</li>
+<li>assuming quiet resistance means no real resistance exists</li>
+</ul>
+<h3 id="technical-lead-failure-modes">Technical-lead failure modes</h3>
+<ul>
+<li>focusing on clever prompting instead of workflow design</li>
+<li>overestimating what others can safely verify</li>
+<li>failing to distinguish their own high oversight readiness from the team's average reality</li>
+<li>silently compensating for poor habits instead of redesigning the workflow</li>
+</ul>
+<h2 id="what-to-watch-for">What to watch for</h2>
+<p>Managers and leads should both watch for:</p>
+<ul>
+<li>rising review burden</li>
+<li>repeated explanation gaps</li>
+<li>weak confidence calibration</li>
+<li>good-looking speed with later rework</li>
+<li>newcomers using AI as a substitute for understanding</li>
+<li>seniors becoming permanent cleanup layers</li>
+<li>weak qualitative signals that something feels off even before a stronger metric moves</li>
+</ul>
+<h2 id="what-this-operating-model-changes">What this operating model changes</h2>
+<ul>
+<li>AI enablement stops being only a tooling or training program.</li>
+<li>Managers become responsible for the conditions that shape behavior.</li>
+<li>Technical leads become responsible for the standards and habits that make AI use safe and useful.</li>
+<li>The team gains a shared operating rhythm for learning, verification, and escalation.</li>
+</ul>
+<h2 id="requirements-management-touchpoints">Requirements-management touchpoints</h2>
+<p>Managers and technical leads should reinforce the same requirements-management defaults from different angles.</p>
+<h3 id="managers-should-reinforce">Managers should reinforce</h3>
+<ul>
+<li>keep the current increment small enough to review in one focused sitting</li>
+<li>require open questions and non-goals to stay visible instead of disappearing into chat history</li>
+<li>stop giant generated requirement packs from being treated as readiness evidence</li>
+<li>watch requirement churn, reopening, and clarification spikes as workflow-quality signals rather than blaming individuals</li>
+</ul>
+<h3 id="technical-leads-should-reinforce">Technical leads should reinforce</h3>
+<ul>
+<li>challenge whether the current requirement is actually buildable, reviewable, and testable</li>
+<li>split oversized or overly coupled requirement artifacts before execution starts</li>
+<li>detect architectural commitments smuggled into product wording</li>
+<li>require canonical artifact updates when an AI conversation changes the team's understanding</li>
+</ul>
+<h3 id="shared-review-prompts">Shared review prompts</h3>
+<ul>
+<li>what is the smallest increment we are actually committing to now</li>
+<li>what is still unresolved and where is it tracked</li>
+<li>what evidence makes this requirement ready for execution</li>
+<li>what would QA, operations, or the next reviewer still not know from the current artifact</li>
+</ul>
+<p>Use <a href="AI-Assisted%20Requirements%20Management.html">AI-Assisted Requirements Management</a> when the team needs the detailed artifact rules behind these prompts.</p>
+<h2 id="adapting-cadence-and-language-in-a-real-workplace">Adapting cadence and language in a real workplace</h2>
+<p>This operating model should fit into existing delivery rhythm before it creates new meetings.</p>
+<p>Use these defaults during pilot adaptation:</p>
+<ul>
+<li>reuse existing manager one-on-ones, standup follow-ups, backlog refinement, or delivery reviews before creating separate enablement ceremonies</li>
+<li>keep sampled technical-lead review small enough that it teaches without becoming hidden process tax</li>
+<li>translate terms like <code>learning mode</code>, <code>delivery mode</code>, or <code>oversight readiness</code> into local team language if the underlying meaning stays intact</li>
+<li>keep the joint manager and lead sync action-oriented; if it becomes status theater, shorten it or fold it into another cadence</li>
+</ul>
+<p>Validate fit after <code>2-3</code> weeks by asking:</p>
+<ul>
+<li>did the weekly questions surface a real workflow problem or just produce polite updates</li>
+<li>is the sampled review small enough to survive real delivery pressure</li>
+<li>are managers and leads acting on soft signals or only collecting them</li>
+<li>does the local language help people speak honestly, or does it sound imported and abstract</li>
+</ul>
+<p>If the answer is mostly no, simplify the cadence before scaling the pilot.</p>
+<h2 id="connected-artifacts">Connected artifacts</h2>
+<ul>
+<li><a href="AI-Assisted%20Requirements%20Management.html">AI-Assisted Requirements Management</a></li>
+<li><a href="../guides/Manager%20Coaching%20Guide%20-%20AI%20Enablement%20in%20Delivery%20Teams.html">Manager Coaching Guide - AI Enablement in Delivery Teams</a></li>
+<li><a href="V1%20Rollout%20Playbook%20-%20Initial%20Pilot%20Cohort.html">V1 Rollout Playbook - Initial Pilot Cohort</a></li>
+<li><a href="Pilot%20Evidence%20Model%20-%20Practical%20Metrics%20and%20Lightweight%20Collection.html">Pilot Evidence Model - Practical Metrics and Lightweight Collection</a></li>
+</ul>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

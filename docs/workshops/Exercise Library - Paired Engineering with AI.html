@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercise Library - Paired Engineering with AI | Paired Engineering</title>
+  <meta name="description" content="Exercise Library - Paired Engineering with AI">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="index.html">Workshops</a> / Exercise Library - Paired Engineering with AI</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>Exercise Library - Paired Engineering with AI</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/workshops/Exercise%20Library%20-%20Paired%20Engineering%20with%20AI.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../guides/index.html">Guides</a><a href="../framework/index.html">Framework</a><a href="../leadership/index.html">Leadership</a><a href="index.html">Workshops</a><a href="../exercises/index.html">Exercises</a><a href="../evidence/index.html">Evidence</a><a href="../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <h2 id="purpose">Purpose</h2>
+<p>This library extends the workshop pack with deeper guided exercises for junior, intermediate, senior, and Staff practitioners.</p>
+<p>The point is not to train people to get an answer from AI as quickly as possible.</p>
+<p>The point is to train:</p>
+<ul>
+<li>mode selection</li>
+<li>question quality</li>
+<li>verification habits</li>
+<li>judgment under uncertainty</li>
+<li>reflection on where AI helps and where it creates risk</li>
+</ul>
+<h2 id="design-rules">Design rules</h2>
+<ul>
+<li>Prefer language-agnostic tasks that can be run in most software-delivery environments.</li>
+<li>Make the work feel real enough to be interesting, but bounded enough to be teachable.</li>
+<li>Focus on paired-engineering habits rather than syntax trivia or tool fandom.</li>
+<li>Keep the exercise objective centered on reasoning, verification, and workflow quality.</li>
+<li>Use the same exercise structure so facilitators can swap domains without rewriting the teaching method.</li>
+</ul>
+<h2 id="rating-model">Rating model</h2>
+<p>Each exercise has two ratings.</p>
+<p>These ratings are not pretend precision.</p>
+<p>They are a shared scoping heuristic for facilitators and learners.</p>
+<p>The purpose is to make the expected shape of the work visible before the exercise begins.</p>
+<h2 id="boundary-rule">Boundary rule</h2>
+<ul>
+<li>the minimum rating is <code>1</code></li>
+<li>the maximum rating is <code>5</code></li>
+<li>there is no valid <code>0</code></li>
+<li>there is no valid <code>6</code></li>
+</ul>
+<p>If a task feels smaller than <code>1</code>, combine it with another small task until it forms a meaningful exercise.</p>
+<p>If a task feels larger than <code>5</code>, break it down into smaller exercises before using it for practice.</p>
+<p>The point is to keep training work bounded, teachable, and reviewable.</p>
+<h3 id="size">Size</h3>
+<p>Size answers:</p>
+<p><code>How much work surface is involved?</code></p>
+<p>This is mostly about scope, number of moving parts, and amount of work to inspect.</p>
+<p><code>1</code>
+- one small artifact or rule set
+- narrow task surface
+- short completion window</p>
+<p><code>2</code>
+- two artifacts or one artifact plus one signal
+- slightly larger comparison space</p>
+<p><code>3</code>
+- several artifacts with one meaningful dependency
+- more than one plausible path</p>
+<p><code>4</code>
+- multiple artifacts with cross-checking required
+- wider impact or more steps to verify</p>
+<p><code>5</code>
+- cross-artifact reasoning, tradeoffs, or partial investigation
+- enough surface area that sequencing matters</p>
+<p>Examples:</p>
+<ul>
+<li><code>size 1</code>: fix or extend one small test case, clarify one narrow rule, inspect one bounded bug</li>
+<li><code>size 3</code>: compare a few options, update several related artifacts, or verify a multi-step workflow</li>
+<li><code>size 5</code>: partial incident reconstruction, broad refactor planning, or cross-team rollout reasoning</li>
+</ul>
+<h3 id="complexity">Complexity</h3>
+<p>Complexity answers:</p>
+<p><code>How deep, ambiguous, or hard to verify is the work?</code></p>
+<p>This is mostly about reasoning difficulty, uncertainty, and risk of false confidence.</p>
+<p><code>1</code>
+- low ambiguity
+- clear verification path
+- low risk of false confidence</p>
+<p><code>2</code>
+- one or two traps
+- moderate ambiguity
+- still fairly observable</p>
+<p><code>3</code>
+- multiple plausible interpretations
+- verification requires care
+- risk of shallow confidence is real</p>
+<p><code>4</code>
+- hidden dependencies or low-observability reasoning
+- stronger tradeoffs and escalation judgment needed</p>
+<p><code>5</code>
+- incomplete information
+- cross-boundary reasoning
+- high risk of overreliance if the facilitator does not slow people down</p>
+<p>Examples:</p>
+<ul>
+<li><code>complexity 1</code>: straightforward boundary check or local test correction with clear expected behavior</li>
+<li><code>complexity 3</code>: multiple plausible explanations, tradeoffs, or verification traps</li>
+<li><code>complexity 5</code>: long-standing low-observability defect, ambiguous incident, or system behavior where elegant answers are easy to generate and hard to trust</li>
+</ul>
+<h2 id="how-to-read-the-ratings">How to read the ratings</h2>
+<p>The two ratings work together.</p>
+<ul>
+<li>high size and low complexity can still be heavy because there is a lot of work surface</li>
+<li>low size and high complexity can still be dangerous because the reasoning is hard</li>
+<li>high size and high complexity should be used carefully and often need stronger facilitation</li>
+</ul>
+<p>The ratings are there to set expectations, not to pretend every exercise is objectively measurable.</p>
+<h2 id="how-to-use-the-library">How to use the library</h2>
+<ul>
+<li>Start with the exercise level that matches the learner's current oversight readiness, not just their title.</li>
+<li>Use a short worked example before independent exercise time when the pattern is new.</li>
+<li>Ask learners to choose <code>learning mode</code> or <code>delivery mode</code> first.</li>
+<li>Require a verification plan before accepting any AI-assisted answer.</li>
+<li>End every exercise with reflection on what the model helped with, what it made easier to miss, and what still required human judgment.</li>
+</ul>
+<h2 id="track-guidance">Track guidance</h2>
+<p>The full library spans <code>size 1-5</code> and <code>complexity 1-5</code> overall.</p>
+<p>The junior track intentionally stays lower-to-mid on complexity while still increasing in scope.</p>
+<p>The intermediate track pushes harder on ambiguity, verification difficulty, and system effects.</p>
+<p>The senior and Staff track is not the main exercise audience, but it is still useful for:</p>
+<ul>
+<li>low-observability reasoning</li>
+<li>architecture and standards critique</li>
+<li>workflow and tooling decisions</li>
+<li>coaching and review discipline</li>
+<li>cross-team tradeoff judgment</li>
+</ul>
+<h2 id="junior-track">Junior track</h2>
+<ul>
+<li><a href="../exercises/scenarios/Junior%20Exercise%201%20-%20Guardrail%20Test%20Matrix.html">Junior Exercise 1 - Guardrail Test Matrix</a></li>
+<li><code>size 1</code></li>
+<li><code>complexity 1</code></li>
+<li>
+<p>focus: edge-case thinking and simple verification</p>
+</li>
+<li>
+<p><a href="../exercises/scenarios/Junior%20Exercise%202%20-%20Bug%20Story%20From%20a%20Failing%20Example.html">Junior Exercise 2 - Bug Story From a Failing Example</a></p>
+</li>
+<li><code>size 2</code></li>
+<li><code>complexity 2</code></li>
+<li>
+<p>focus: hypothesis generation and minimal reproduction</p>
+</li>
+<li>
+<p><a href="../exercises/scenarios/Junior%20Exercise%203%20-%20Ambiguous%20Requirements%20Cleanup.html">Junior Exercise 3 - Ambiguous Requirements Cleanup</a></p>
+</li>
+<li><code>size 3</code></li>
+<li><code>complexity 2</code></li>
+<li>
+<p>focus: clarification, question design, and assumption control</p>
+</li>
+<li>
+<p><a href="../exercises/scenarios/Junior%20Exercise%204%20-%20Safe%20Refactor%20Planning.html">Junior Exercise 4 - Safe Refactor Planning</a></p>
+</li>
+<li><code>size 4</code></li>
+<li><code>complexity 3</code></li>
+<li>
+<p>focus: behavioral preservation and verification planning</p>
+</li>
+<li>
+<p><a href="../exercises/scenarios/Junior%20Exercise%205%20-%20Incident%20Triage%20Warm-Up.html">Junior Exercise 5 - Incident Triage Warm-Up</a></p>
+</li>
+<li><code>size 5</code></li>
+<li><code>complexity 3</code></li>
+<li>focus: early incident reasoning without overclaiming certainty</li>
+</ul>
+<h2 id="intermediate-track">Intermediate track</h2>
+<ul>
+<li><a href="../exercises/scenarios/Intermediate%20Exercise%201%20-%20Flaky%20Test%20or%20Race%20Condition.html">Intermediate Exercise 1 - Flaky Test or Race Condition</a></li>
+<li><code>size 2</code></li>
+<li><code>complexity 3</code></li>
+<li>
+<p>focus: rejecting shallow fixes and investigating observability gaps</p>
+</li>
+<li>
+<p><a href="../exercises/scenarios/Intermediate%20Exercise%202%20-%20Query%20and%20Cache%20Tradeoff%20Review.html">Intermediate Exercise 2 - Query and Cache Tradeoff Review</a></p>
+</li>
+<li><code>size 3</code></li>
+<li><code>complexity 3</code></li>
+<li>
+<p>focus: performance advice, tradeoffs, and safe skepticism</p>
+</li>
+<li>
+<p><a href="../exercises/scenarios/Intermediate%20Exercise%203%20-%20Policy%20Change%20With%20Hidden%20Edge%20Cases.html">Intermediate Exercise 3 - Policy Change With Hidden Edge Cases</a></p>
+</li>
+<li><code>size 3</code></li>
+<li><code>complexity 4</code></li>
+<li>
+<p>focus: domain logic, policy interpretation, and verification traps</p>
+</li>
+<li>
+<p><a href="../exercises/scenarios/Intermediate%20Exercise%204%20-%20Contract%20Change%20Rollout%20Review.html">Intermediate Exercise 4 - Contract Change Rollout Review</a></p>
+</li>
+<li><code>size 4</code></li>
+<li><code>complexity 4</code></li>
+<li>
+<p>focus: rollout safety across service boundaries</p>
+</li>
+<li>
+<p><a href="../exercises/scenarios/Intermediate%20Exercise%205%20-%20Partial%20Incident%20Reconstruction.html">Intermediate Exercise 5 - Partial Incident Reconstruction</a></p>
+</li>
+<li><code>size 5</code></li>
+<li><code>complexity 5</code></li>
+<li>focus: incomplete evidence, escalation, and disciplined uncertainty</li>
+</ul>
+<h2 id="senior-and-staff-track">Senior and Staff track</h2>
+<ul>
+<li><a href="../exercises/scenarios/Senior%20Staff%20Exercise%201%20-%20Architecture%20Option%20Critique%20Under%20Missing%20Evidence.html">Senior Staff Exercise 1 - Architecture Option Critique Under Missing Evidence</a></li>
+<li><code>size 2</code></li>
+<li><code>complexity 4</code></li>
+<li>
+<p>focus: option critique, uncertainty, and unsupported assumptions</p>
+</li>
+<li>
+<p><a href="../exercises/scenarios/Senior%20Staff%20Exercise%202%20-%20Review%20Debt%20and%20Cleanup%20Audit.html">Senior Staff Exercise 2 - Review Debt and Cleanup Audit</a></p>
+</li>
+<li><code>size 3</code></li>
+<li><code>complexity 4</code></li>
+<li>
+<p>focus: detecting hidden system cost behind apparently successful adoption</p>
+</li>
+<li>
+<p><a href="../exercises/scenarios/Senior%20Staff%20Exercise%203%20-%20Verification%20Standard%20Design.html">Senior Staff Exercise 3 - Verification Standard Design</a></p>
+</li>
+<li><code>size 3</code></li>
+<li><code>complexity 4</code></li>
+<li>
+<p>focus: turning vague review expectations into explicit standards</p>
+</li>
+<li>
+<p><a href="../exercises/scenarios/Senior%20Staff%20Exercise%204%20-%20Tool%20Selection%20and%20Governance%20Tradeoff.html">Senior Staff Exercise 4 - Tool Selection and Governance Tradeoff</a></p>
+</li>
+<li><code>size 4</code></li>
+<li><code>complexity 5</code></li>
+<li>
+<p>focus: workflow fit, edit surface, governance, and long-term operational tradeoffs</p>
+</li>
+<li>
+<p><a href="../exercises/scenarios/Senior%20Staff%20Exercise%205%20-%20Cross-Team%20Rollout%20Failure%20Review.html">Senior Staff Exercise 5 - Cross-Team Rollout Failure Review</a></p>
+</li>
+<li><code>size 5</code></li>
+<li><code>complexity 5</code></li>
+<li>focus: interpreting weak rollout signals and deciding how to intervene</li>
+</ul>
+<h2 id="facilitator-pattern">Facilitator pattern</h2>
+<p>For most sessions, use this sequence:</p>
+<ol>
+<li>Briefly frame the scenario and desired learning pattern.</li>
+<li>Ask learners to name the mode first.</li>
+<li>Let them work with AI in a bounded way.</li>
+<li>Require a verification path and a confidence statement.</li>
+<li>Debrief what AI improved, what it obscured, and what should change next time.</li>
+</ol>
+<h2 id="relationship-to-the-workshop-pack">Relationship to the workshop pack</h2>
+<p>Use <a href="Workshop%20Pack%20-%20Paired%20Engineering%20with%20AI.html">Workshop Pack - Paired Engineering with AI</a> for the base workshop flow.</p>
+<p>Use this library when you want deeper practice, better progression, or more targeted sessions for junior, intermediate, senior, and Staff practitioners.</p>
+<p>Use <a href="Exercise%20Worksheet%20Pack%20-%20Paired%20Engineering%20with%20AI.html">Exercise Worksheet Pack - Paired Engineering with AI</a> when a facilitator wants ready-to-run delivery guidance rather than scenario notes alone.</p>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

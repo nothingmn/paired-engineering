@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Junior Worksheet Pack - Paired Engineering with AI | Paired Engineering</title>
+  <meta name="description" content="Junior Worksheet Pack - Paired Engineering with AI">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="index.html">Exercises</a> / Junior Worksheet Pack - Paired Engineering with AI</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>Junior Worksheet Pack - Paired Engineering with AI</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/exercises/Junior%20Worksheet%20Pack%20-%20Paired%20Engineering%20with%20AI.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../guides/index.html">Guides</a><a href="../framework/index.html">Framework</a><a href="../leadership/index.html">Leadership</a><a href="../workshops/index.html">Workshops</a><a href="index.html">Exercises</a><a href="../evidence/index.html">Evidence</a><a href="../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <h2 id="pack-intent">Pack intent</h2>
+<p>These worksheets are for practitioners who are still building stable paired-engineering habits.</p>
+<p>The exercises should feel real and engaging, but still bounded enough that explanation and verification stay visible.</p>
+<h2 id="facilitation-defaults">Facilitation defaults</h2>
+<ul>
+<li>preferred format: pairs or triads</li>
+<li>recommended timebox: <code>15-25 min</code> per exercise plus <code>10 min</code> debrief</li>
+<li>recommended AI stance: <code>learning mode</code> by default unless the scenario is very familiar</li>
+</ul>
+<h2 id="worksheet-1-guardrail-test-matrix">Worksheet 1. Guardrail Test Matrix</h2>
+<p>Canonical scenario:</p>
+<ul>
+<li><a href="scenarios/Junior%20Exercise%201%20-%20Guardrail%20Test%20Matrix.html">Junior Exercise 1 - Guardrail Test Matrix</a></li>
+</ul>
+<p>Use when:</p>
+<ul>
+<li>learners need a clean first exercise</li>
+<li>the group is tempted to equate more generated output with better quality</li>
+</ul>
+<p>Suggested format:</p>
+<ul>
+<li><code>15 min</code> working time</li>
+<li><code>10 min</code> debrief</li>
+<li>pairs</li>
+</ul>
+<p>Facilitator setup:</p>
+<ul>
+<li>provide the rule text exactly as written</li>
+<li>do not provide the expected full answer</li>
+<li>remind learners that AI-generated expected outcomes still require manual checking</li>
+</ul>
+<p>Learner handout prompt:</p>
+<p>Create a small test matrix with AI support, then manually verify every expected outcome against the written rules. Mark which cases came from AI and which cases you corrected or added yourself.</p>
+<p>What good looks like:</p>
+<ul>
+<li>the learner catches at least one missing or wrong AI suggestion</li>
+<li>the learner uses the written rules to justify expected outcomes</li>
+<li>the final matrix is smaller and sharper than the raw AI output</li>
+</ul>
+<p>Likely traps:</p>
+<ul>
+<li>too many cases with weak coverage logic</li>
+<li>missing combined conditions</li>
+<li>trusting polished expected outcomes</li>
+</ul>
+<p>Debrief prompts:</p>
+<ul>
+<li>what case did AI help surface</li>
+<li>what mistake did AI introduce</li>
+<li>what made one case worth keeping and another worth dropping</li>
+</ul>
+<h2 id="worksheet-2-bug-story-from-a-failing-example">Worksheet 2. Bug Story From a Failing Example</h2>
+<p>Canonical scenario:</p>
+<ul>
+<li><a href="scenarios/Junior%20Exercise%202%20-%20Bug%20Story%20From%20a%20Failing%20Example.html">Junior Exercise 2 - Bug Story From a Failing Example</a></li>
+</ul>
+<p>Use when:</p>
+<ul>
+<li>learners jump too quickly to a fix</li>
+<li>the facilitator wants to reinforce hypothesis generation before code changes</li>
+</ul>
+<p>Suggested format:</p>
+<ul>
+<li><code>20 min</code> working time</li>
+<li><code>10 min</code> debrief</li>
+<li>pairs</li>
+</ul>
+<p>Facilitator setup:</p>
+<ul>
+<li>keep the pseudocode visible</li>
+<li>ask learners to rank explanations before proposing a fix</li>
+</ul>
+<p>Learner handout prompt:</p>
+<p>Use AI to generate several plausible explanations for the defect, rank them, choose one minimal fix, and define what evidence would prove the fix actually works.</p>
+<p>What good looks like:</p>
+<ul>
+<li>more than one plausible explanation is considered</li>
+<li>the learner distinguishes explanation from proof</li>
+<li>the proposed verification path is concrete</li>
+</ul>
+<p>Likely traps:</p>
+<ul>
+<li>accepting the first AI explanation</li>
+<li>rewriting more logic than necessary</li>
+<li>fixing without a reproduction path</li>
+</ul>
+<p>Debrief prompts:</p>
+<ul>
+<li>what made your chosen hypothesis stronger than the others</li>
+<li>what would have disproved your first instinct</li>
+<li>what did AI help with versus what still required human judgment</li>
+</ul>
+<h2 id="worksheet-3-ambiguous-requirements-cleanup">Worksheet 3. Ambiguous Requirements Cleanup</h2>
+<p>Canonical scenario:</p>
+<ul>
+<li><a href="scenarios/Junior%20Exercise%203%20-%20Ambiguous%20Requirements%20Cleanup.html">Junior Exercise 3 - Ambiguous Requirements Cleanup</a></li>
+</ul>
+<p>Use when:</p>
+<ul>
+<li>the group needs practice separating clarification from invention</li>
+<li>product and engineering participants are in the same room</li>
+</ul>
+<p>Suggested format:</p>
+<ul>
+<li><code>20 min</code> working time</li>
+<li><code>10 min</code> debrief</li>
+<li>pairs or small mixed-role groups</li>
+</ul>
+<p>Facilitator setup:</p>
+<ul>
+<li>stress that unresolved business decisions should stay unresolved</li>
+<li>ask learners to mark known facts versus open questions explicitly</li>
+</ul>
+<p>Learner handout prompt:</p>
+<p>Use AI to rewrite the acceptance criteria and surface missing questions, but do not let AI invent policy decisions. Mark what is known, what is inferred, and what must go back to stakeholders.</p>
+<p>What good looks like:</p>
+<ul>
+<li>clearer criteria with fewer hidden assumptions</li>
+<li>a visible question list</li>
+<li>refusal to over-polish uncertainty into fake certainty</li>
+</ul>
+<p>Likely traps:</p>
+<ul>
+<li>AI-generated precision that sounds authoritative</li>
+<li>buried stakeholder decisions</li>
+<li>overconfident “final” acceptance criteria</li>
+</ul>
+<p>Debrief prompts:</p>
+<ul>
+<li>what became clearer</li>
+<li>what still needs stakeholder input</li>
+<li>where did AI cross the line from clarification into invention</li>
+</ul>
+<h2 id="worksheet-4-safe-refactor-planning">Worksheet 4. Safe Refactor Planning</h2>
+<p>Canonical scenario:</p>
+<ul>
+<li><a href="scenarios/Junior%20Exercise%204%20-%20Safe%20Refactor%20Planning.html">Junior Exercise 4 - Safe Refactor Planning</a></li>
+</ul>
+<p>Use when:</p>
+<ul>
+<li>learners need to balance reuse pressure with behavioral safety</li>
+<li>the facilitator wants to reinforce verification planning before refactor enthusiasm</li>
+</ul>
+<p>Suggested format:</p>
+<ul>
+<li><code>25 min</code> working time</li>
+<li><code>10 min</code> debrief</li>
+<li>pairs</li>
+</ul>
+<p>Facilitator setup:</p>
+<ul>
+<li>remind learners that “less duplication” is not the only success criterion</li>
+<li>ask them to name what should stay different before what should be shared</li>
+</ul>
+<p>Learner handout prompt:</p>
+<p>Compare two refactor options with AI support, then decide what should be reused, what should stay distinct, and how you would prove that behavior remains correct after the change.</p>
+<p>What good looks like:</p>
+<ul>
+<li>distinction between shared rules and workflow-specific behavior</li>
+<li>explicit risk list</li>
+<li>behavior-focused verification plan</li>
+</ul>
+<p>Likely traps:</p>
+<ul>
+<li>abstracting too early</li>
+<li>ignoring workflow differences</li>
+<li>vague test plans</li>
+</ul>
+<p>Debrief prompts:</p>
+<ul>
+<li>what looked reusable at first but turned out not to be</li>
+<li>what would you verify first after refactoring</li>
+<li>where did AI help and where did it oversimplify</li>
+</ul>
+<h2 id="worksheet-5-incident-triage-warm-up">Worksheet 5. Incident Triage Warm-Up</h2>
+<p>Canonical scenario:</p>
+<ul>
+<li><a href="scenarios/Junior%20Exercise%205%20-%20Incident%20Triage%20Warm-Up.html">Junior Exercise 5 - Incident Triage Warm-Up</a></li>
+</ul>
+<p>Use when:</p>
+<ul>
+<li>learners need practice staying uncertainty-aware</li>
+<li>the facilitator wants to show that AI can organize signals without proving a root cause</li>
+</ul>
+<p>Suggested format:</p>
+<ul>
+<li><code>25 min</code> working time</li>
+<li><code>10 min</code> debrief</li>
+<li>pairs or triads</li>
+</ul>
+<p>Facilitator setup:</p>
+<ul>
+<li>stress that the exercise is about safe triage, not perfect diagnosis</li>
+<li>ask for a confidence statement before debrief</li>
+</ul>
+<p>Learner handout prompt:</p>
+<p>Use AI to help organize possible causes, identify missing evidence, and propose safe next steps. Do not let the model declare a root cause unless the evidence supports it.</p>
+<p>What good looks like:</p>
+<ul>
+<li>multiple hypotheses remain visible</li>
+<li>next steps are concrete and safe</li>
+<li>uncertainty is stated clearly</li>
+</ul>
+<p>Likely traps:</p>
+<ul>
+<li>treating the release note as proof</li>
+<li>declaring the root cause too early</li>
+<li>confusing a good summary with verified understanding</li>
+</ul>
+<p>Debrief prompts:</p>
+<ul>
+<li>what did you refuse to conclude</li>
+<li>what next signal would change your confidence most</li>
+<li>where did AI help your thinking without proving anything</li>
+</ul>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pilot Evidence Operations Guide - Initial Pilot Cohort | Paired Engineering</title>
+  <meta name="description" content="Pilot Evidence Operations Guide - Initial Pilot Cohort">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="index.html">Evidence</a> / Pilot Evidence Operations Guide - Initial Pilot Cohort</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>Pilot Evidence Operations Guide - Initial Pilot Cohort</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/evidence/Pilot%20Evidence%20Operations%20Guide%20-%20Initial%20Pilot%20Cohort.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../guides/index.html">Guides</a><a href="../framework/index.html">Framework</a><a href="../leadership/index.html">Leadership</a><a href="../workshops/index.html">Workshops</a><a href="../exercises/index.html">Exercises</a><a href="index.html">Evidence</a><a href="../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <h2 id="purpose">Purpose</h2>
+<p>This note turns the evidence kit into an operating routine a real pilot can run.</p>
+<p>It is for the people who have to set up, run, and maintain the measurement loop:</p>
+<ul>
+<li>technical enablement lead</li>
+<li>manager sponsor</li>
+<li>pilot coordinator</li>
+<li>technical lead supporting sampled review</li>
+</ul>
+<h2 id="minimum-viable-tool-stack">Minimum viable tool stack</h2>
+<p>Use existing tools first.</p>
+<p>Minimum viable setup:</p>
+<ul>
+<li>one survey or form tool</li>
+<li>one shared spreadsheet or table</li>
+<li>one issue-tracker view for pilot workflows</li>
+<li>one place to log exceptions or incidents</li>
+</ul>
+<p>Do not add a new measurement platform unless the pilot has already outgrown the lightweight stack.</p>
+<p>If the organization does not yet know how to instantiate that stack, use <a href="Pilot%20Evidence%20Reference%20Deployment%20-%20Microsoft%20365%20and%20Jira.html">Pilot Evidence Reference Deployment - Microsoft 365 and Jira</a> as the reference build.</p>
+<h2 id="core-roles">Core roles</h2>
+<h3 id="technical-enablement-lead">Technical enablement lead</h3>
+<p>Owns:</p>
+<ul>
+<li>kit setup</li>
+<li>weekly pulse review</li>
+<li>sampled case review coordination</li>
+<li>weekly action log</li>
+<li>pilot closeout summary</li>
+</ul>
+<h3 id="manager-sponsor">Manager sponsor</h3>
+<p>Owns:</p>
+<ul>
+<li>workflow participation support</li>
+<li>weekly soft-signal input</li>
+<li>follow-up on support gaps</li>
+<li>reinforce that the kit is not for performance management</li>
+</ul>
+<h3 id="technical-lead-or-reviewer">Technical lead or reviewer</h3>
+<p>Owns:</p>
+<ul>
+<li>sampled case review quality</li>
+<li>verification-quality judgment</li>
+<li>escalation of unsafe patterns</li>
+</ul>
+<h2 id="setup-checklist-before-kickoff">Setup checklist before kickoff</h2>
+<ol>
+<li>Choose <code>2-6</code> target workflows total across the pilot.</li>
+<li>Tag those workflows in the system of record.</li>
+<li>Create one shared evidence sheet.</li>
+<li>Decide the baseline window, usually <code>2-4</code> weeks of recent comparable work if available.</li>
+<li>Build the pre-pilot survey and weekly pulse in the chosen form tool.</li>
+<li>Confirm who reviews sampled cases each week.</li>
+<li>Confirm confidentiality language with the sponsor.</li>
+<li>Tell participants explicitly that the kit is for workflow learning, not employee ranking.</li>
+</ol>
+<h2 id="weekly-operating-rhythm">Weekly operating rhythm</h2>
+<h3 id="early-in-the-week">Early in the week</h3>
+<ul>
+<li>update KPI rows for the target workflows</li>
+<li>review the weekly pulse responses</li>
+<li>note any immediate support needs or red flags</li>
+</ul>
+<h3 id="midweek">Midweek</h3>
+<ul>
+<li>sample <code>5-10</code> cases across the pilot</li>
+<li>apply the rubric</li>
+<li>capture <code>1-2</code> strong examples and <code>1-2</code> weak examples if available</li>
+</ul>
+<h3 id="end-of-week">End of week</h3>
+<ul>
+<li>write one short action summary</li>
+<li>decide refine, support, escalate, or hold</li>
+<li>communicate only the relevant summary, not raw individual responses</li>
+</ul>
+<h2 id="action-thresholds">Action thresholds</h2>
+<p>These are not hard laws, but they are useful default triggers.</p>
+<h3 id="escalate-quickly-if">Escalate quickly if:</h3>
+<ul>
+<li>there is a meaningful privacy, security, or policy exception</li>
+<li>a high-risk case scores <code>0</code> on verification quality or risk handling</li>
+<li>multiple cases show fluent but weakly explained output being trusted</li>
+</ul>
+<h3 id="refine-the-workflow-if">Refine the workflow if:</h3>
+<ul>
+<li>review burden rises for <code>2</code> consecutive weeks</li>
+<li>weekly pulse responses repeatedly report rework or confusion</li>
+<li>adoption quality is mixed while throughput appears better</li>
+</ul>
+<h3 id="pause-scaling-if">Pause scaling if:</h3>
+<ul>
+<li>a target workflow looks faster but hidden rework is rising</li>
+<li>managers or technical leads report growing unease that samples confirm</li>
+<li>lower-oversight-readiness participants are moving faster without better explanation ability</li>
+</ul>
+<h2 id="shared-spreadsheet-structure">Shared spreadsheet structure</h2>
+<p>Use <a href="Pilot%20Evidence%20Sheet%20-%20Initial%20Pilot%20Cohort.html">Pilot Evidence Sheet - Initial Pilot Cohort</a> as the working sheet model.</p>
+<p>Recommended tabs:</p>
+<ol>
+<li>pilot overview</li>
+<li>workflow KPI tracker</li>
+<li>sampled case log</li>
+<li>support and learning log</li>
+<li>weekly action log</li>
+</ol>
+<h2 id="reporting-rule">Reporting rule</h2>
+<p>Keep the output simple.</p>
+<p>The weekly summary should answer:</p>
+<ul>
+<li>what improved</li>
+<li>what got heavier</li>
+<li>what needs support</li>
+<li>what needs inspection</li>
+<li>what should not scale yet</li>
+</ul>
+<h2 id="closeout-routine">Closeout routine</h2>
+<p>At pilot close:</p>
+<ol>
+<li>run the post-pilot survey</li>
+<li>compare baseline and pilot-period workflow signals</li>
+<li>summarize the strongest good and bad examples</li>
+<li>name hidden costs, not just gains</li>
+<li>recommend refine, pause, or scale</li>
+</ol>
+<h2 id="what-to-avoid">What to avoid</h2>
+<ul>
+<li>auditing everything</li>
+<li>building a scorecard for individuals</li>
+<li>chasing statistical proof in a tiny pilot</li>
+<li>keeping weak metrics because they are easy to collect</li>
+<li>hiding uncertainty in the summary language</li>
+</ul>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

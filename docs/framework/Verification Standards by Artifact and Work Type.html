@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verification Standards by Artifact and Work Type | Paired Engineering</title>
+  <meta name="description" content="Verification Standards by Artifact and Work Type">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="index.html">Framework</a> / Verification Standards by Artifact and Work Type</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>Verification Standards by Artifact and Work Type</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/framework/Verification%20Standards%20by%20Artifact%20and%20Work%20Type.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../guides/index.html">Guides</a><a href="index.html">Framework</a><a href="../leadership/index.html">Leadership</a><a href="../workshops/index.html">Workshops</a><a href="../exercises/index.html">Exercises</a><a href="../evidence/index.html">Evidence</a><a href="../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <p>This note defines what <code>real verification</code> should look like for common AI-assisted artifacts and work types in software delivery.</p>
+<p>The goal is not to require the same checks everywhere.</p>
+<p>The goal is to stop teams from treating fluent explanation, tool confidence, or seniority alone as proof.</p>
+<h2 id="core-rule">Core rule</h2>
+<p>Verification must match:</p>
+<ul>
+<li>the artifact or work type</li>
+<li>the task risk</li>
+<li>the verification difficulty</li>
+<li>the person's oversight readiness</li>
+</ul>
+<p>What counts as sufficient verification for one artifact may be deeply insufficient for another.</p>
+<h2 id="non-negotiable-principles">Non-negotiable principles</h2>
+<ul>
+<li>AI explanation is not verification.</li>
+<li>Explanation only helps when it lowers the cost of checking in a meaningful way.</li>
+<li>If the task is hard to verify, richer explanation text usually will not rescue it.</li>
+<li>Review preparation is not signoff.</li>
+<li>Fast generation increases the need for explicit evidence, not the right to skip it.</li>
+<li>Low-observability work should be treated as riskier than it first appears.</li>
+<li>Human accountability for release, requirements, architecture, and production decisions remains human.</li>
+</ul>
+<h2 id="what-explanation-is-still-good-for">What explanation is still good for</h2>
+<p>Explanations are still useful when they help with:</p>
+<ul>
+<li>learning the workflow</li>
+<li>exposing model inconsistency or uncertainty</li>
+<li>surfacing likely failure patterns</li>
+<li>building better mental models of where the tool tends to help or fail</li>
+</ul>
+<p>That is different from using explanation as release evidence.</p>
+<h2 id="verification-lenses">Verification lenses</h2>
+<p>Use these lenses to decide how to verify an output:</p>
+<ul>
+<li>
+<p><code>observable behavior</code>
+  Can we run, execute, reproduce, or directly inspect the effect?</p>
+</li>
+<li>
+<p><code>traceability</code>
+  Can we point to the source, requirement, decision, dataset, log, or evidence behind the claim?</p>
+</li>
+<li>
+<p><code>peer scrutiny</code>
+  Has a relevant human reviewed the work with enough context to challenge it?</p>
+</li>
+<li>
+<p><code>downstream consequence</code>
+  If this is wrong, how expensive or dangerous is the error?</p>
+</li>
+<li>
+<p><code>reversibility</code>
+  Can we recover easily if the result is wrong?</p>
+</li>
+</ul>
+<h2 id="standard-by-artifact-or-work-type">Standard by artifact or work type</h2>
+<h3 id="1-code-changes">1. Code changes</h3>
+<p>Verification should include:</p>
+<ul>
+<li>executable tests where appropriate</li>
+<li>local reasoning by the implementer</li>
+<li>code review by someone capable of challenging the change</li>
+<li>confirmation that the code matches the intended behavior, not just that it compiles</li>
+</ul>
+<p>Extra checks are needed when:</p>
+<ul>
+<li>the area is security-sensitive</li>
+<li>the code path is unfamiliar</li>
+<li>the change alters infrastructure, data handling, concurrency, or production reliability</li>
+</ul>
+<p>What does not count:</p>
+<ul>
+<li>“the model explained the code”</li>
+<li>“the diff looks clean”</li>
+<li>“the senior engineer accepted it without reading closely”</li>
+</ul>
+<p>Default stance:</p>
+<ul>
+<li>bounded drafting is acceptable on reviewable work</li>
+<li>blind full-solution delegation is not acceptable on unfamiliar or high-risk work</li>
+</ul>
+<h3 id="2-tests-and-test-assets">2. Tests and test assets</h3>
+<p>This includes:</p>
+<ul>
+<li>unit tests</li>
+<li>integration tests</li>
+<li>end-to-end test cases</li>
+<li>exploratory test charters</li>
+<li>test data and fixtures</li>
+</ul>
+<p>Verification should include:</p>
+<ul>
+<li>evidence that the test actually exercises the intended behavior</li>
+<li>review for redundancy, false assumptions, and brittle assertions</li>
+<li>traceability back to requirement, defect, or risk</li>
+<li>execution results where relevant</li>
+</ul>
+<p>What does not count:</p>
+<ul>
+<li>“the generated test suite is large”</li>
+<li>“the tests passed once”</li>
+<li>“the AI described why these tests matter”</li>
+</ul>
+<p>Default stance:</p>
+<ul>
+<li>executable evidence beats persuasive explanation</li>
+<li>shallow test generation should be treated as a common failure mode</li>
+</ul>
+<h3 id="3-requirements-and-backlog-artifacts">3. Requirements and backlog artifacts</h3>
+<p>This includes:</p>
+<ul>
+<li>stories</li>
+<li>acceptance criteria</li>
+<li>refinement notes</li>
+<li>requirement summaries</li>
+<li>stakeholder communication drafts</li>
+</ul>
+<p>Verification should include:</p>
+<ul>
+<li>confirmation by the responsible product or delivery stakeholders</li>
+<li>ambiguity review by delivery roles that will implement or test the work</li>
+<li>explicit scope boundary checks</li>
+<li>small-increment sanity check</li>
+<li>consolidation into canonical artifacts instead of dependence on long chat history</li>
+</ul>
+<p>What does not count:</p>
+<ul>
+<li>“the requirement sounds clear”</li>
+<li>“the wording is polished”</li>
+<li>“the AI produced a comprehensive-looking document”</li>
+</ul>
+<p>Default stance:</p>
+<ul>
+<li>semantic correctness matters more than polished prose</li>
+<li>requirement bloat and false completeness are first-class risks</li>
+</ul>
+<h3 id="4-architecture-and-design-reasoning">4. Architecture and design reasoning</h3>
+<p>This includes:</p>
+<ul>
+<li>solution options</li>
+<li>tradeoff analysis</li>
+<li>ADR drafts</li>
+<li>dependency and integration reasoning</li>
+<li>threat, reliability, or scalability prompts</li>
+</ul>
+<p>Verification should include:</p>
+<ul>
+<li>peer review by technically relevant reviewers</li>
+<li>challenge of hidden assumptions and missing tradeoffs</li>
+<li>explicit unknowns and unresolved risks</li>
+<li>operational and downstream constraints review where appropriate</li>
+<li>reference to actual system context rather than generic patterns alone</li>
+</ul>
+<p>What does not count:</p>
+<ul>
+<li>“the rationale is articulate”</li>
+<li>“the options sound sophisticated”</li>
+<li>“the model cited common best practices”</li>
+</ul>
+<p>Default stance:</p>
+<ul>
+<li>architecture reasoning is often easy to generate and hard to verify</li>
+<li>treat it as elevated-risk knowledge work even when no code is produced</li>
+</ul>
+<h3 id="5-debugging-root-cause-analysis-and-incident-reasoning">5. Debugging, root-cause analysis, and incident reasoning</h3>
+<p>Verification should include:</p>
+<ul>
+<li>observable system evidence</li>
+<li>reproduction or partial reproduction where possible</li>
+<li>logs, traces, metrics, or direct environment inspection</li>
+<li>separation of hypothesis from confirmed cause</li>
+<li>peer escalation when the system or risk demands it</li>
+</ul>
+<p>What does not count:</p>
+<ul>
+<li>“the diagnosis sounds plausible”</li>
+<li>“the model recognized a familiar pattern”</li>
+<li>“the summary is coherent”</li>
+</ul>
+<p>Default stance:</p>
+<ul>
+<li>diagnosis must stay evidence-led</li>
+<li>AI is useful for question generation and hypothesis expansion, but operational evidence outranks fluent diagnosis</li>
+</ul>
+<h3 id="6-runbooks-operational-procedures-and-release-steps">6. Runbooks, operational procedures, and release steps</h3>
+<p>This includes:</p>
+<ul>
+<li>deployment checklists</li>
+<li>rollback plans</li>
+<li>support procedures</li>
+<li>incident runbooks</li>
+<li>environment-specific instructions</li>
+</ul>
+<p>Verification should include:</p>
+<ul>
+<li>environment-specific validation</li>
+<li>versioned ownership</li>
+<li>walkthrough or dry-run where feasible</li>
+<li>rollback and recovery path confirmation</li>
+<li>review by the operators or delivery owners who will actually use the artifact</li>
+</ul>
+<p>What does not count:</p>
+<ul>
+<li>“the steps look complete”</li>
+<li>“the AI followed a generic best-practice template”</li>
+</ul>
+<p>Default stance:</p>
+<ul>
+<li>operational artifacts are only useful if they remain executable under real conditions</li>
+</ul>
+<h3 id="7-documentation-and-knowledge-summaries">7. Documentation and knowledge summaries</h3>
+<p>This includes:</p>
+<ul>
+<li>design summaries</li>
+<li>onboarding notes</li>
+<li>internal wiki drafts</li>
+<li>meeting summaries</li>
+<li>retrospective synthesis</li>
+</ul>
+<p>Verification should include:</p>
+<ul>
+<li>source traceability</li>
+<li>spot-checking against canonical systems</li>
+<li>owner review for critical pages</li>
+<li>removal of invented certainty or invented decisions</li>
+</ul>
+<p>What does not count:</p>
+<ul>
+<li>“the summary feels comprehensive”</li>
+<li>“the prose is well structured”</li>
+</ul>
+<p>Default stance:</p>
+<ul>
+<li>summaries can accelerate communication, but they can also fossilize wrong assumptions quickly</li>
+</ul>
+<h2 id="verification-difficulty-guide">Verification difficulty guide</h2>
+<h3 id="low-difficulty">Low difficulty</h3>
+<ul>
+<li>output can be executed, tested, reproduced, or directly observed</li>
+<li>errors are localized and reversible</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>bounded refactor with tests</li>
+<li>draft unit tests against known behavior</li>
+<li>environment diff summaries confirmed against tooling</li>
+</ul>
+<h3 id="medium-difficulty">Medium difficulty</h3>
+<ul>
+<li>some evidence exists, but interpretation still matters</li>
+<li>downstream effects are meaningful</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>acceptance criteria drafts</li>
+<li>test strategy proposals</li>
+<li>non-trivial review summaries</li>
+</ul>
+<h3 id="high-difficulty">High difficulty</h3>
+<ul>
+<li>correctness is hard to observe directly before downstream use</li>
+<li>confident wrongness is dangerous</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>architecture tradeoff reasoning</li>
+<li>root-cause diagnosis without reproduction</li>
+<li>policy interpretation</li>
+<li>broad requirement synthesis across many sources</li>
+</ul>
+<h2 id="default-escalation-rules">Default escalation rules</h2>
+<ul>
+<li>If verification is hard, shrink the batch.</li>
+<li>If the artifact is canonical, require explicit owner review.</li>
+<li>If the task is high risk, require second-review expectations regardless of seniority.</li>
+<li>If the implementer cannot explain what they would verify, the work is not ready.</li>
+<li>If AI materially increased review burden, treat that as a signal that the workflow needs redesign.</li>
+</ul>
+<h2 id="role-reminders">Role reminders</h2>
+<h3 id="developers">Developers</h3>
+<ul>
+<li>prove behavior, not just code plausibility</li>
+</ul>
+<h3 id="qa-and-sdet">QA and SDET</h3>
+<ul>
+<li>prefer executable evidence and traceability to expected behavior</li>
+</ul>
+<h3 id="product-owners">Product owners</h3>
+<ul>
+<li>verify semantic intent, scope boundaries, and ambiguity reduction</li>
+</ul>
+<h3 id="architects-and-technical-leads">Architects and technical leads</h3>
+<ul>
+<li>surface unknowns, tradeoffs, and operational constraints explicitly</li>
+</ul>
+<h3 id="delivery-leads-and-managers">Delivery leads and managers</h3>
+<ul>
+<li>make sure verification standards are followed without turning them into surveillance theater</li>
+</ul>
+<h2 id="what-this-note-changes-in-practice">What this note changes in practice</h2>
+<ul>
+<li>Teams should stop using one generic <code>verify the AI output</code> instruction.</li>
+<li>Workflow guidance should name the expected evidence by artifact type.</li>
+<li>Training and examples should show verification steps explicitly.</li>
+<li>Pilot evidence reviews should score verification against artifact and risk, not against generic diligence language.</li>
+</ul>
+<h2 id="current-operating-connections">Current operating connections</h2>
+<ul>
+<li><a href="Rollout%20Matrix%20-%20Role-Specific%20Workflows%20by%20Phase.html">Rollout Matrix - Role-Specific Workflows by Phase</a> and <a href="Rollout%20Matrix%20-%20Capability%20Rules%20by%20Phase.html">Rollout Matrix - Capability Rules by Phase</a> apply these standards to rollout guidance</li>
+<li><a href="AI-Assisted%20Requirements%20Management.html">AI-Assisted Requirements Management</a> applies them to requirement and backlog artifacts</li>
+<li><a href="Manager%20and%20Technical-Lead%20Operating%20Model%20for%20AI%20Enablement.html">Manager and Technical-Lead Operating Model for AI Enablement</a> and <a href="../guides/Manager%20Coaching%20Guide%20-%20AI%20Enablement%20in%20Delivery%20Teams.html">Manager Coaching Guide - AI Enablement in Delivery Teams</a> translate them into management and technical-lead reinforcement</li>
+</ul>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

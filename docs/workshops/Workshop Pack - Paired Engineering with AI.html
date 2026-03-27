@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workshop Pack - Paired Engineering with AI | Paired Engineering</title>
+  <meta name="description" content="Workshop Pack - Paired Engineering with AI">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="index.html">Workshops</a> / Workshop Pack - Paired Engineering with AI</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>Workshop Pack - Paired Engineering with AI</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/workshops/Workshop%20Pack%20-%20Paired%20Engineering%20with%20AI.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../guides/index.html">Guides</a><a href="../framework/index.html">Framework</a><a href="../leadership/index.html">Leadership</a><a href="index.html">Workshops</a><a href="../exercises/index.html">Exercises</a><a href="../evidence/index.html">Evidence</a><a href="../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <h2 id="usage-note">Usage note</h2>
+<p>This workshop pack, <a href="Practitioner%20Workshop%20Deck%20Outline%20-%20Paired%20Engineering%20with%20AI.html">Practitioner Workshop Deck Outline - Paired Engineering with AI</a>, and <a href="Practitioner%20Workshop%20Deck%20Slide%20Copy%20-%20Paired%20Engineering%20with%20AI.html">Practitioner Workshop Deck Slide Copy - Paired Engineering with AI</a> now form the accepted locked markdown baseline for the practitioner workshop package.</p>
+<p>Use this note as the facilitator and exercise layer unless a substantive audience or content gap appears.</p>
+<h2 id="purpose">Purpose</h2>
+<p>This draft turns the practitioner playbook into a teachable session for pilot teams.</p>
+<h2 id="audience">Audience</h2>
+<p>Developers, QA, SDET, architects, and product owners in the first pilot wave.</p>
+<h2 id="workshop-goals">Workshop goals</h2>
+<ul>
+<li>understand the paired-engineering stance</li>
+<li>distinguish <code>learning mode</code> from <code>delivery mode</code></li>
+<li>apply capability-aware rules to realistic work</li>
+<li>practice verification habits on AI-assisted tasks</li>
+</ul>
+<h2 id="suggested-format">Suggested format</h2>
+<ul>
+<li><code>15 min</code> framing and evidence summary</li>
+<li><code>15 min</code> capability model walkthrough</li>
+<li><code>20 min</code> live paired example</li>
+<li><code>30 min</code> role-based exercises</li>
+<li><code>10 min</code> debrief and team commitments</li>
+</ul>
+<h2 id="facilitator-notes">Facilitator notes</h2>
+<ul>
+<li>emphasize that oversight readiness is not job title alone</li>
+<li>reinforce that explanation is not verification</li>
+<li>keep examples grounded in real delivery work</li>
+<li>ask participants to name where verification is easy and where it is hard</li>
+<li>avoid learner-style labels; vary examples and supports without pretending each person needs a unique style match</li>
+<li>reference the supporting learning-design notes when formalizing this workshop further</li>
+</ul>
+<h2 id="opening-script">Opening script</h2>
+<p>AI can help us move faster, but speed is not the only outcome that matters.</p>
+<p>In this pilot, we are using AI as a paired-engineering aid. That means we want better understanding, better debugging, better review, and safer acceleration. We are not treating AI as a substitute for engineering judgment.</p>
+<h2 id="exercise-1-mode-selection">Exercise 1. Mode selection</h2>
+<p>Prompt:</p>
+<p>Given a task, decide whether it belongs primarily in <code>learning mode</code> or <code>delivery mode</code>, then explain why.</p>
+<p>Scenarios:</p>
+<ul>
+<li>new internal framework, first feature in the codebase</li>
+<li>familiar service, localized unit test updates</li>
+<li>production incident root-cause analysis with incomplete evidence</li>
+<li>rewriting acceptance criteria for a known backlog pattern</li>
+</ul>
+<p>Debrief questions:</p>
+<ul>
+<li>what made the task unfamiliar</li>
+<li>what made the task hard to verify</li>
+<li>what would have made you overconfident</li>
+</ul>
+<h2 id="exercise-2-verification-check">Exercise 2. Verification check</h2>
+<p>Prompt:</p>
+<p>Participants review an AI answer and list what would count as real verification before use.</p>
+<p>Debrief questions:</p>
+<ul>
+<li>what evidence would you trust</li>
+<li>what would still worry you</li>
+<li>what would require peer review or stakeholder review</li>
+</ul>
+<h2 id="role-specific-exercises">Role-specific exercises</h2>
+<h3 id="developers">Developers</h3>
+<p>Scenario:</p>
+<p>Use AI to help debug a bounded defect in a familiar service. Then decide what you would still need to inspect manually.</p>
+<p>Expected focus:</p>
+<ul>
+<li>explanation of failure mechanism</li>
+<li>test-based verification</li>
+<li>checking hidden assumptions</li>
+</ul>
+<h3 id="qa-and-sdet">QA and SDET</h3>
+<p>Scenario:</p>
+<p>Use AI to propose additional test cases for a flaky workflow. Then separate good candidates from shallow or redundant ones.</p>
+<p>Expected focus:</p>
+<ul>
+<li>edge cases</li>
+<li>data sensitivity</li>
+<li>whether the proposed cases would actually catch failures</li>
+</ul>
+<h3 id="architects">Architects</h3>
+<p>Scenario:</p>
+<p>Use AI to generate two architecture options for a new integration. Then critique the missing tradeoffs and unknowns.</p>
+<p>Expected focus:</p>
+<ul>
+<li>unsupported claims</li>
+<li>operational consequences</li>
+<li>where more evidence is needed before decision</li>
+</ul>
+<h3 id="product-owners">Product owners</h3>
+<p>Scenario:</p>
+<p>Use AI to improve acceptance criteria and stakeholder questions for a story with ambiguous behavior. Then identify what the model cannot know.</p>
+<p>Expected focus:</p>
+<ul>
+<li>hidden business assumptions</li>
+<li>semantic correctness</li>
+<li>unresolved stakeholder decisions</li>
+</ul>
+<h2 id="debrief-prompts">Debrief prompts</h2>
+<ul>
+<li>where did AI genuinely help</li>
+<li>where did it sound good without being trustworthy</li>
+<li>what verification step caught the biggest issue</li>
+<li>what would an engineer with lower oversight readiness likely miss here</li>
+</ul>
+<h2 id="team-commitments">Team commitments</h2>
+<p>Ask each participant to write down:</p>
+<ul>
+<li>one workflow they will pilot</li>
+<li>one anti-pattern they will avoid</li>
+<li>one verification habit they will adopt</li>
+</ul>
+<h2 id="follow-up-materials">Follow-up materials</h2>
+<ul>
+<li><a href="Practitioner%20Playbook%20-%20Paired%20Engineering%20with%20AI.html">Practitioner Playbook - Paired Engineering with AI</a></li>
+<li><a href="Exercise%20Library%20-%20Paired%20Engineering%20with%20AI.html">Exercise Library - Paired Engineering with AI</a></li>
+<li><a href="../framework/Capability%20Model%20-%20Oversight%20Readiness%20x%20Task%20Familiarity%20x%20Risk.html">Capability Model - Oversight Readiness x Task Familiarity x Risk</a></li>
+<li><a href="../framework/Rollout%20Matrix%20-%20Role-Specific%20Workflows%20by%20Phase.html">Rollout Matrix - Role-Specific Workflows by Phase</a></li>
+<li><a href="../framework/Rollout%20Matrix%20-%20Capability%20Rules%20by%20Phase.html">Rollout Matrix - Capability Rules by Phase</a></li>
+</ul>
+<h2 id="deeper-exercise-extension">Deeper exercise extension</h2>
+<p>Use <a href="Exercise%20Library%20-%20Paired%20Engineering%20with%20AI.html">Exercise Library - Paired Engineering with AI</a> when the base workshop needs a stronger progression path for junior, intermediate, senior, or Staff practitioners.</p>
+<p>That library:</p>
+<ul>
+<li>stays mostly language-agnostic</li>
+<li>rates exercises by <code>size</code> and <code>complexity</code></li>
+<li>emphasizes verification and judgment rather than syntax drills</li>
+<li>gives facilitators a reusable progression beyond the first workshop session</li>
+</ul>
+<p>Use <a href="Exercise%20Worksheet%20Pack%20-%20Paired%20Engineering%20with%20AI.html">Exercise Worksheet Pack - Paired Engineering with AI</a> when the facilitator needs ready-to-run worksheet structure, timing, traps, and debrief guidance.</p>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

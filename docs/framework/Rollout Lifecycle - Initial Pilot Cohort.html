@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rollout Lifecycle - Initial Pilot Cohort | Paired Engineering</title>
+  <meta name="description" content="Rollout Lifecycle - Initial Pilot Cohort">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="index.html">Framework</a> / Rollout Lifecycle - Initial Pilot Cohort</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>Rollout Lifecycle - Initial Pilot Cohort</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/framework/Rollout%20Lifecycle%20-%20Initial%20Pilot%20Cohort.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../guides/index.html">Guides</a><a href="index.html">Framework</a><a href="../leadership/index.html">Leadership</a><a href="../workshops/index.html">Workshops</a><a href="../exercises/index.html">Exercises</a><a href="../evidence/index.html">Evidence</a><a href="../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <p>This note describes the first working rollout lifecycle for a bounded initial pilot cohort in software delivery.</p>
+<h2 id="what-this-lifecycle-is">What this lifecycle is</h2>
+<p>This is not a one-time training plan. It is the sequence for moving a small software-delivery organization from curiosity and uneven experimentation toward repeatable, measured, and safer AI-assisted engineering practice.</p>
+<h2 id="design-intent">Design intent</h2>
+<ul>
+<li>Start narrow enough to learn quickly</li>
+<li>Preserve software craftsmanship while increasing leverage</li>
+<li>Treat AI as paired engineering, not blind delegation</li>
+<li>Keep a parallel research lane open so the rollout model improves as the evidence base improves</li>
+</ul>
+<h2 id="lifecycle-overview">Lifecycle overview</h2>
+<h3 id="phase-1-alignment-and-boundaries">Phase 1. Alignment and boundaries</h3>
+<p>Goal:</p>
+<ul>
+<li>Establish why the organization is doing AI enablement and what good looks like</li>
+</ul>
+<p>Key activities:</p>
+<ul>
+<li>Align on the problem statement from <a href="Project%20Charter.html">Project Charter</a></li>
+<li>Set initial guardrails for privacy, security, approved tools, and high-risk task boundaries</li>
+<li>Identify the initial pilot cohort and a technical enablement lead</li>
+<li>Clarify that the initial objective is workflow improvement and mastery-preserving adoption, not maximum short-term code generation</li>
+</ul>
+<p>Outputs:</p>
+<ul>
+<li>Initial enablement charter for the pilot</li>
+<li>Initial tool and data-use boundaries</li>
+<li>Initial management narrative and expectations</li>
+</ul>
+<p>Exit criteria:</p>
+<ul>
+<li>Teams know what is in scope, out of scope, and why</li>
+<li>Leadership understands that rollout quality matters more than rollout speed</li>
+</ul>
+<h3 id="phase-2-baseline-and-workflow-discovery">Phase 2. Baseline and workflow discovery</h3>
+<p>Goal:</p>
+<ul>
+<li>Understand current delivery work well enough to choose useful pilot workflows</li>
+</ul>
+<p>Key activities:</p>
+<ul>
+<li>Identify role-specific tasks with high friction or repeated cognitive overhead</li>
+<li>Separate learning-heavy workflows from familiar execution workflows</li>
+<li>Capture current pain points, verification habits, and existing informal AI use</li>
+<li>Select a small number of target workflows for developers, QA, SDET, architects, or product owners</li>
+</ul>
+<p>Outputs:</p>
+<ul>
+<li>Shortlist of pilot workflows</li>
+<li>Initial task-risk map</li>
+<li>Baseline measures for speed, quality, and review burden where possible</li>
+</ul>
+<p>Exit criteria:</p>
+<ul>
+<li>The team is not rolling AI out everywhere</li>
+<li>There is a clear first set of workflows worth testing</li>
+</ul>
+<h3 id="phase-3-paired-engineering-pilot">Phase 3. Paired-engineering pilot</h3>
+<p>Goal:</p>
+<ul>
+<li>Introduce AI through a small number of concrete workflows with coaching and observation</li>
+</ul>
+<p>Key activities:</p>
+<ul>
+<li>Teach paired-engineering patterns for the selected workflows</li>
+<li>Require explanation-first usage for unfamiliar tasks and less experienced engineers</li>
+<li>Use higher-leverage acceleration patterns only where engineers can verify output reliably</li>
+<li>Run demos, office hours, and live pairing rather than only distributing guidance documents</li>
+</ul>
+<p>Outputs:</p>
+<ul>
+<li>First workflow playbooks</li>
+<li>Example prompts and anti-patterns</li>
+<li>Early observations about what helps, what confuses, and what creates risk</li>
+</ul>
+<p>Exit criteria:</p>
+<ul>
+<li>Engineers can describe when to use AI, how to verify it, and when not to use it</li>
+<li>At least a few workflows are being used repeatably in real work</li>
+</ul>
+<h3 id="phase-4-capability-aware-expansion">Phase 4. Capability-aware expansion</h3>
+<p>Goal:</p>
+<ul>
+<li>Adjust the rollout by oversight readiness and task risk instead of scaling one generic model</li>
+</ul>
+<p>Key activities:</p>
+<ul>
+<li>Segment guidance by capability level and oversight ability</li>
+<li>Keep learning-mode practices for unfamiliar tasks</li>
+<li>Introduce stronger acceleration patterns for senior engineers on bounded tasks</li>
+<li>Add review expectations, code-reading checks, and debugging expectations</li>
+</ul>
+<p>Outputs:</p>
+<ul>
+<li>Capability-aware guidance</li>
+<li>First version of role-specific enablement materials</li>
+<li>Early internal standards for AI-assisted work</li>
+</ul>
+<p>Exit criteria:</p>
+<ul>
+<li>Teams are not using the same AI habits for junior engineers, senior engineers, and high-risk tasks</li>
+<li>Managers and leads can coach toward better usage patterns</li>
+</ul>
+<h3 id="phase-5-standards-self-service-and-internal-platform-support">Phase 5. Standards, self-service, and internal platform support</h3>
+<p>Goal:</p>
+<ul>
+<li>Make the good patterns easy to reuse without losing judgment</li>
+</ul>
+<p>Key activities:</p>
+<ul>
+<li>Publish lightweight standards for approved workflows</li>
+<li>Add internal examples, templates, prompt patterns, and checklists</li>
+<li>Improve developer workflow support through internal platform or self-service assets where appropriate</li>
+<li>Build repeatable enablement mechanisms such as brown bags, mentoring loops, and office hours</li>
+</ul>
+<p>Outputs:</p>
+<ul>
+<li>Reusable standards and templates</li>
+<li>Self-service enablement assets</li>
+<li>Cross-team knowledge-sharing rhythm</li>
+</ul>
+<p>Exit criteria:</p>
+<ul>
+<li>Good usage no longer depends entirely on one enthusiastic individual</li>
+<li>Teams can onboard into the practices without starting from zero</li>
+</ul>
+<h3 id="phase-6-measure-adjust-and-decide-whether-to-scale">Phase 6. Measure, adjust, and decide whether to scale</h3>
+<p>Goal:</p>
+<ul>
+<li>Decide what is actually working and whether the model is ready to expand</li>
+</ul>
+<p>Key activities:</p>
+<ul>
+<li>Review adoption quality, delivery effects, quality effects, learning signals, and safety signals</li>
+<li>Compare expected benefits with real behavior and downstream side effects</li>
+<li>Identify where the current model still creates learning debt, review burden, or unsafe overreliance</li>
+<li>Decide whether to refine, pause, or expand toward broader multi-team adoption</li>
+</ul>
+<p>Outputs:</p>
+<ul>
+<li>Pilot review</li>
+<li>Refined rollout model</li>
+<li>Decision on whether to scale</li>
+</ul>
+<p>Exit criteria:</p>
+<ul>
+<li>There is evidence that the rollout improved real workflows without hiding new risks</li>
+<li>Scaling is based on observed behavior, not optimism</li>
+</ul>
+<h2 id="parallel-research-lane">Parallel research lane</h2>
+<p>The rollout should not wait for perfect evidence, but research should continue in parallel.</p>
+<p>Current high-priority gaps:</p>
+<ul>
+<li>Long-term mastery and retention</li>
+<li>Overreliance and explanation design</li>
+<li>Real workplace interventions over time</li>
+<li>Multi-team adoption and influence dynamics</li>
+</ul>
+<h2 id="what-this-means-in-practice">What this means in practice</h2>
+<p>For a Staff Engineer or technical enablement lead, this lifecycle means:</p>
+<ul>
+<li>you spend less time announcing AI and more time designing workflows</li>
+<li>you teach through examples, pairing, demos, and review habits</li>
+<li>you translate tradeoffs upward without overselling the maturity of the rollout</li>
+<li>you treat adoption quality as more important than raw tool usage</li>
+</ul>
+<h2 id="current-implementation-layer">Current implementation layer</h2>
+<ul>
+<li><a href="V1%20Rollout%20Playbook%20-%20Initial%20Pilot%20Cohort.html">V1 Rollout Playbook - Initial Pilot Cohort</a> turns the lifecycle into a week-by-week pilot shape</li>
+<li><a href="../leadership/Executive%20Deck%20-%20AI%20Enablement%20for%20an%20Initial%20Pilot%20Cohort.html">Executive Deck - AI Enablement for an Initial Pilot Cohort</a> and the related leadership material carry the sponsor-facing communication layer</li>
+<li><a href="../workshops/Practitioner%20Playbook%20-%20Paired%20Engineering%20with%20AI.html">Practitioner Playbook - Paired Engineering with AI</a> plus the workshop and exercise pack carry the practitioner teaching layer</li>
+<li><a href="Capability%20Model%20-%20Oversight%20Readiness%20x%20Task%20Familiarity%20x%20Risk.html">Capability Model - Oversight Readiness x Task Familiarity x Risk</a> and <a href="Pilot%20Evidence%20Model%20-%20Practical%20Metrics%20and%20Lightweight%20Collection.html">Pilot Evidence Model - Practical Metrics and Lightweight Collection</a> carry the current model and measurement layer</li>
+</ul>
+<h2 id="supporting-notes">Supporting notes</h2>
+<ul>
+<li><a href="V1%20Rollout%20Playbook%20-%20Initial%20Pilot%20Cohort.html">V1 Rollout Playbook - Initial Pilot Cohort</a></li>
+<li><a href="Rollout%20Matrix%20-%20Role-Specific%20Workflows%20by%20Phase.html">Rollout Matrix - Role-Specific Workflows by Phase</a></li>
+<li><a href="Rollout%20Matrix%20-%20Capability%20Rules%20by%20Phase.html">Rollout Matrix - Capability Rules by Phase</a></li>
+<li><a href="AI%20Enablement%20Across%20the%20Software%20Delivery%20Lifecycle.html">AI Enablement Across the Software Delivery Lifecycle</a></li>
+<li><a href="Pilot%20Evidence%20Model%20-%20Practical%20Metrics%20and%20Lightweight%20Collection.html">Pilot Evidence Model - Practical Metrics and Lightweight Collection</a></li>
+<li><a href="Capability%20Model%20-%20Oversight%20Readiness%20x%20Task%20Familiarity%20x%20Risk.html">Capability Model - Oversight Readiness x Task Familiarity x Risk</a></li>
+<li><a href="Verification%20Standards%20by%20Artifact%20and%20Work%20Type.html">Verification Standards by Artifact and Work Type</a></li>
+<li><a href="../leadership/Executive%20Deck%20-%20AI%20Enablement%20for%20an%20Initial%20Pilot%20Cohort.html">Executive Deck - AI Enablement for an Initial Pilot Cohort</a></li>
+<li><a href="../workshops/Practitioner%20Playbook%20-%20Paired%20Engineering%20with%20AI.html">Practitioner Playbook - Paired Engineering with AI</a></li>
+</ul>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

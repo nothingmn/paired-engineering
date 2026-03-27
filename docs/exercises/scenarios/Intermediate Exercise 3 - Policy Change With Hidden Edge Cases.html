@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intermediate Exercise 3 - Policy Change With Hidden Edge Cases | Paired Engineering</title>
+  <meta name="description" content="Intermediate Exercise 3 - Policy Change With Hidden Edge Cases">
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../../index.html">Home</a> / <a href="../index.html">Exercises</a> / <a href="index.html">Scenarios</a> / Intermediate Exercise 3 - Policy Change With Hidden Edge Cases</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>Intermediate Exercise 3 - Policy Change With Hidden Edge Cases</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/exercises/scenarios/Intermediate%20Exercise%203%20-%20Policy%20Change%20With%20Hidden%20Edge%20Cases.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../../guides/index.html">Guides</a><a href="../../framework/index.html">Framework</a><a href="../../leadership/index.html">Leadership</a><a href="../../workshops/index.html">Workshops</a><a href="../index.html">Exercises</a><a href="../../evidence/index.html">Evidence</a><a href="../../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <h2 id="rating">Rating</h2>
+<ul>
+<li>size: <code>3</code></li>
+<li>complexity: <code>4</code></li>
+</ul>
+<h2 id="purpose">Purpose</h2>
+<p>Practice using AI on policy-heavy logic where polished drafts can hide semantic mistakes and unverified assumptions.</p>
+<h2 id="scenario">Scenario</h2>
+<p>A billing policy changes:</p>
+<ul>
+<li>customers get a <code>7-day</code> grace period before cancellation</li>
+<li>prorated refunds apply if cancellation happens after the grace period</li>
+<li>enterprise customers follow a different renewal rule</li>
+</ul>
+<p>AI proposes a single decision tree that looks clean and complete.</p>
+<h2 id="task">Task</h2>
+<p>Use AI to help critique the proposed decision tree rather than simply accept it.</p>
+<p>Identify:</p>
+<ul>
+<li>missing policy questions</li>
+<li>edge cases</li>
+<li>where different customer categories may diverge</li>
+<li>what cannot be implemented safely without policy clarification</li>
+</ul>
+<h2 id="expected-output">Expected output</h2>
+<ul>
+<li>annotated decision tree or rule list</li>
+<li>unresolved questions</li>
+<li>verification plan using examples and counterexamples</li>
+</ul>
+<h2 id="good-ai-uses">Good AI uses</h2>
+<ul>
+<li>generating boundary scenarios</li>
+<li>surfacing conflicting interpretations</li>
+<li>comparing example cases across policy branches</li>
+</ul>
+<h2 id="verification-focus">Verification focus</h2>
+<ul>
+<li>every business rule must tie back to source policy</li>
+<li>enterprise exceptions must not be inferred casually</li>
+<li>example-based verification should cover boundary dates and customer types</li>
+</ul>
+<h2 id="anti-patterns-to-watch">Anti-patterns to watch</h2>
+<ul>
+<li>trusting a complete-looking decision tree</li>
+<li>letting AI collapse different policy branches into one clean story</li>
+<li>implementing before unresolved policy points are escalated</li>
+</ul>
+<h2 id="debrief-prompts">Debrief prompts</h2>
+<ul>
+<li>where did the AI draft look strongest while still being unsafe</li>
+<li>which unresolved question mattered most</li>
+<li>what counterexample most stress-tested the policy</li>
+</ul>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

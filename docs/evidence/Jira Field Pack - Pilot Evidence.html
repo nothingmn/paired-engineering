@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jira Field Pack - Pilot Evidence | Paired Engineering</title>
+  <meta name="description" content="Jira Field Pack - Pilot Evidence">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="index.html">Evidence</a> / Jira Field Pack - Pilot Evidence</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>Jira Field Pack - Pilot Evidence</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/evidence/Jira%20Field%20Pack%20-%20Pilot%20Evidence.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../guides/index.html">Guides</a><a href="../framework/index.html">Framework</a><a href="../leadership/index.html">Leadership</a><a href="../workshops/index.html">Workshops</a><a href="../exercises/index.html">Exercises</a><a href="index.html">Evidence</a><a href="../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <h2 id="purpose">Purpose</h2>
+<p>This note defines the minimum Jira configuration needed to make the evidence kit work in a real pilot.</p>
+<p>The goal is tagging and traceability, not perfect instrumentation.</p>
+<h2 id="minimum-field-pack">Minimum field pack</h2>
+<p>If Jira admins can create custom fields, use these.</p>
+<h3 id="1-ai-pilot-cohort">1. <code>AI Pilot Cohort</code></h3>
+<p>Type:</p>
+<ul>
+<li>checkbox</li>
+<li>or single select with <code>Yes/No</code></li>
+</ul>
+<p>Purpose:</p>
+<ul>
+<li>marks issues that belong to the pilot evidence set</li>
+</ul>
+<h3 id="2-ai-target-workflow">2. <code>AI Target Workflow</code></h3>
+<p>Type:</p>
+<ul>
+<li>single select</li>
+</ul>
+<p>Purpose:</p>
+<ul>
+<li>tags the issue to one of the approved target workflows</li>
+</ul>
+<p>Example values:</p>
+<ul>
+<li><code>Developer - Debugging support</code></li>
+<li><code>Developer - Unit test drafting</code></li>
+<li><code>QA - Defect triage</code></li>
+<li><code>Product - Acceptance criteria drafting</code></li>
+</ul>
+<h3 id="3-ai-workflow-mode">3. <code>AI Workflow Mode</code></h3>
+<p>Type:</p>
+<ul>
+<li>single select</li>
+</ul>
+<p>Values:</p>
+<ul>
+<li><code>learning</code></li>
+<li><code>delivery</code></li>
+</ul>
+<p>Purpose:</p>
+<ul>
+<li>captures whether the work was primarily a learning-mode or delivery-mode use case</li>
+</ul>
+<h2 id="optional-field-pack">Optional field pack</h2>
+<p>Use these only if the admin burden is low and the team will actually maintain them.</p>
+<h3 id="4-ai-assistance-surface">4. <code>AI Assistance Surface</code></h3>
+<p>Type:</p>
+<ul>
+<li>single select</li>
+</ul>
+<p>Values:</p>
+<ul>
+<li><code>chat</code></li>
+<li><code>IDE assistant</code></li>
+<li><code>repo-aware assistant</code></li>
+<li><code>other</code></li>
+</ul>
+<h3 id="5-ai-review-follow-up">5. <code>AI Review Follow-Up</code></h3>
+<p>Type:</p>
+<ul>
+<li>checkbox</li>
+</ul>
+<p>Purpose:</p>
+<ul>
+<li>marks issues where reviewer burden or follow-up became notable enough to inspect</li>
+</ul>
+<h2 id="if-custom-fields-are-too-hard">If custom fields are too hard</h2>
+<p>Use labels as the fallback, but stay consistent.</p>
+<p>Suggested labels:</p>
+<ul>
+<li><code>ai-pilot</code></li>
+<li><code>ai-learning</code></li>
+<li><code>ai-delivery</code></li>
+<li><code>ai-review-followup</code></li>
+<li><code>ai-workflow-&lt;slug&gt;</code></li>
+</ul>
+<p>This is weaker than real fields, but it is still better than leaving workflow tagging implicit.</p>
+<h2 id="saved-filters">Saved filters</h2>
+<p>Create at least these filters.</p>
+<h3 id="all-pilot-work">All pilot work</h3>
+<p>Use:</p>
+<ul>
+<li><code>AI Pilot Cohort = Yes</code></li>
+</ul>
+<p>or label fallback:</p>
+<ul>
+<li><code>labels = ai-pilot</code></li>
+</ul>
+<h3 id="pilot-work-by-workflow">Pilot work by workflow</h3>
+<p>Use:</p>
+<ul>
+<li><code>AI Pilot Cohort = Yes AND "AI Target Workflow" = "&lt;workflow name&gt;"</code></li>
+</ul>
+<h3 id="candidate-rework-or-follow-up-set">Candidate rework or follow-up set</h3>
+<p>Use one of:</p>
+<ul>
+<li><code>AI Pilot Cohort = Yes AND "AI Review Follow-Up" = Yes</code></li>
+<li><code>AI Pilot Cohort = Yes AND labels = ai-review-followup</code></li>
+<li>linked follow-up fix issues using the team’s normal defect convention</li>
+</ul>
+<p>Do not force one perfect query if the team already has a working rework convention.</p>
+<h2 id="fields-to-export-or-inspect-weekly">Fields to export or inspect weekly</h2>
+<p>At minimum, pull:</p>
+<ul>
+<li>issue key</li>
+<li>summary</li>
+<li>issue type</li>
+<li>created date</li>
+<li>resolved date if available</li>
+<li>current status</li>
+<li>AI Target Workflow</li>
+<li>AI Workflow Mode</li>
+<li>labels</li>
+<li>link to issue</li>
+</ul>
+<p>Use Jira reports or exports for cycle-time direction where possible rather than building a separate timing system from scratch.</p>
+<h2 id="guardrails">Guardrails</h2>
+<ul>
+<li>tag pilot issues before meaningful work begins</li>
+<li>if an issue is not tagged, it does not count as part of the pilot evidence set</li>
+<li>do not create many optional AI fields just because the admin console makes it possible</li>
+<li>keep the Jira layer focused on workflow traceability, not on rating people</li>
+</ul>
+<h2 id="translation-rule">Translation rule</h2>
+<p>If the target workplace uses Azure DevOps, Linear, GitHub Projects, or another tracker, keep the same logical field pack:</p>
+<ul>
+<li>pilot flag</li>
+<li>target workflow</li>
+<li>workflow mode</li>
+<li>optional surface or review-follow-up indicator</li>
+</ul>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

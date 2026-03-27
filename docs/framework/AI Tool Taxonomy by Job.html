@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Tool Taxonomy by Job | Paired Engineering</title>
+  <meta name="description" content="AI Tool Taxonomy by Job">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="index.html">Framework</a> / AI Tool Taxonomy by Job</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>AI Tool Taxonomy by Job</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/framework/AI%20Tool%20Taxonomy%20by%20Job.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../guides/index.html">Guides</a><a href="index.html">Framework</a><a href="../leadership/index.html">Leadership</a><a href="../workshops/index.html">Workshops</a><a href="../exercises/index.html">Exercises</a><a href="../evidence/index.html">Evidence</a><a href="../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <p>This note defines AI tools at the level of the jobs they perform so the project does not become anchored to a specific vendor list.</p>
+<p>For tool-choice criteria and a lightweight decision path, use <a href="AI%20Tool%20Selection%20Framework.html">AI Tool Selection Framework</a>.</p>
+<h2 id="why-this-note-exists">Why this note exists</h2>
+<p>Tool names and market leaders will change.</p>
+<p>The project needs a more durable layer that answers:</p>
+<ul>
+<li>what kind of job does this tool perform</li>
+<li>when is this kind of tool appropriate</li>
+<li>what risks and verification expectations come with it</li>
+</ul>
+<h2 id="stable-category-set">Stable category set</h2>
+<h3 id="1-conversational-reasoning-partners">1. Conversational reasoning partners</h3>
+<p>Primary job:</p>
+<ul>
+<li>question generation</li>
+<li>option comparison</li>
+<li>explanation</li>
+<li>critique</li>
+</ul>
+<p>Typical workflow fit:</p>
+<ul>
+<li>discovery</li>
+<li>backlog shaping</li>
+<li>design exploration</li>
+<li>incident questioning</li>
+</ul>
+<p>Verification expectation:</p>
+<ul>
+<li>medium to high, depending on task observability</li>
+</ul>
+<h3 id="2-artifact-drafting-assistants">2. Artifact drafting assistants</h3>
+<p>Primary job:</p>
+<ul>
+<li>first drafts of stories, ADRs, release notes, stakeholder summaries, and test plans</li>
+</ul>
+<p>Typical workflow fit:</p>
+<ul>
+<li>backlog shaping</li>
+<li>design documentation</li>
+<li>review preparation</li>
+<li>release communication</li>
+</ul>
+<p>Verification expectation:</p>
+<ul>
+<li>high, because drafting speed easily creates scope and wording debt</li>
+</ul>
+<h3 id="3-ide-copilots-and-inline-completion-tools">3. IDE copilots and inline completion tools</h3>
+<p>Primary job:</p>
+<ul>
+<li>local code and test drafting inside the implementation environment</li>
+</ul>
+<p>Typical workflow fit:</p>
+<ul>
+<li>implementation</li>
+<li>refactoring</li>
+<li>unit test scaffolding</li>
+</ul>
+<p>Verification expectation:</p>
+<ul>
+<li>high, but often manageable on bounded familiar work</li>
+</ul>
+<h3 id="4-repository-aware-engineering-assistants">4. Repository-aware engineering assistants</h3>
+<p>Primary job:</p>
+<ul>
+<li>answer questions using the local codebase, change history, tests, and repository structure</li>
+</ul>
+<p>Typical workflow fit:</p>
+<ul>
+<li>debugging</li>
+<li>code reading</li>
+<li>review support</li>
+<li>onboarding to internal systems</li>
+</ul>
+<p>Verification expectation:</p>
+<ul>
+<li>high, especially when the assistant synthesizes from incomplete or stale project context</li>
+</ul>
+<h3 id="5-agentic-coding-and-task-execution-tools">5. Agentic coding and task-execution tools</h3>
+<p>Primary job:</p>
+<ul>
+<li>perform multi-step engineering work with some autonomy</li>
+</ul>
+<p>Typical workflow fit:</p>
+<ul>
+<li>repetitive engineering chores</li>
+<li>bounded migration tasks</li>
+<li>structured repair or test-generation workflows</li>
+</ul>
+<p>Verification expectation:</p>
+<ul>
+<li>very high</li>
+</ul>
+<p>Working stance:</p>
+<ul>
+<li>use only where task boundaries, rollback paths, and review loops are strong</li>
+</ul>
+<h3 id="6-retrieval-and-knowledge-access-tools">6. Retrieval and knowledge access tools</h3>
+<p>Primary job:</p>
+<ul>
+<li>find, retrieve, and summarize internal documentation, requirements, standards, incidents, and past decisions</li>
+</ul>
+<p>Typical workflow fit:</p>
+<ul>
+<li>discovery</li>
+<li>backlog shaping</li>
+<li>implementation</li>
+<li>operations</li>
+</ul>
+<p>Verification expectation:</p>
+<ul>
+<li>medium to high</li>
+</ul>
+<p>Working stance:</p>
+<ul>
+<li>strong value when artifact quality is already decent</li>
+<li>weak value when the underlying knowledge base is noisy or contradictory</li>
+</ul>
+<h3 id="7-quality-test-and-evaluation-helpers">7. Quality, test, and evaluation helpers</h3>
+<p>Primary job:</p>
+<ul>
+<li>generate test ideas</li>
+<li>assess outputs</li>
+<li>compare changes</li>
+<li>run evaluation or guardrail checks</li>
+</ul>
+<p>Typical workflow fit:</p>
+<ul>
+<li>testing</li>
+<li>review</li>
+<li>release readiness</li>
+</ul>
+<p>Verification expectation:</p>
+<ul>
+<li>high, but they can reduce human review load when well-scoped</li>
+</ul>
+<h3 id="8-devops-platform-and-infrastructure-assistants">8. DevOps, platform, and infrastructure assistants</h3>
+<p>Primary job:</p>
+<ul>
+<li>support CI or CD workflow work</li>
+<li>assist with infrastructure as code</li>
+<li>help with deployment pipelines</li>
+<li>summarize operational configuration and environment differences</li>
+</ul>
+<p>Typical workflow fit:</p>
+<ul>
+<li>release readiness</li>
+<li>deployment</li>
+<li>environment management</li>
+<li>platform engineering</li>
+</ul>
+<p>Verification expectation:</p>
+<ul>
+<li>very high</li>
+</ul>
+<p>Working stance:</p>
+<ul>
+<li>infrastructure and pipeline speed-ups are only wins if rollback, auditability, and environment correctness remain strong</li>
+</ul>
+<h3 id="9-observability-and-incident-analysis-assistants">9. Observability and incident-analysis assistants</h3>
+<p>Primary job:</p>
+<ul>
+<li>summarize telemetry</li>
+<li>cluster alerts and symptoms</li>
+<li>support incident questioning</li>
+<li>draft post-incident follow-up</li>
+</ul>
+<p>Typical workflow fit:</p>
+<ul>
+<li>operations</li>
+<li>production support</li>
+<li>release follow-up</li>
+<li>reliability review</li>
+</ul>
+<p>Verification expectation:</p>
+<ul>
+<li>very high</li>
+</ul>
+<p>Main risk:</p>
+<ul>
+<li>persuasive but wrong root-cause narratives</li>
+</ul>
+<h3 id="10-mlops-and-model-lifecycle-assistants">10. MLOps and model-lifecycle assistants</h3>
+<p>Primary job:</p>
+<ul>
+<li>support model evaluation, prompt or workflow versioning, dataset handling, experiment comparison, and deployment coordination for AI-enabled systems</li>
+</ul>
+<p>Typical workflow fit:</p>
+<ul>
+<li>AI product delivery</li>
+<li>evaluation and regression checks</li>
+<li>model or prompt release workflows</li>
+<li>governance on AI-enabled applications</li>
+</ul>
+<p>Verification expectation:</p>
+<ul>
+<li>very high</li>
+</ul>
+<p>Working stance:</p>
+<ul>
+<li>this category matters most when the team is shipping AI-enabled product behavior, not just using AI internally for software delivery</li>
+</ul>
+<h3 id="11-planning-meeting-and-synthesis-tools">11. Planning, meeting, and synthesis tools</h3>
+<p>Primary job:</p>
+<ul>
+<li>summarize meetings</li>
+<li>extract actions</li>
+<li>cluster themes</li>
+<li>draft planning artifacts</li>
+</ul>
+<p>Typical workflow fit:</p>
+<ul>
+<li>delivery coordination</li>
+<li>retrospectives</li>
+<li>review follow-up</li>
+</ul>
+<p>Verification expectation:</p>
+<ul>
+<li>medium</li>
+</ul>
+<p>Main risk:</p>
+<ul>
+<li>convincing summaries that miss the actual unresolved decision</li>
+</ul>
+<h3 id="12-local-and-private-model-setups">12. Local and private model setups</h3>
+<p>Primary job:</p>
+<ul>
+<li>enable sensitive workflows under stronger privacy and governance constraints</li>
+</ul>
+<p>Typical workflow fit:</p>
+<ul>
+<li>security-sensitive engineering work</li>
+<li>internal knowledge tasks</li>
+<li>regulated or private data contexts</li>
+</ul>
+<p>Verification expectation:</p>
+<ul>
+<li>depends on the task, but governance expectations are higher</li>
+</ul>
+<h3 id="13-governance-observability-and-policy-support-tools">13. Governance, observability, and policy support tools</h3>
+<p>Primary job:</p>
+<ul>
+<li>track approved usage boundaries</li>
+<li>support lightweight evidence collection</li>
+<li>enforce policy or routing constraints</li>
+</ul>
+<p>Typical workflow fit:</p>
+<ul>
+<li>pilot management</li>
+<li>risk control</li>
+<li>audit support</li>
+</ul>
+<p>Verification expectation:</p>
+<ul>
+<li>focused on process integrity rather than content accuracy alone</li>
+</ul>
+<h2 id="analysis-dimensions">Analysis dimensions</h2>
+<ul>
+<li>primary job performed</li>
+<li>typical workflow fit</li>
+<li>strengths</li>
+<li>common failure modes</li>
+<li>privacy and security implications</li>
+<li>verification expectations</li>
+<li>level of human oversight needed</li>
+</ul>
+<h2 id="working-stance">Working stance</h2>
+<p>Current product examples can be named as temporary instances of a category, but the category should matter more than the vendor.</p>
+<p>Examples can help orientation, but they should not become the taxonomy itself.</p>
+<h2 id="rule-for-market-examples">Rule for market examples</h2>
+<p>Current market examples can add value if they are handled as dated illustrations rather than canonical knowledge.</p>
+<p>If examples are added later, they should:</p>
+<ul>
+<li>be clearly marked as time-bound snapshots</li>
+<li>sit under the category, not replace the category</li>
+<li>include why the example fits the category</li>
+<li>avoid turning into a ranked vendor list unless a specific comparison task requires it</li>
+<li>be treated as secondary to workflow fit, verification needs, and governance fit</li>
+</ul>
+<h2 id="how-the-categories-map-to-lifecycle-work">How the categories map to lifecycle work</h2>
+<ul>
+<li>discovery and backlog shaping lean more on conversational reasoning, artifact drafting, retrieval, and planning tools</li>
+<li>implementation and debugging lean more on IDE copilots, repository-aware assistants, and bounded agentic tools</li>
+<li>testing and review lean more on evaluation helpers, retrieval tools, and review-prep assistants</li>
+<li>release and follow-up lean more on DevOps, observability, synthesis, retrieval, and governance tools</li>
+<li>AI-enabled product delivery adds MLOps or model-lifecycle tooling where prompts, models, or evaluation assets must be versioned and governed</li>
+</ul>
+<h2 id="how-oversight-readiness-changes-tool-fit">How oversight readiness changes tool fit</h2>
+<ul>
+<li>lower-oversight-readiness users should spend more time with reasoning, explanation, retrieval, and bounded drafting support</li>
+<li>higher-oversight-readiness users can safely extract more leverage from repository-aware and agentic tools on bounded work</li>
+<li>low-observability work should move toward stricter review regardless of the tool category</li>
+</ul>
+<h2 id="typical-meta-toolset-for-a-real-team">Typical meta toolset for a real team</h2>
+<p>A modern software delivery team will often need a compact stack rather than a single platform:</p>
+<ul>
+<li>one conversational or reasoning partner</li>
+<li>one engineering-integrated assistant for code and tests</li>
+<li>one retrieval layer for internal knowledge</li>
+<li>one documentation and synthesis aid</li>
+<li>one evaluation or guardrail layer for review and evidence</li>
+<li>one DevOps or observability-support layer when delivery teams own deployment and production operations</li>
+<li>one MLOps or model-lifecycle layer when the team is shipping AI-enabled product behavior</li>
+<li>optional local or private model capability where sensitive work requires it</li>
+</ul>
+<p>The right question is not "which AI tool wins?"</p>
+<p>The right question is "which small set of tool jobs improves this workflow without creating unsafe hidden work elsewhere?"</p>
+<h2 id="current-companion-guidance">Current companion guidance</h2>
+<ul>
+<li><a href="AI%20Tool%20Selection%20Framework.html">AI Tool Selection Framework</a> gives the actual decision criteria and selection path</li>
+<li><a href="AI%20Enablement%20Across%20the%20Software%20Delivery%20Lifecycle.html">AI Enablement Across the Software Delivery Lifecycle</a> maps these tool jobs to lifecycle work</li>
+<li><a href="Capability%20Model%20-%20Oversight%20Readiness%20x%20Task%20Familiarity%20x%20Risk.html">Capability Model - Oversight Readiness x Task Familiarity x Risk</a> helps explain why tool fit changes with user capability and task profile</li>
+</ul>
+<h2 id="optional-future-extension">Optional future extension</h2>
+<ul>
+<li>add a dated market-example appendix later if the project needs concrete examples for a specific publication or workshop context</li>
+</ul>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

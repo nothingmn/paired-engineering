@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Source Summary | Paired Engineering</title>
+  <meta name="description" content="Source Summary">
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../../index.html">Home</a> / <a href="../index.html">Framework</a> / <a href="index.html">Sources</a> / Source Summary</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>Source Summary</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/framework/sources/Source%20-%20How%20AI%20Impacts%20Skill%20Formation%20%28Shen%20%26%20Tamkin%2C%202026%29.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../../guides/index.html">Guides</a><a href="../index.html">Framework</a><a href="../../leadership/index.html">Leadership</a><a href="../../workshops/index.html">Workshops</a><a href="../../exercises/index.html">Exercises</a><a href="../../evidence/index.html">Evidence</a><a href="../../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <h2 id="citation">Citation</h2>
+<p>Shen, Judy Hanwen, and Alex Tamkin. <em>How AI Impacts Skill Formation</em>. arXiv:2601.20245, February 3, 2026.</p>
+<p>Companion materials:</p>
+<ul>
+<li>Anthropic article: https://www.anthropic.com/research/AI-assistance-coding-skills</li>
+<li>Public repository: https://github.com/safety-research/how-ai-impacts-skill-formation</li>
+</ul>
+<h2 id="what-it-says">What it says</h2>
+<ul>
+<li>This is a randomized between-subjects experiment on software developers learning an unfamiliar Python library, Trio, with or without AI assistance.</li>
+<li>The main study reports <code>n=52</code>, with <code>26</code> participants in the AI condition and <code>26</code> in the control condition.</li>
+<li>The AI condition used a chat-based coding assistant backed by <code>GPT-4o</code> that could see the participant's code and generate the full solution when prompted.</li>
+<li>The paper reports a lower immediate post-task mastery score for the AI group: <code>50%</code> average quiz score versus <code>67%</code> for the control group, a <code>17%</code> absolute gap with <code>Cohen's d = 0.738</code> and <code>p = 0.010</code>.</li>
+<li>The paper reports a small average speed improvement for the AI group, but says the completion-time difference was not statistically significant.</li>
+<li>The largest reported score gap was in debugging, with additional gaps in code reading and conceptual understanding.</li>
+<li>The authors argue that heavy delegation and AI-led debugging were associated with weaker learning outcomes, while explanation-seeking and conceptual inquiry were associated with better outcomes among AI users.</li>
+</ul>
+<h2 id="what-we-could-verify-directly">What we could verify directly</h2>
+<ul>
+<li>The appendix states that quiz grading was defined before the experiment in a pre-registration, but the public pre-registration link was not found during this review.</li>
+<li>The appendix states that annotated participant transcripts are publicly available, and that claim is true through the GitHub repository.</li>
+<li>The public repository includes:</li>
+<li>the Trio task instructions</li>
+<li>starter and completed task code</li>
+<li>a post-task notebook with quiz material fragments</li>
+<li><code>52</code> annotated participant transcript JSON files</li>
+<li>The public transcript files include participant condition, task duration, annotated events, active coding time, task completion, and AI query text when applicable.</li>
+<li>From the public transcript JSON files, the mean main-task time is about <code>23.16</code> minutes for the AI condition and <code>24.93</code> minutes for the No-AI condition, which is directionally consistent with the paper's claim of a small speed advantage for AI.</li>
+<li>From the public transcript JSON files, AI participants averaged about <code>5.48</code> AI queries, with a maximum of <code>15</code>.</li>
+<li>From the public transcript JSON files, No-AI participants encountered more observed errors on average than AI participants, which is directionally consistent with the authors' interpretation that independent error resolution may have contributed to learning.</li>
+</ul>
+<h2 id="public-data-availability">Public data availability</h2>
+<p>The closest thing to public raw data is the annotated transcript set in the GitHub repository. It is useful, but it is not the full raw experimental dataset.</p>
+<p>Publicly available:</p>
+<ul>
+<li>Annotated transcripts for each participant in JSON form</li>
+<li>Task materials and code artifacts</li>
+<li>Partial survey or quiz material in the notebook</li>
+</ul>
+<p>Not found publicly during this review:</p>
+<ul>
+<li>Raw quiz responses</li>
+<li>A participant-level quiz score table</li>
+<li>Raw keystroke logs</li>
+<li>Screen recordings</li>
+<li>The public pre-registration record</li>
+</ul>
+<p>The paper says quiz responses were stored in Google Drive and coding keystrokes were stored in the coding platform, but those raw stores do not appear to be public.</p>
+<h2 id="limitations-and-concerns">Limitations and concerns</h2>
+<ul>
+<li>The study measures immediate post-task understanding, not long-term retention or workplace mastery.</li>
+<li>The task uses one unfamiliar library, one chat-style assistant setup, and one short learning window, so external validity is limited.</li>
+<li>The paper's stronger causal claim is the group-level quiz difference; the AI interaction pattern analysis is much weaker because the pattern groups are very small.</li>
+<li>The public repository does not expose enough structured outcome data to reproduce the headline quiz effect independently.</li>
+<li>There is a documentation mismatch worth noting:</li>
+<li>the main study section reports <code>26</code> AI and <code>26</code> control participants</li>
+<li>the appendix says <code>51/52</code> participants uploaded recordings and that recordings for <code>25</code> AI and <code>25</code> No-AI participants were reviewed</li>
+<li>the public transcript repository currently contains <code>52</code> JSON files split as <code>25</code> AI and <code>27</code> No-AI, with participant <code>26</code> missing</li>
+<li>Because of that mismatch, the public release should be treated as useful but not fully clean replication material.</li>
+</ul>
+<h2 id="relevance-to-ai-enablement">Relevance to AI enablement</h2>
+<p>This source is highly relevant to the project because it directly supports several working assumptions in <a href="../Project%20Charter.html">Project Charter</a>.</p>
+<ul>
+<li>It supports a comprehension-first rollout stance: using AI to understand code, concepts, and errors is safer than defaulting to code delegation.</li>
+<li>It supports capability-aware adoption: less experienced engineers may need explanation-first patterns and deliberate guardrails rather than unrestricted acceleration workflows.</li>
+<li>It supports the emphasis on paired engineering with AI rather than blind delegation.</li>
+<li>It supports measuring debugging and code-reading ability, not just speed, when evaluating adoption success.</li>
+<li>It supports the idea that enablement leaders should teach workflows, verification habits, and learning-preserving usage patterns rather than only granting tool access.</li>
+</ul>
+<h2 id="what-not-to-overclaim">What not to overclaim</h2>
+<ul>
+<li>This source does not prove that all AI coding assistance harms learning.</li>
+<li>This source does not justify banning AI for software engineering.</li>
+<li>This source does not establish long-term skill erosion.</li>
+<li>This source does not cleanly generalize to senior engineers, agentic coding systems, autocomplete-heavy tools, or familiar tasks.</li>
+</ul>
+<h2 id="practical-extraction-for-this-project">Practical extraction for this project</h2>
+<ul>
+<li>Prefer AI workflows that force or invite explanation, reflection, and independent reasoning.</li>
+<li>Treat debugging skill as a critical safeguard metric in AI rollout.</li>
+<li>Avoid presenting adoption success purely as speed gain.</li>
+<li>Use AI-free comprehension checks or review exercises when the goal is learning a new tool, framework, or internal platform.</li>
+<li>Teach engineers to ask <code>why</code>, <code>how</code>, and <code>what would happen if</code> questions instead of only requesting implementations.</li>
+</ul>
+<h2 id="follow-up-questions">Follow-up questions</h2>
+<ul>
+<li>Can the authors release participant-level quiz scores or at least an anonymized aggregate score table?</li>
+<li>Is the pre-registration public, and does it include the grading rubric?</li>
+<li>Why does the public transcript release not line up cleanly with the participant counts reported in the paper and appendix?</li>
+<li>How much of the observed effect persists after days or weeks rather than minutes?</li>
+</ul>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

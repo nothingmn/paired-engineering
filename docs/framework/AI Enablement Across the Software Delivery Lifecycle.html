@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Enablement Across the Software Delivery Lifecycle | Paired Engineering</title>
+  <meta name="description" content="AI Enablement Across the Software Delivery Lifecycle">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="index.html">Framework</a> / AI Enablement Across the Software Delivery Lifecycle</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>AI Enablement Across the Software Delivery Lifecycle</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/framework/AI%20Enablement%20Across%20the%20Software%20Delivery%20Lifecycle.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../guides/index.html">Guides</a><a href="index.html">Framework</a><a href="../leadership/index.html">Leadership</a><a href="../workshops/index.html">Workshops</a><a href="../exercises/index.html">Exercises</a><a href="../evidence/index.html">Evidence</a><a href="../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <p>This note maps AI enablement across a practical software delivery lifecycle rather than treating AI as a developer-only topic.</p>
+<h2 id="purpose">Purpose</h2>
+<p>The project needs a durable view of who is affected, where AI enters the workflow, what changes in agile and kanban environments, and what new risks or gains appear across the lifecycle.</p>
+<h2 id="scope">Scope</h2>
+<p>Initial roles in scope:</p>
+<ul>
+<li>product owners</li>
+<li>project or delivery managers</li>
+<li>developers</li>
+<li>QA and SDET</li>
+<li>architects</li>
+<li>technical leads and Staff Engineers</li>
+<li>DevOps, platform, SRE, or operations partners where teams own deployment and runtime health</li>
+<li>MLOps or AI platform partners where teams ship AI-enabled product behavior</li>
+</ul>
+<p>Initial delivery environments in scope:</p>
+<ul>
+<li>agile</li>
+<li>kanban</li>
+<li>shift-left quality and testing practices</li>
+</ul>
+<h2 id="key-questions">Key questions</h2>
+<ul>
+<li>Where does AI affect backlog refinement, design, development, testing, review, release, and follow-up?</li>
+<li>Which roles gain leverage, and which roles absorb hidden cleanup or review burden?</li>
+<li>How do scope, time, and resource constraints change under AI-assisted work?</li>
+<li>What positive effects and negative side effects show up across the lifecycle?</li>
+<li>Which lifecycle stages are easy to verify and which are low-observability and risky?</li>
+</ul>
+<h2 id="how-teams-actually-work">How teams actually work</h2>
+<p>Real software teams rarely follow a pristine linear lifecycle.</p>
+<p>In practice:</p>
+<ul>
+<li>product questions continue after work starts</li>
+<li>architecture decisions continue during implementation</li>
+<li>QA and SDET work starts before stories are "done"</li>
+<li>bugs, interrupts, and operational noise reshape planned work</li>
+<li>review and rework loops matter as much as the first-pass implementation</li>
+<li>documentation and stakeholder alignment happen throughout, not only at the start</li>
+</ul>
+<p>This project should therefore model the delivery lifecycle as a set of recurring work loops, not as a waterfall diagram with new AI icons on top.</p>
+<h2 id="two-common-operating-systems">Two common operating systems</h2>
+<h3 id="scrum-style-teams">Scrum-style teams</h3>
+<p>Typical reality:</p>
+<ul>
+<li>discovery work and backlog shaping happen ahead of sprint planning, but not always cleanly</li>
+<li>sprint planning selects a batch of work with an initial hypothesis about scope and capacity</li>
+<li>daily coordination surfaces blockers, scope surprises, and collaboration needs</li>
+<li>implementation, testing, review, and requirement clarification overlap during the sprint</li>
+<li>sprint review and retrospective close the loop, but important learning also happens mid-sprint</li>
+</ul>
+<p>Useful AI mutation:</p>
+<ul>
+<li>insert AI pairing into the work itself, not into the ceremony as theater</li>
+<li>keep sprint planning focused on small workflow experiments rather than abstract "AI adoption"</li>
+<li>use refinement and planning to decide where learning mode versus delivery mode should apply</li>
+<li>use review and retrospective to inspect verification burden, confidence calibration, and hidden rework</li>
+</ul>
+<h3 id="kanban-style-teams">Kanban-style teams</h3>
+<p>Typical reality:</p>
+<ul>
+<li>work arrives continuously rather than in sprint batches</li>
+<li>the system is managed through queue health, work-in-progress limits, aging, and flow efficiency</li>
+<li>expedite work and production issues can reorder priorities quickly</li>
+<li>requirement quality and readiness often vary more at the point of intake</li>
+<li>review and test bottlenecks become visible through queue buildup</li>
+</ul>
+<p>Useful AI mutation:</p>
+<ul>
+<li>use AI pairing to reduce queue delay in bounded work, not to hide queue health problems</li>
+<li>add explicit rules for what kind of work may enter flow with AI assistance</li>
+<li>make verification and review stages visible so AI-generated speed does not simply flood downstream queues</li>
+<li>inspect aging work and rework to see whether AI reduced friction or just moved it later in the system</li>
+</ul>
+<h2 id="method-agnostic-lifecycle-model">Method-agnostic lifecycle model</h2>
+<p>The core lifecycle is the same in both Scrum and Kanban, but the control points differ.</p>
+<h3 id="1-discovery-and-problem-framing">1. Discovery and problem framing</h3>
+<p>What teams are actually doing:</p>
+<ul>
+<li>identifying business problems, user pain, operational needs, and technical constraints</li>
+<li>narrowing scope</li>
+<li>deciding what deserves investment now versus later</li>
+</ul>
+<p>Typical role mix:</p>
+<ul>
+<li>product owners</li>
+<li>delivery or project managers</li>
+<li>architects</li>
+<li>Staff Engineers or technical leads</li>
+</ul>
+<p>Good AI pairing:</p>
+<ul>
+<li>clarifying assumptions</li>
+<li>generating stakeholder questions</li>
+<li>comparing problem framings</li>
+<li>surfacing missing constraints</li>
+</ul>
+<p>Main risks:</p>
+<ul>
+<li>false completeness</li>
+<li>inflated scope</li>
+<li>plausible but ungrounded summaries</li>
+</ul>
+<p>Verification expectation:</p>
+<ul>
+<li>business and technical stakeholders must confirm key assumptions</li>
+<li>AI output should not become the source of truth for the problem statement</li>
+</ul>
+<h3 id="2-backlog-shaping-and-readiness">2. Backlog shaping and readiness</h3>
+<p>What teams are actually doing:</p>
+<ul>
+<li>decomposing work into increments</li>
+<li>writing or refining backlog items</li>
+<li>clarifying acceptance criteria</li>
+<li>sequencing work against dependencies and capacity</li>
+</ul>
+<p>Typical role mix:</p>
+<ul>
+<li>product owners</li>
+<li>delivery managers</li>
+<li>developers</li>
+<li>QA and SDET</li>
+<li>architects when cross-cutting design matters</li>
+</ul>
+<p>Good AI pairing:</p>
+<ul>
+<li>story decomposition</li>
+<li>ambiguity detection</li>
+<li>acceptance-criteria critique</li>
+<li>dependency question generation</li>
+</ul>
+<p>Main risks:</p>
+<ul>
+<li>oversized backlog items</li>
+<li>requirement bloat</li>
+<li>hidden assumptions in generated acceptance criteria</li>
+</ul>
+<p>Verification expectation:</p>
+<ul>
+<li>team review of readiness</li>
+<li>artifact-first capture in canonical backlog tools or notes</li>
+<li>no dependence on one long AI conversation to preserve intent</li>
+</ul>
+<h3 id="3-design-and-architecture">3. Design and architecture</h3>
+<p>What teams are actually doing:</p>
+<ul>
+<li>comparing solution approaches</li>
+<li>identifying dependencies and tradeoffs</li>
+<li>deciding where to standardize versus where to stay flexible</li>
+<li>recording architecture and design intent</li>
+</ul>
+<p>Typical role mix:</p>
+<ul>
+<li>architects</li>
+<li>developers</li>
+<li>Staff Engineers</li>
+<li>product owners when tradeoffs affect user value or delivery scope</li>
+</ul>
+<p>Good AI pairing:</p>
+<ul>
+<li>option generation</li>
+<li>architecture question generation</li>
+<li>ADR drafting support</li>
+<li>threat, reliability, and dependency prompts</li>
+</ul>
+<p>Main risks:</p>
+<ul>
+<li>elegant but shallow reasoning</li>
+<li>unverified tradeoff claims</li>
+<li>overlooked operational constraints</li>
+</ul>
+<p>Verification expectation:</p>
+<ul>
+<li>peer review, stakeholder review, or operational review on meaningful decisions</li>
+<li>treat low-observability reasoning as higher risk than it first appears</li>
+</ul>
+<h3 id="4-implementation">4. Implementation</h3>
+<p>What teams are actually doing:</p>
+<ul>
+<li>writing, refactoring, debugging, and integrating code</li>
+<li>learning new frameworks or internal patterns</li>
+<li>resolving technical surprises</li>
+</ul>
+<p>Typical role mix:</p>
+<ul>
+<li>developers</li>
+<li>QA and SDET in shift-left environments</li>
+<li>technical leads</li>
+</ul>
+<p>Good AI pairing:</p>
+<ul>
+<li>code explanation</li>
+<li>bounded drafting</li>
+<li>debugging support</li>
+<li>test scaffolding</li>
+<li>refactoring suggestions</li>
+</ul>
+<p>Main risks:</p>
+<ul>
+<li>blind delegation</li>
+<li>fragile generated code</li>
+<li>hidden review debt</li>
+</ul>
+<p>Verification expectation:</p>
+<ul>
+<li>tests, review, local reasoning, and modification by the engineer</li>
+<li>stronger restrictions when oversight readiness is low or the code path is unfamiliar</li>
+</ul>
+<h3 id="5-testing-and-quality-engineering">5. Testing and quality engineering</h3>
+<p>What teams are actually doing:</p>
+<ul>
+<li>expanding test coverage</li>
+<li>reproducing defects</li>
+<li>triaging failures</li>
+<li>investigating flaky tests</li>
+<li>pressure-testing acceptance criteria</li>
+</ul>
+<p>Typical role mix:</p>
+<ul>
+<li>QA</li>
+<li>SDET</li>
+<li>developers</li>
+<li>product owners when the behavior itself is still unclear</li>
+</ul>
+<p>Good AI pairing:</p>
+<ul>
+<li>failure summarization</li>
+<li>test idea generation</li>
+<li>reproduction hypotheses</li>
+<li>requirement-to-test trace prompts</li>
+</ul>
+<p>Main risks:</p>
+<ul>
+<li>shallow test cases</li>
+<li>redundant test suites</li>
+<li>AI-confirmed wrong assumptions about expected behavior</li>
+</ul>
+<p>Verification expectation:</p>
+<ul>
+<li>executable evidence beats persuasive explanation</li>
+<li>quality work should still trace back to observable behavior and agreed expectations</li>
+</ul>
+<h3 id="6-review-integration-and-release-readiness">6. Review, integration, and release readiness</h3>
+<p>What teams are actually doing:</p>
+<ul>
+<li>code review</li>
+<li>requirement review</li>
+<li>design review</li>
+<li>release decision checks</li>
+<li>dependency and regression checks</li>
+</ul>
+<p>Typical role mix:</p>
+<ul>
+<li>developers</li>
+<li>architects</li>
+<li>QA and SDET</li>
+<li>release or delivery leads</li>
+</ul>
+<p>Good AI pairing:</p>
+<ul>
+<li>review preparation</li>
+<li>checklist generation</li>
+<li>change summarization</li>
+<li>regression-risk prompts</li>
+</ul>
+<p>Main risks:</p>
+<ul>
+<li>AI-generated confidence overwhelming reviewer skepticism</li>
+<li>review shortcuts that accept claims without evidence</li>
+<li>summarization that hides important nuance</li>
+</ul>
+<p>Verification expectation:</p>
+<ul>
+<li>review remains a human accountability function</li>
+<li>AI may support review preparation, but not replace signoff judgment</li>
+</ul>
+<h3 id="7-release-operations-and-follow-up-learning">7. Release, operations, and follow-up learning</h3>
+<p>What teams are actually doing:</p>
+<ul>
+<li>deployment</li>
+<li>monitoring</li>
+<li>incident response</li>
+<li>stakeholder communication</li>
+<li>retrospective learning</li>
+</ul>
+<p>Typical role mix:</p>
+<ul>
+<li>developers</li>
+<li>SRE or operations partners where relevant</li>
+<li>QA and SDET</li>
+<li>delivery leads</li>
+<li>product owners</li>
+<li>platform or DevOps engineers where relevant</li>
+</ul>
+<p>Good AI pairing:</p>
+<ul>
+<li>incident question generation</li>
+<li>log or event summarization</li>
+<li>draft follow-up actions</li>
+<li>retrospective theme clustering</li>
+<li>deployment checklist support</li>
+<li>environment-difference summarization</li>
+</ul>
+<p>Main risks:</p>
+<ul>
+<li>hallucinated root cause</li>
+<li>premature certainty during incident response</li>
+<li>weak learning capture after release</li>
+</ul>
+<p>Verification expectation:</p>
+<ul>
+<li>operational evidence and reproduction matter more than fluent diagnosis</li>
+<li>post-release learning should feed back into workflow and standards</li>
+</ul>
+<h3 id="8-ai-product-operations-and-model-lifecycle">8. AI product operations and model lifecycle</h3>
+<p>This stage only applies when the team is shipping AI-enabled product behavior, not just using AI internally.</p>
+<p>What teams are actually doing:</p>
+<ul>
+<li>evaluating prompt or model behavior</li>
+<li>comparing versions</li>
+<li>monitoring regressions</li>
+<li>managing dataset, policy, and release coordination issues</li>
+</ul>
+<p>Typical role mix:</p>
+<ul>
+<li>developers</li>
+<li>platform or MLOps engineers</li>
+<li>QA or evaluation-focused engineers</li>
+<li>product owners for behavior acceptance</li>
+</ul>
+<p>Good AI pairing:</p>
+<ul>
+<li>evaluation-plan drafting</li>
+<li>regression-question generation</li>
+<li>prompt or workflow diff summarization</li>
+<li>safety and policy checklist support</li>
+</ul>
+<p>Main risks:</p>
+<ul>
+<li>shipping behavior that looks improved in demos but regresses in real use</li>
+<li>weak evaluation discipline</li>
+<li>hidden model or prompt drift</li>
+</ul>
+<p>Verification expectation:</p>
+<ul>
+<li>benchmark, test, and evaluation evidence matter more than verbal justification</li>
+<li>versioned artifacts and rollback paths should exist before broader rollout</li>
+</ul>
+<h2 id="what-has-to-mutate-for-ai-pairing-to-work">What has to mutate for AI pairing to work</h2>
+<h3 id="shift-from-chat-centric-work-to-artifact-centric-work">Shift from chat-centric work to artifact-centric work</h3>
+<ul>
+<li>AI conversations are transient</li>
+<li>delivery artifacts must remain canonical</li>
+<li>important outcomes should be consolidated into backlog items, ADRs, code, test assets, runbooks, and notes</li>
+</ul>
+<h3 id="split-learning-mode-from-delivery-mode">Split learning mode from delivery mode</h3>
+<ul>
+<li>unfamiliar work should default toward understanding and explanation</li>
+<li>routine bounded work can use more acceleration</li>
+<li>teams should not use the same prompt habits for both</li>
+</ul>
+<h3 id="add-verification-points-where-ai-creates-speed">Add verification points where AI creates speed</h3>
+<ul>
+<li>if AI accelerates drafting, review and evidence must still happen</li>
+<li>if AI accelerates requirements, readiness review must still happen</li>
+<li>if AI accelerates testing, observable behavior must still validate the outcome</li>
+<li>use <a href="Verification%20Standards%20by%20Artifact%20and%20Work%20Type.html">Verification Standards by Artifact and Work Type</a> to define what evidence counts for each artifact rather than relying on generic <code>verify it</code> language</li>
+</ul>
+<h3 id="keep-batch-size-small">Keep batch size small</h3>
+<ul>
+<li>AI makes it cheap to create too much</li>
+<li>backlog items, documents, and code changes should stay small enough to review</li>
+<li>MVP and next-increment thinking matter more, not less</li>
+</ul>
+<h3 id="make-review-burden-visible">Make review burden visible</h3>
+<ul>
+<li>a local speed gain is not a win if review, QA, or downstream clarification costs explode</li>
+<li>Scrum teams should inspect this in sprint review and retrospective</li>
+<li>Kanban teams should inspect this through queue buildup, aging, and rework signals</li>
+</ul>
+<h3 id="normalize-explicit-uncertainty">Normalize explicit uncertainty</h3>
+<ul>
+<li>paired AI work should produce statements like:</li>
+<li>what we know</li>
+<li>what we assume</li>
+<li>what remains unverified</li>
+<li>what needs human decision</li>
+</ul>
+<h2 id="scope-time-and-resource-effects">Scope, time, and resource effects</h2>
+<h3 id="positive-effects">Positive effects</h3>
+<ul>
+<li>faster first drafts for bounded artifacts</li>
+<li>lower friction for research, summarization, and explanation</li>
+<li>broader option generation during design and test planning</li>
+<li>improved onboarding on unfamiliar internal systems when used in learning mode</li>
+</ul>
+<h3 id="negative-effects">Negative effects</h3>
+<ul>
+<li>scope inflation because drafting becomes cheap</li>
+<li>more material to review and reconcile</li>
+<li>false confidence in low-observability work</li>
+<li>hidden coaching load on stronger engineers</li>
+<li>queue flooding in test, review, or requirements clarification stages</li>
+</ul>
+<h2 id="shift-left-implications">Shift-left implications</h2>
+<p>AI pairing works best when quality is shifted left with it.</p>
+<p>That means:</p>
+<ul>
+<li>requirements are challenged earlier</li>
+<li>test thinking starts during backlog shaping and implementation</li>
+<li>architecture and dependency questions appear before merge time</li>
+<li>verification strategy is considered while the work is being generated, not only after</li>
+</ul>
+<h2 id="meta-tool-needs-across-the-lifecycle">Meta tool needs across the lifecycle</h2>
+<p>The typical meta toolset is not one tool. Teams usually need a stack of jobs-to-be-done:</p>
+<ul>
+<li>reasoning partner for exploration and question generation</li>
+<li>artifact drafting assistant for stories, docs, ADRs, and summaries</li>
+<li>code and test assistant inside the engineering workflow</li>
+<li>repository-aware or context-aware assistant for local codebase work</li>
+<li>retrieval and knowledge access tools for internal documentation and past decisions</li>
+<li>review and evaluation helpers for quality, regression, and policy checks</li>
+<li>DevOps, deployment, and observability assistants where the team owns runtime health</li>
+<li>MLOps or model-lifecycle tools where AI-enabled product behavior must be evaluated and governed</li>
+<li>private or local model options for sensitive workflows</li>
+<li>governance and observability tooling for approved use, risk, and evidence collection</li>
+</ul>
+<p>Detailed category guidance belongs in <a href="AI%20Tool%20Taxonomy%20by%20Job.html">AI Tool Taxonomy by Job</a>.</p>
+<h2 id="recommended-interpretation">Recommended interpretation</h2>
+<p>The delivery lifecycle should not be "AI-enabled everywhere."</p>
+<p>It should be:</p>
+<ul>
+<li>selectively paired where the job is clear</li>
+<li>constrained where verification is weak</li>
+<li>adapted to Scrum or Kanban realities</li>
+<li>measured by flow, quality, learning, and review burden together</li>
+</ul>
+<h2 id="current-companion-guidance">Current companion guidance</h2>
+<ul>
+<li><a href="AI%20Tool%20Taxonomy%20by%20Job.html">AI Tool Taxonomy by Job</a> and <a href="AI%20Tool%20Selection%20Framework.html">AI Tool Selection Framework</a> carry the tool-layer guidance for the lifecycle map</li>
+<li><a href="AI-Assisted%20Requirements%20Management.html">AI-Assisted Requirements Management</a> expands the product and documentation layer</li>
+<li><a href="Pilot%20Evidence%20Model%20-%20Practical%20Metrics%20and%20Lightweight%20Collection.html">Pilot Evidence Model - Practical Metrics and Lightweight Collection</a> defines where scope, time, review burden, and learning signals can be measured</li>
+<li><a href="Manager%20and%20Technical-Lead%20Operating%20Model%20for%20AI%20Enablement.html">Manager and Technical-Lead Operating Model for AI Enablement</a> adds the people-leadership layer needed for the lifecycle to work in practice</li>
+</ul>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

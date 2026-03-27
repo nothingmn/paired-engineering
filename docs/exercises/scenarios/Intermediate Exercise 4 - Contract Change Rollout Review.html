@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intermediate Exercise 4 - Contract Change Rollout Review | Paired Engineering</title>
+  <meta name="description" content="Intermediate Exercise 4 - Contract Change Rollout Review">
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../../index.html">Home</a> / <a href="../index.html">Exercises</a> / <a href="index.html">Scenarios</a> / Intermediate Exercise 4 - Contract Change Rollout Review</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>Intermediate Exercise 4 - Contract Change Rollout Review</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/exercises/scenarios/Intermediate%20Exercise%204%20-%20Contract%20Change%20Rollout%20Review.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../../guides/index.html">Guides</a><a href="../../framework/index.html">Framework</a><a href="../../leadership/index.html">Leadership</a><a href="../../workshops/index.html">Workshops</a><a href="../index.html">Exercises</a><a href="../../evidence/index.html">Evidence</a><a href="../../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <h2 id="rating">Rating</h2>
+<ul>
+<li>size: <code>4</code></li>
+<li>complexity: <code>4</code></li>
+</ul>
+<h2 id="purpose">Purpose</h2>
+<p>Practice evaluating AI-generated rollout advice for cross-service changes where backwards compatibility and coordination matter more than elegant prose.</p>
+<h2 id="scenario">Scenario</h2>
+<p>A payments service wants to add a new optional field to an event payload:</p>
+<ul>
+<li>producer will send <code>riskScore</code></li>
+<li>some downstream consumers ignore unknown fields</li>
+<li>one reporting consumer deserializes into a strict schema</li>
+<li>AI says the change is "backwards compatible" because the field is optional</li>
+</ul>
+<h2 id="task">Task</h2>
+<p>Use AI to help evaluate the rollout plan, then identify what still needs human design review.</p>
+<h2 id="expected-output">Expected output</h2>
+<ul>
+<li>rollout-risk list</li>
+<li>safer phased rollout plan</li>
+<li>verification steps across producer and consumers</li>
+<li>explicit statement of what "compatible" does and does not mean here</li>
+</ul>
+<h2 id="good-ai-uses">Good AI uses</h2>
+<ul>
+<li>generating compatibility questions</li>
+<li>comparing rollout sequences</li>
+<li>surfacing coordination dependencies</li>
+</ul>
+<h2 id="verification-focus">Verification focus</h2>
+<ul>
+<li>test compatibility assumptions against actual consumers</li>
+<li>distinguish protocol compatibility from operational safety</li>
+<li>include rollback and observability checks</li>
+</ul>
+<h2 id="anti-patterns-to-watch">Anti-patterns to watch</h2>
+<ul>
+<li>trusting the word "optional" as proof of safety</li>
+<li>ignoring strict consumers because they are less visible</li>
+<li>shipping contract changes without a concrete verification path</li>
+</ul>
+<h2 id="debrief-prompts">Debrief prompts</h2>
+<ul>
+<li>what did the AI framing miss about compatibility</li>
+<li>which consumer created the real risk</li>
+<li>how would you stage this rollout safely</li>
+</ul>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

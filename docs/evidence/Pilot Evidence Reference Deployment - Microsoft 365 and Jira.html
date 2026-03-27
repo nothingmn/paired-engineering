@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pilot Evidence Reference Deployment - Microsoft 365 and Jira | Paired Engineering</title>
+  <meta name="description" content="Pilot Evidence Reference Deployment - Microsoft 365 and Jira">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="index.html">Evidence</a> / Pilot Evidence Reference Deployment - Microsoft 365 and Jira</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>Pilot Evidence Reference Deployment - Microsoft 365 and Jira</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/evidence/Pilot%20Evidence%20Reference%20Deployment%20-%20Microsoft%20365%20and%20Jira.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../guides/index.html">Guides</a><a href="../framework/index.html">Framework</a><a href="../leadership/index.html">Leadership</a><a href="../workshops/index.html">Workshops</a><a href="../exercises/index.html">Exercises</a><a href="index.html">Evidence</a><a href="../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <h2 id="purpose">Purpose</h2>
+<p>This note turns the pilot evidence kit into a concrete reference deployment.</p>
+<p>It assumes a common enterprise stack:</p>
+<ul>
+<li>Microsoft Forms for surveys and pulse checks</li>
+<li>SharePoint or Teams-backed Excel workbook for the shared tracker</li>
+<li>Jira for workflow tagging and basic workflow metrics</li>
+<li>existing pull request system for review-burden observation</li>
+</ul>
+<p>This is a reference build, not a universal mandate.</p>
+<p>If the target workplace uses Google Workspace, Azure DevOps, or another equivalent stack, translate the surfaces but keep the logic.</p>
+<h2 id="why-this-stack">Why this stack</h2>
+<p>This stack is concrete enough to deploy, but common enough that most organizations can map to it.</p>
+<p>It also keeps the evidence loop lightweight:</p>
+<ul>
+<li>no new measurement platform</li>
+<li>no separate analytics vendor</li>
+<li>no requirement for heavy automation before the pilot begins</li>
+</ul>
+<h2 id="named-assets-to-create">Named assets to create</h2>
+<p>Create these assets with stable names so the pilot team knows where the system of record lives.</p>
+<h3 id="microsoft-forms">Microsoft Forms</h3>
+<ol>
+<li><code>AI Enablement - Pre-Pilot Survey - Initial Pilot Cohort</code></li>
+<li><code>AI Enablement - Post-Pilot Survey - Initial Pilot Cohort</code></li>
+<li><code>AI Enablement - Weekly Pilot Pulse - Initial Pilot Cohort</code></li>
+<li>Optional: <code>AI Enablement - Retrieval Check</code></li>
+</ol>
+<p>Use <a href="Microsoft%20Forms%20Build%20-%20Pilot%20Evidence%20Surveys.html">Microsoft Forms Build - Pilot Evidence Surveys</a> for the exact form structure.</p>
+<h3 id="sharepoint-or-teams-document-library">SharePoint or Teams document library</h3>
+<p>Create one restricted folder:</p>
+<p><code>AI Enablement Pilot Evidence</code></p>
+<p>Suggested subfolders:</p>
+<ul>
+<li><code>Forms Exports</code></li>
+<li><code>Weekly Summaries</code></li>
+<li><code>Redacted Example Cases</code></li>
+</ul>
+<h3 id="excel-workbook">Excel workbook</h3>
+<p>Create one workbook in that folder:</p>
+<p><a href="https://github.com/nothingmn/paired-engineering/blob/main/evidence/AI%20Enablement%20-%20Pilot%20Evidence%20Tracker%20-%20Initial%20Pilot%20Cohort.xlsx"><code>AI Enablement - Pilot Evidence Tracker - Initial Pilot Cohort.xlsx</code></a></p>
+<p>Use <a href="Pilot%20Evidence%20Workbook%20Schema%20-%20Excel%20and%20SharePoint.html">Pilot Evidence Workbook Schema - Excel and SharePoint</a> for the worksheet structure.</p>
+<h3 id="jira-configuration">Jira configuration</h3>
+<p>Create the pilot field pack and saved filters in the target Jira project or program scope.</p>
+<p>Use <a href="Jira%20Field%20Pack%20-%20Pilot%20Evidence.html">Jira Field Pack - Pilot Evidence</a> for the exact fields and filter pattern.</p>
+<h3 id="privacy-note">Privacy note</h3>
+<p>Publish one short internal handling note or policy reference before launch.</p>
+<p>Use <a href="Pilot%20Evidence%20Privacy%20Posture%20-%20Confidential%20Aggregate%20Reporting.html">Pilot Evidence Privacy Posture - Confidential Aggregate Reporting</a> as the default.</p>
+<h2 id="first-build-order">First build order</h2>
+<ol>
+<li>Confirm the privacy posture and sponsor language.</li>
+<li>Create the SharePoint or Teams folder.</li>
+<li>Create the Excel workbook.</li>
+<li>Build the three Microsoft Forms.</li>
+<li>Add the Jira field pack and saved filters.</li>
+<li>Tag the target workflows before pilot start.</li>
+<li>Run the pre-pilot survey.</li>
+<li>Start weekly tracking only after the workbook, filters, and ownership model exist.</li>
+</ol>
+<h2 id="kpi-to-system-map">KPI-to-system map</h2>
+<table>
+<thead>
+<tr>
+<th>KPI</th>
+<th>Primary system</th>
+<th>Secondary input</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Target workflow median cycle time</td>
+<td>Jira report or export</td>
+<td>workbook trend note</td>
+<td>technical enablement lead</td>
+</tr>
+<tr>
+<td>Downstream rework rate</td>
+<td>Jira reopened work or linked follow-up fixes</td>
+<td>defect tracker</td>
+<td>technical enablement lead</td>
+</tr>
+<tr>
+<td>Review burden</td>
+<td>pull request system</td>
+<td>reviewer check-in</td>
+<td>technical lead</td>
+</tr>
+<tr>
+<td>Guardrail exception count</td>
+<td>exception log or weekly action log</td>
+<td>manager or reviewer escalation</td>
+<td>manager sponsor plus enablement lead</td>
+</tr>
+<tr>
+<td>Adoption quality score</td>
+<td>workbook sampled case log</td>
+<td>rubric</td>
+<td>technical reviewer</td>
+</tr>
+<tr>
+<td>Retrieval follow-up score</td>
+<td>Microsoft Forms retrieval check</td>
+<td>workshop notes</td>
+<td>facilitator or enablement lead</td>
+</tr>
+<tr>
+<td>Confidence calibration check</td>
+<td>survey plus weekly pulse</td>
+<td>sampled case review</td>
+<td>enablement lead</td>
+</tr>
+</tbody>
+</table>
+<h2 id="weekly-operating-rhythm-in-this-stack">Weekly operating rhythm in this stack</h2>
+<h3 id="monday-or-early-week">Monday or early week</h3>
+<ul>
+<li>export or inspect the Jira pilot filter</li>
+<li>update the <code>Workflow KPI tracker</code> sheet</li>
+<li>export the latest weekly pulse results from Microsoft Forms</li>
+</ul>
+<h3 id="midweek">Midweek</h3>
+<ul>
+<li>sample <code>5-10</code> real cases</li>
+<li>review them with the rubric</li>
+<li>enter case rows into the <code>Sampled case log</code></li>
+</ul>
+<h3 id="end-of-week">End of week</h3>
+<ul>
+<li>update the <code>Support and learning log</code></li>
+<li>write one row in the <code>Weekly action log</code></li>
+<li>send an aggregate summary in Teams or email</li>
+</ul>
+<h2 id="what-stays-outside-the-workbook">What stays outside the workbook</h2>
+<p>Do not paste everything into the shared tracker.</p>
+<p>Keep these outside the workbook:</p>
+<ul>
+<li>raw Microsoft Forms exports with respondent identity if the tenant captures it</li>
+<li>raw prompts containing secrets, customer data, or personal data</li>
+<li>full incident transcripts or sensitive customer tickets</li>
+<li>performance commentary about individuals</li>
+</ul>
+<p>The workbook should hold only the working operational data needed to run the pilot.</p>
+<h2 id="what-makes-this-deployable">What makes this deployable</h2>
+<p>This reference deployment is concrete enough that a small pilot team can build it in a few hours, not a few weeks.</p>
+<p>That is the point.</p>
+<p>If the team cannot launch this version of the evidence loop, the pilot scope is probably still too broad.</p>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intermediate Worksheet Pack - Paired Engineering with AI | Paired Engineering</title>
+  <meta name="description" content="Intermediate Worksheet Pack - Paired Engineering with AI">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="index.html">Exercises</a> / Intermediate Worksheet Pack - Paired Engineering with AI</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>Intermediate Worksheet Pack - Paired Engineering with AI</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/exercises/Intermediate%20Worksheet%20Pack%20-%20Paired%20Engineering%20with%20AI.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../guides/index.html">Guides</a><a href="../framework/index.html">Framework</a><a href="../leadership/index.html">Leadership</a><a href="../workshops/index.html">Workshops</a><a href="index.html">Exercises</a><a href="../evidence/index.html">Evidence</a><a href="../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <h2 id="pack-intent">Pack intent</h2>
+<p>These worksheets are for practitioners who can already use AI productively but still need more discipline around ambiguity, verification depth, and system effects.</p>
+<h2 id="facilitation-defaults">Facilitation defaults</h2>
+<ul>
+<li>preferred format: pairs or triads</li>
+<li>recommended timebox: <code>20-35 min</code> per exercise plus <code>10-15 min</code> debrief</li>
+<li>recommended AI stance: choose mode deliberately; do not default everything to delivery mode</li>
+</ul>
+<h2 id="worksheet-1-flaky-test-or-race-condition">Worksheet 1. Flaky Test or Race Condition</h2>
+<p>Canonical scenario:</p>
+<ul>
+<li><a href="scenarios/Intermediate%20Exercise%201%20-%20Flaky%20Test%20or%20Race%20Condition.html">Intermediate Exercise 1 - Flaky Test or Race Condition</a></li>
+</ul>
+<p>Use when:</p>
+<ul>
+<li>teams overuse timeout increases and sleeps</li>
+<li>the facilitator wants to expose the difference between stabilizing and understanding</li>
+</ul>
+<p>Suggested format:</p>
+<ul>
+<li><code>20 min</code> working time</li>
+<li><code>10 min</code> debrief</li>
+<li>pairs</li>
+</ul>
+<p>Facilitator setup:</p>
+<ul>
+<li>keep the quick-fix temptation visible</li>
+<li>ask learners to name what evidence would separate flaky test from real race</li>
+</ul>
+<p>Learner handout prompt:</p>
+<p>Use AI to compare multiple explanations for the intermittent failure, but do not start with a blind timeout increase. Define what evidence would distinguish test fragility from system behavior.</p>
+<p>What good looks like:</p>
+<ul>
+<li>the learner rejects shallow stabilization as proof</li>
+<li>the investigation path includes instrumentation or timing evidence</li>
+<li>uncertainty remains visible until evidence improves</li>
+</ul>
+<p>Likely traps:</p>
+<ul>
+<li>quick-fix bias</li>
+<li>confusing CI rarity with low importance</li>
+<li>missing observability gaps</li>
+</ul>
+<p>Debrief prompts:</p>
+<ul>
+<li>what evidence would justify a timeout change</li>
+<li>what did AI help you consider</li>
+<li>what still required engineering judgment</li>
+</ul>
+<h2 id="worksheet-2-query-and-cache-tradeoff-review">Worksheet 2. Query and Cache Tradeoff Review</h2>
+<p>Canonical scenario:</p>
+<ul>
+<li><a href="scenarios/Intermediate%20Exercise%202%20-%20Query%20and%20Cache%20Tradeoff%20Review.html">Intermediate Exercise 2 - Query and Cache Tradeoff Review</a></li>
+</ul>
+<p>Use when:</p>
+<ul>
+<li>teams tend to accept “just cache it” as universal advice</li>
+<li>the facilitator wants to reinforce tradeoff reasoning</li>
+</ul>
+<p>Suggested format:</p>
+<ul>
+<li><code>25 min</code> working time</li>
+<li><code>10 min</code> debrief</li>
+<li>pairs or triads</li>
+</ul>
+<p>Facilitator setup:</p>
+<ul>
+<li>keep freshness and support cost visible</li>
+<li>ask learners to define what data they wish they had</li>
+</ul>
+<p>Learner handout prompt:</p>
+<p>Use AI to compare query optimization, partial caching, and full payload caching. Then decide what evidence you still need before recommending any one path.</p>
+<p>What good looks like:</p>
+<ul>
+<li>clear tradeoff comparison</li>
+<li>measurement needs are explicit</li>
+<li>cache invalidation and freshness are treated as real design issues</li>
+</ul>
+<p>Likely traps:</p>
+<ul>
+<li>assuming performance advice is context-free</li>
+<li>optimizing one metric at the expense of trust or operability</li>
+<li>accepting AI benchmarks as local truth</li>
+</ul>
+<p>Debrief prompts:</p>
+<ul>
+<li>what made one option look attractive at first</li>
+<li>what hidden cost mattered most</li>
+<li>what would you measure next</li>
+</ul>
+<h2 id="worksheet-3-policy-change-with-hidden-edge-cases">Worksheet 3. Policy Change With Hidden Edge Cases</h2>
+<p>Canonical scenario:</p>
+<ul>
+<li><a href="scenarios/Intermediate%20Exercise%203%20-%20Policy%20Change%20With%20Hidden%20Edge%20Cases.html">Intermediate Exercise 3 - Policy Change With Hidden Edge Cases</a></li>
+</ul>
+<p>Use when:</p>
+<ul>
+<li>AI outputs look polished but domain semantics are easy to miss</li>
+<li>the facilitator wants to pressure-test semantic verification</li>
+</ul>
+<p>Suggested format:</p>
+<ul>
+<li><code>30 min</code> working time</li>
+<li><code>10 min</code> debrief</li>
+<li>small mixed-role groups if possible</li>
+</ul>
+<p>Facilitator setup:</p>
+<ul>
+<li>require participants to tie rules back to policy text</li>
+<li>emphasize counterexamples</li>
+</ul>
+<p>Learner handout prompt:</p>
+<p>Critique the AI-generated decision logic instead of admiring it. Surface missing questions, edge cases, and places where the policy still needs clarification before implementation.</p>
+<p>What good looks like:</p>
+<ul>
+<li>unresolved questions remain visible</li>
+<li>examples and counterexamples are used to test the logic</li>
+<li>the group resists the temptation to call the decision tree “done”</li>
+</ul>
+<p>Likely traps:</p>
+<ul>
+<li>confusing completeness of format with completeness of policy</li>
+<li>hiding ambiguity inside elegant structure</li>
+<li>skipping stakeholder escalation</li>
+</ul>
+<p>Debrief prompts:</p>
+<ul>
+<li>what looked convincing but unsafe</li>
+<li>which unresolved question most affected implementation</li>
+<li>what counterexample stressed the logic hardest</li>
+</ul>
+<h2 id="worksheet-4-contract-change-rollout-review">Worksheet 4. Contract Change Rollout Review</h2>
+<p>Canonical scenario:</p>
+<ul>
+<li><a href="scenarios/Intermediate%20Exercise%204%20-%20Contract%20Change%20Rollout%20Review.html">Intermediate Exercise 4 - Contract Change Rollout Review</a></li>
+</ul>
+<p>Use when:</p>
+<ul>
+<li>teams need practice seeing past “optional means safe”</li>
+<li>cross-service coordination is a common local weakness</li>
+</ul>
+<p>Suggested format:</p>
+<ul>
+<li><code>30 min</code> working time</li>
+<li><code>10 min</code> debrief</li>
+<li>triads</li>
+</ul>
+<p>Facilitator setup:</p>
+<ul>
+<li>keep producer and consumer perspectives visible</li>
+<li>ask learners to distinguish protocol compatibility from rollout safety</li>
+</ul>
+<p>Learner handout prompt:</p>
+<p>Use AI to help evaluate the rollout plan for the contract change, then define what still needs real design review and cross-team verification before the change should ship.</p>
+<p>What good looks like:</p>
+<ul>
+<li>strict consumers are treated as first-class risks</li>
+<li>rollback and observability are included</li>
+<li>“compatible” is defined carefully rather than assumed</li>
+</ul>
+<p>Likely traps:</p>
+<ul>
+<li>trusting optional-field logic too quickly</li>
+<li>ignoring downstream assumptions</li>
+<li>skipping rollout sequencing</li>
+</ul>
+<p>Debrief prompts:</p>
+<ul>
+<li>what made the AI answer sound safer than it was</li>
+<li>which consumer created the real risk</li>
+<li>how would you stage the rollout</li>
+</ul>
+<h2 id="worksheet-5-partial-incident-reconstruction">Worksheet 5. Partial Incident Reconstruction</h2>
+<p>Canonical scenario:</p>
+<ul>
+<li><a href="scenarios/Intermediate%20Exercise%205%20-%20Partial%20Incident%20Reconstruction.html">Intermediate Exercise 5 - Partial Incident Reconstruction</a></li>
+</ul>
+<p>Use when:</p>
+<ul>
+<li>learners need practice in disciplined uncertainty</li>
+<li>the facilitator wants an incident exercise without pretending the root cause is knowable from thin evidence</li>
+</ul>
+<p>Suggested format:</p>
+<ul>
+<li><code>35 min</code> working time</li>
+<li><code>15 min</code> debrief</li>
+<li>triads</li>
+</ul>
+<p>Facilitator setup:</p>
+<ul>
+<li>ask for explicit confidence language</li>
+<li>require both internal reasoning and stakeholder-safe communication</li>
+</ul>
+<p>Learner handout prompt:</p>
+<p>Use AI to organize the incident, but do not let it decide the answer. Produce a hypothesis map, immediate containment options, a verification plan, and a stakeholder update that is accurate under uncertainty.</p>
+<p>What good looks like:</p>
+<ul>
+<li>the update is useful without overclaiming</li>
+<li>hypotheses stay separate from facts</li>
+<li>containment and evidence collection are both visible</li>
+</ul>
+<p>Likely traps:</p>
+<ul>
+<li>neat narrative bias</li>
+<li>overconfident stakeholder language</li>
+<li>collapsing multiple mechanisms into one story</li>
+</ul>
+<p>Debrief prompts:</p>
+<ul>
+<li>which part of the AI output was most tempting to trust</li>
+<li>what uncertainty had to stay in the stakeholder message</li>
+<li>what evidence would narrow the hypothesis set</li>
+</ul>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

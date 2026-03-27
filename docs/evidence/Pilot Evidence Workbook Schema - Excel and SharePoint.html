@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pilot Evidence Workbook Schema - Excel and SharePoint | Paired Engineering</title>
+  <meta name="description" content="Pilot Evidence Workbook Schema - Excel and SharePoint">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="index.html">Evidence</a> / Pilot Evidence Workbook Schema - Excel and SharePoint</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>Pilot Evidence Workbook Schema - Excel and SharePoint</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/evidence/Pilot%20Evidence%20Workbook%20Schema%20-%20Excel%20and%20SharePoint.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../guides/index.html">Guides</a><a href="../framework/index.html">Framework</a><a href="../leadership/index.html">Leadership</a><a href="../workshops/index.html">Workshops</a><a href="../exercises/index.html">Exercises</a><a href="index.html">Evidence</a><a href="../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <h2 id="purpose">Purpose</h2>
+<p>This note defines the actual workbook shape for the pilot evidence tracker.</p>
+<p>Workbook name:</p>
+<p><a href="https://github.com/nothingmn/paired-engineering/blob/main/evidence/AI%20Enablement%20-%20Pilot%20Evidence%20Tracker%20-%20Initial%20Pilot%20Cohort.xlsx"><code>AI Enablement - Pilot Evidence Tracker - Initial Pilot Cohort.xlsx</code></a></p>
+<p>Recommended location:</p>
+<ul>
+<li>restricted SharePoint document library</li>
+<li>or a Teams channel files area with limited membership</li>
+</ul>
+<h2 id="worksheet-list">Worksheet list</h2>
+<p>Create these tabs in this order:</p>
+<ol>
+<li><code>Pilot overview</code></li>
+<li><code>Lookup lists</code></li>
+<li><code>Workflow KPI tracker</code></li>
+<li><code>Sampled case log</code></li>
+<li><code>Support and learning log</code></li>
+<li><code>Weekly action log</code></li>
+</ol>
+<h2 id="tab-1-pilot-overview">Tab 1. Pilot overview</h2>
+<p>Use one simple metadata block.</p>
+<p>Fields:</p>
+<ul>
+<li>pilot name</li>
+<li>pilot start date</li>
+<li>pilot end date</li>
+<li>baseline window</li>
+<li>sponsor</li>
+<li>technical enablement lead</li>
+<li>manager sponsor</li>
+<li>technical reviewer</li>
+<li>survey links</li>
+<li>Jira filter link</li>
+<li>workbook owner</li>
+<li>current pilot decision: <code>refine</code>, <code>hold</code>, <code>pause</code>, <code>scale</code></li>
+</ul>
+<h2 id="tab-2-lookup-lists">Tab 2. Lookup lists</h2>
+<p>Use this tab for validation values so the rest of the workbook stays consistent.</p>
+<p>Suggested lists:</p>
+<ul>
+<li>roles</li>
+<li>target workflows</li>
+<li>workflow mode</li>
+<li>AI surface</li>
+<li>familiarity values</li>
+<li>risk values</li>
+<li>verification difficulty values</li>
+<li>trend values</li>
+<li>action values</li>
+</ul>
+<p>Default lookup values:</p>
+<h3 id="workflow-mode">Workflow mode</h3>
+<ul>
+<li><code>learning</code></li>
+<li><code>delivery</code></li>
+</ul>
+<h3 id="ai-surface">AI surface</h3>
+<ul>
+<li><code>chat</code></li>
+<li><code>IDE assistant</code></li>
+<li><code>repo-aware assistant</code></li>
+<li><code>other</code></li>
+</ul>
+<h3 id="familiarity">Familiarity</h3>
+<ul>
+<li><code>F1 unfamiliar</code></li>
+<li><code>F2 mixed</code></li>
+<li><code>F3 familiar</code></li>
+</ul>
+<h3 id="risk">Risk</h3>
+<ul>
+<li><code>R1 low</code></li>
+<li><code>R2 medium</code></li>
+<li><code>R3 high</code></li>
+</ul>
+<h3 id="verification-difficulty">Verification difficulty</h3>
+<ul>
+<li><code>low</code></li>
+<li><code>medium</code></li>
+<li><code>high</code></li>
+</ul>
+<h3 id="trend">Trend</h3>
+<ul>
+<li><code>up</code></li>
+<li><code>down</code></li>
+<li><code>flat</code></li>
+<li><code>mixed</code></li>
+<li><code>unknown</code></li>
+</ul>
+<h3 id="action">Action</h3>
+<ul>
+<li><code>support</code></li>
+<li><code>inspect</code></li>
+<li><code>refine</code></li>
+<li><code>pause</code></li>
+<li><code>scale</code></li>
+<li><code>hold</code></li>
+</ul>
+<h2 id="tab-3-workflow-kpi-tracker">Tab 3. Workflow KPI tracker</h2>
+<p>Use one row per <code>workflow + KPI + week</code>.</p>
+<p>Columns:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Week starting</td>
+<td>weekly anchor</td>
+</tr>
+<tr>
+<td>Workflow tag</td>
+<td>stable workflow identifier</td>
+</tr>
+<tr>
+<td>Role</td>
+<td>reporting cut</td>
+</tr>
+<tr>
+<td>KPI</td>
+<td>one of the approved KPIs</td>
+</tr>
+<tr>
+<td>Data source</td>
+<td>Jira, PR system, Forms, rubric, other</td>
+</tr>
+<tr>
+<td>Owner</td>
+<td>person updating the row</td>
+</tr>
+<tr>
+<td>Baseline</td>
+<td>numeric or short text baseline</td>
+</tr>
+<tr>
+<td>Current</td>
+<td>current period value</td>
+</tr>
+<tr>
+<td>Change</td>
+<td>current minus baseline when numeric</td>
+</tr>
+<tr>
+<td>Trend</td>
+<td><code>up/down/flat/mixed/unknown</code></td>
+</tr>
+<tr>
+<td>Decision note</td>
+<td>what this means</td>
+</tr>
+<tr>
+<td>Source link</td>
+<td>report or export location</td>
+</tr>
+</tbody>
+</table>
+<p>Approved KPI names:</p>
+<ul>
+<li><code>Target workflow median cycle time</code></li>
+<li><code>Downstream rework rate</code></li>
+<li><code>Review burden</code></li>
+<li><code>Guardrail exception count</code></li>
+<li><code>Adoption quality score</code></li>
+<li><code>Retrieval follow-up score</code></li>
+<li><code>Confidence calibration check</code></li>
+</ul>
+<h2 id="tab-4-sampled-case-log">Tab 4. Sampled case log</h2>
+<p>Use one row per reviewed case.</p>
+<p>Columns:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Week starting</td>
+<td>weekly anchor</td>
+</tr>
+<tr>
+<td>Review date</td>
+<td>date reviewed</td>
+</tr>
+<tr>
+<td>Artifact link</td>
+<td>issue, PR, doc, or case link</td>
+</tr>
+<tr>
+<td>Role</td>
+<td>participant role</td>
+</tr>
+<tr>
+<td>Team</td>
+<td>team or cohort group</td>
+</tr>
+<tr>
+<td>Workflow tag</td>
+<td>target workflow</td>
+</tr>
+<tr>
+<td>Workflow mode</td>
+<td><code>learning</code> or <code>delivery</code></td>
+</tr>
+<tr>
+<td>AI surface</td>
+<td>tool surface used</td>
+</tr>
+<tr>
+<td>Task familiarity</td>
+<td><code>F1/F2/F3</code></td>
+</tr>
+<tr>
+<td>Task risk</td>
+<td><code>R1/R2/R3</code></td>
+</tr>
+<tr>
+<td>Verification difficulty</td>
+<td>low, medium, or high</td>
+</tr>
+<tr>
+<td>Workflow fit score</td>
+<td><code>0-2</code></td>
+</tr>
+<tr>
+<td>Explanation ability score</td>
+<td><code>0-2</code></td>
+</tr>
+<tr>
+<td>Verification quality score</td>
+<td><code>0-2</code></td>
+</tr>
+<tr>
+<td>Risk handling score</td>
+<td><code>0-2</code></td>
+</tr>
+<tr>
+<td>Downstream quality score</td>
+<td><code>0-2</code></td>
+</tr>
+<tr>
+<td>Total score</td>
+<td>sum of the five scores</td>
+</tr>
+<tr>
+<td>Strongest part</td>
+<td>short text</td>
+</tr>
+<tr>
+<td>Biggest concern</td>
+<td>short text</td>
+</tr>
+<tr>
+<td>Teaching note</td>
+<td>short text</td>
+</tr>
+<tr>
+<td>Follow-up owner</td>
+<td>owner if action is needed</td>
+</tr>
+<tr>
+<td>Escalation needed</td>
+<td>yes or no</td>
+</tr>
+</tbody>
+</table>
+<p>Suggested total formula:</p>
+<ul>
+<li><code>=SUM(L2:P2)</code> if the score columns begin in <code>L</code></li>
+</ul>
+<h2 id="tab-5-support-and-learning-log">Tab 5. Support and learning log</h2>
+<p>Use one row per support signal or learning event.</p>
+<p>Columns:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Week starting</td>
+<td>weekly anchor</td>
+</tr>
+<tr>
+<td>Signal type</td>
+<td>workshop, office hours, manager check-in, peer support, retrieval check</td>
+</tr>
+<tr>
+<td>Event or source</td>
+<td>session name or source</td>
+</tr>
+<tr>
+<td>Audience</td>
+<td>who it served</td>
+</tr>
+<tr>
+<td>Count</td>
+<td>attendance or response count</td>
+</tr>
+<tr>
+<td>Top support need</td>
+<td>main request or issue</td>
+</tr>
+<tr>
+<td>Follow-up owner</td>
+<td>who handles it</td>
+</tr>
+<tr>
+<td>Note</td>
+<td>short observation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tab-6-weekly-action-log">Tab 6. Weekly action log</h2>
+<p>Use one row per week.</p>
+<p>Columns:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Week starting</td>
+<td>weekly anchor</td>
+</tr>
+<tr>
+<td>What improved</td>
+<td>short summary</td>
+</tr>
+<tr>
+<td>What got heavier</td>
+<td>short summary</td>
+</tr>
+<tr>
+<td>What needs support</td>
+<td>short summary</td>
+</tr>
+<tr>
+<td>What needs inspection</td>
+<td>short summary</td>
+</tr>
+<tr>
+<td>Decision</td>
+<td><code>support/refine/pause/scale/hold</code></td>
+</tr>
+<tr>
+<td>Owner</td>
+<td>who carries the action</td>
+</tr>
+<tr>
+<td>Due date</td>
+<td>target completion</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>open or closed</td>
+</tr>
+</tbody>
+</table>
+<h2 id="workbook-rules">Workbook rules</h2>
+<ul>
+<li>keep raw survey exports outside this workbook</li>
+<li>keep names out of the shared tabs by default</li>
+<li>use links to internal cases instead of copying sensitive content</li>
+<li>if one tab stops informing decisions, simplify it instead of preserving it for completeness</li>
+</ul>
+<h2 id="minimum-useful-formulas">Minimum useful formulas</h2>
+<ul>
+<li><code>Total score</code> in the sampled case log</li>
+<li>optional conditional formatting for low scores and escalation flags</li>
+<li>optional simple pivot or filter view by workflow</li>
+</ul>
+<p>Do not over-automate this workbook in the first pilot.</p>
+<p>The point is operational clarity, not analytics theater.</p>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

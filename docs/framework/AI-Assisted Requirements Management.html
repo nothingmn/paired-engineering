@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI-Assisted Requirements Management | Paired Engineering</title>
+  <meta name="description" content="AI-Assisted Requirements Management">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="index.html">Framework</a> / AI-Assisted Requirements Management</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>AI-Assisted Requirements Management</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/framework/AI-Assisted%20Requirements%20Management.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../guides/index.html">Guides</a><a href="index.html">Framework</a><a href="../leadership/index.html">Leadership</a><a href="../workshops/index.html">Workshops</a><a href="../exercises/index.html">Exercises</a><a href="../evidence/index.html">Evidence</a><a href="../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <p>This note defines how requirements and product documentation can be created, refined, and maintained with AI without drifting into bloated, low-signal documentation.</p>
+<p>The central stance is simple:</p>
+<ul>
+<li>AI should help teams think more clearly about requirements</li>
+<li>AI should not become a machine for manufacturing larger requirement piles</li>
+</ul>
+<h2 id="evidence-posture">Evidence posture</h2>
+<ul>
+<li><code>evidence-backed</code>: low-observability knowledge artifacts need explicit verification and owner review rather than trust in fluent generated text.</li>
+<li><code>evidence-backed</code>: transfer into real work depends on durable artifacts, social review, and reinforcement rather than one-off conversation output.</li>
+<li><code>practice-based</code>: most concrete rules below are operating guidance for software teams, not the output of a mature experimental literature on AI-assisted requirement writing.</li>
+</ul>
+<h2 id="problem-statement">Problem statement</h2>
+<p>AI makes it easy to produce large amounts of requirement text quickly.</p>
+<p>That creates a predictable failure mode:</p>
+<ul>
+<li>oversized documents</li>
+<li>vague or redundant requirements</li>
+<li>drifting conversations</li>
+<li>context overload</li>
+<li>hard-to-maintain requirement histories</li>
+</ul>
+<p>The risk is not only poor prose.</p>
+<p>The larger risk is that teams mistake <code>more text</code> for <code>better understanding</code>.</p>
+<h2 id="design-intent">Design intent</h2>
+<p>The project should bias toward:</p>
+<ul>
+<li>MVP thinking</li>
+<li>small increments</li>
+<li>precise requirement statements</li>
+<li>durable structure over sprawling conversation history</li>
+<li>maintainable documentation over maximal documentation</li>
+</ul>
+<h2 id="core-principle">Core principle</h2>
+<p>Requirements should be <code>artifact-first</code>, not <code>chat-first</code>.</p>
+<p>Chats are working space.</p>
+<p>Canonical requirement artifacts are the source of truth.</p>
+<p>That means:</p>
+<ul>
+<li>AI conversations can help generate, critique, and refine</li>
+<li>decisions, scope boundaries, and accepted wording must be consolidated into stable artifacts</li>
+<li>no team should depend on one endless thread to preserve product intent</li>
+</ul>
+<h2 id="what-this-note-is-trying-to-solve">What this note is trying to solve</h2>
+<p>Weak AI-assisted requirements work usually looks like this:</p>
+<ul>
+<li>a very large generated PRD appears quickly</li>
+<li>everyone assumes the document is more complete than the thinking behind it</li>
+<li>implementation starts before assumptions and gaps are exposed</li>
+<li>the real requirement logic gets scattered across chats, docs, tickets, and comments</li>
+<li>later clarification work becomes archaeology</li>
+</ul>
+<p>This note is trying to prevent that pattern.</p>
+<h2 id="key-questions">Key questions</h2>
+<ul>
+<li>How should product owners and teams ask AI for requirement help without asking for the kitchen sink?</li>
+<li>What guidance should exist for keeping requirement artifacts small, precise, and increment-focused?</li>
+<li>How should long-term requirement history be managed when AI conversations have context limits and drift?</li>
+<li>What should live in canonical requirement artifacts versus transient AI chats?</li>
+<li>How do we prevent AI from inflating scope or giving false completeness to unclear product thinking?</li>
+</ul>
+<h2 id="recommended-canonical-artifact-stack">Recommended canonical artifact stack</h2>
+<p>Not every team needs every artifact.</p>
+<p>But most teams need a stable structure like this.</p>
+<h3 id="1-problem-frame">1. Problem frame</h3>
+<p>Keep this short.</p>
+<p>It should capture:</p>
+<ul>
+<li>the problem to solve</li>
+<li>the user or business outcome</li>
+<li>the reason this matters now</li>
+<li>the most important constraints</li>
+<li>explicit non-goals</li>
+</ul>
+<h3 id="2-increment-brief">2. Increment brief</h3>
+<p>This is the current smallest meaningful slice, not the whole universe of the initiative.</p>
+<p>It should capture:</p>
+<ul>
+<li>the increment being built now</li>
+<li>what is in scope for this increment</li>
+<li>what is out of scope for this increment</li>
+<li>open questions that block execution</li>
+<li>linked dependencies</li>
+</ul>
+<h3 id="3-delivery-facing-backlog-artifact">3. Delivery-facing backlog artifact</h3>
+<p>This might be a story, feature slice, task group, or kanban-ready work item.</p>
+<p>It should capture:</p>
+<ul>
+<li>implementation-ready scope</li>
+<li>acceptance criteria</li>
+<li>key edge cases or business rules</li>
+<li>testability notes where relevant</li>
+<li>links back to the parent increment brief</li>
+</ul>
+<h3 id="4-decision-and-change-log">4. Decision and change log</h3>
+<p>This is where changing intent belongs.</p>
+<p>It should capture:</p>
+<ul>
+<li>what changed</li>
+<li>why it changed</li>
+<li>who confirmed it</li>
+<li>what downstream artifact was updated</li>
+</ul>
+<h3 id="5-open-questions-and-risks-list">5. Open questions and risks list</h3>
+<p>Do not bury unresolved issues inside long narrative text.</p>
+<p>Track them explicitly:</p>
+<ul>
+<li>open product questions</li>
+<li>technical unknowns</li>
+<li>testing or rollout concerns</li>
+<li>stakeholder dependencies</li>
+</ul>
+<h2 id="what-ai-is-good-for-here">What AI is good for here</h2>
+<p>Useful jobs for AI in requirements work:</p>
+<ul>
+<li>ambiguity detection</li>
+<li>decomposition into smaller increments</li>
+<li>identifying missing assumptions</li>
+<li>generating stakeholder questions</li>
+<li>critiquing acceptance criteria for vagueness</li>
+<li>comparing two requirement drafts</li>
+<li>summarizing changes between versions</li>
+<li>helping build traceability between problem, scope, and criteria</li>
+</ul>
+<p>Useful stance:</p>
+<ul>
+<li>ask AI to challenge the requirement</li>
+<li>ask AI to reduce scope</li>
+<li>ask AI what is missing</li>
+<li>ask AI what cannot yet be verified</li>
+</ul>
+<h2 id="what-ai-is-dangerous-for-here">What AI is dangerous for here</h2>
+<p>High-risk uses:</p>
+<ul>
+<li>generating a full end-to-end PRD from a vague prompt and treating it as real thinking</li>
+<li>inventing precise acceptance criteria for decisions nobody has actually made</li>
+<li>expanding optional ideas into implied commitments</li>
+<li>preserving project memory only in chat threads</li>
+<li>producing polished summaries that hide unresolved disagreement</li>
+</ul>
+<h2 id="working-rules">Working rules</h2>
+<h3 id="1-one-increment-at-a-time">1. One increment at a time</h3>
+<p>Do not ask for the final complete system specification unless the team is actually prepared to review and own it.</p>
+<p>Default prompt stance:</p>
+<ul>
+<li>define one problem</li>
+<li>define one increment</li>
+<li>define one artifact</li>
+<li>define one decision or clarification goal</li>
+</ul>
+<h3 id="2-ask-for-reduction-before-expansion">2. Ask for reduction before expansion</h3>
+<p>Good requirement prompts often ask:</p>
+<ul>
+<li>what can be removed</li>
+<li>what is still unclear</li>
+<li>what assumption needs validation</li>
+<li>what belongs in a later increment</li>
+</ul>
+<p>That is usually more useful than asking for “a comprehensive document.”</p>
+<h3 id="3-separate-ideas-from-commitments">3. Separate ideas from commitments</h3>
+<p>AI should help generate options.</p>
+<p>The canonical artifact should make clear:</p>
+<ul>
+<li>accepted requirement</li>
+<li>rejected option</li>
+<li>unresolved question</li>
+<li>future consideration</li>
+</ul>
+<p>Do not let these blur together.</p>
+<h3 id="4-keep-assumptions-explicit">4. Keep assumptions explicit</h3>
+<p>Each meaningful requirement artifact should make assumptions visible.</p>
+<p>If AI had to guess, that is a signal to verify, not a gift to quietly accept.</p>
+<h3 id="5-link-instead-of-restating">5. Link instead of restating</h3>
+<p>Do not copy the same product truth into many places unless there is a strong reason.</p>
+<p>Prefer:</p>
+<ul>
+<li>short canonical artifact</li>
+<li>links to related detail</li>
+<li>stable IDs or references</li>
+<li>one maintained definition per concept</li>
+</ul>
+<h3 id="6-close-the-chat-loop">6. Close the chat loop</h3>
+<p>At the end of an AI session:</p>
+<ul>
+<li>extract the useful result</li>
+<li>update the canonical artifact</li>
+<li>record the change or open question</li>
+<li>leave the rest of the chat as transient working material</li>
+</ul>
+<p>If the useful output never makes it into a durable artifact, the conversation did not really change the system.</p>
+<h2 id="context-drift-controls">Context-drift controls</h2>
+<p>This is one of the biggest reasons requirement work gets messy with AI.</p>
+<h3 id="use-small-bounded-sessions">Use small, bounded sessions</h3>
+<p>A single session should usually focus on one of:</p>
+<ul>
+<li>problem framing</li>
+<li>increment shaping</li>
+<li>acceptance criteria review</li>
+<li>ambiguity review</li>
+<li>decision comparison</li>
+<li>change summarization</li>
+</ul>
+<h3 id="bring-in-current-canonical-context-not-the-whole-history">Bring in current canonical context, not the whole history</h3>
+<p>Include:</p>
+<ul>
+<li>current artifact text</li>
+<li>current scope boundary</li>
+<li>known constraints</li>
+<li>unresolved questions</li>
+</ul>
+<p>Do not dump a month of chat history into the model and hope for coherence.</p>
+<h3 id="reset-when-the-goal-changes">Reset when the goal changes</h3>
+<p>If the work shifts from:</p>
+<ul>
+<li>discovery to refinement</li>
+<li>refinement to implementation readiness</li>
+<li>one increment to another</li>
+</ul>
+<p>start a new bounded conversation and anchor it to the current artifact state.</p>
+<h3 id="maintain-a-short-change-trail">Maintain a short change trail</h3>
+<p>Keep the latest requirements state understandable without replaying chat archaeology.</p>
+<p>A simple decision or delta log is usually enough.</p>
+<h2 id="role-responsibilities">Role responsibilities</h2>
+<h3 id="product-owner-or-product-manager">Product owner or product manager</h3>
+<p>Primary responsibility:</p>
+<ul>
+<li>own business intent</li>
+<li>own scope boundaries</li>
+<li>decide what is now versus later</li>
+<li>confirm final wording for canonical requirement artifacts</li>
+</ul>
+<p>Good AI use:</p>
+<ul>
+<li>challenge ambiguity</li>
+<li>shrink scope</li>
+<li>generate stakeholder questions</li>
+<li>compare requirement versions</li>
+</ul>
+<p>Bad AI use:</p>
+<ul>
+<li>outsourcing product judgment</li>
+<li>treating polished language as validated meaning</li>
+<li>asking for giant documents to think on their behalf</li>
+</ul>
+<h3 id="developers-and-technical-leads">Developers and technical leads</h3>
+<p>Primary responsibility:</p>
+<ul>
+<li>challenge implementability</li>
+<li>surface hidden complexity</li>
+<li>identify technical assumptions</li>
+<li>ask whether the increment is actually buildable and reviewable</li>
+</ul>
+<p>Good AI use:</p>
+<ul>
+<li>identify missing edge cases</li>
+<li>critique ambiguity</li>
+<li>suggest decomposition points</li>
+</ul>
+<h3 id="qa-and-sdet">QA and SDET</h3>
+<p>Primary responsibility:</p>
+<ul>
+<li>testability</li>
+<li>edge-case visibility</li>
+<li>detection of missing behavioral criteria</li>
+</ul>
+<p>Good AI use:</p>
+<ul>
+<li>critique acceptance criteria for observability and testability</li>
+<li>propose scenarios and failure cases</li>
+</ul>
+<h3 id="architects-or-staff-engineers">Architects or Staff Engineers</h3>
+<p>Primary responsibility:</p>
+<ul>
+<li>challenge cross-cutting implications</li>
+<li>identify decision dependencies</li>
+<li>detect when requirement wording smuggles in architectural commitments</li>
+</ul>
+<h2 id="verification-expectations">Verification expectations</h2>
+<p>Requirement artifacts should be verified for:</p>
+<ul>
+<li>semantic correctness</li>
+<li>scope boundary clarity</li>
+<li>testability</li>
+<li>implementability</li>
+<li>explicit ownership of open questions</li>
+</ul>
+<p>What does not count:</p>
+<ul>
+<li>polished prose</li>
+<li>comprehensive-looking format</li>
+<li>AI confidence</li>
+<li>leader intuition without artifact review</li>
+</ul>
+<p>Use <a href="Verification%20Standards%20by%20Artifact%20and%20Work%20Type.html">Verification Standards by Artifact and Work Type</a> when deciding what level of review and confirmation is needed.</p>
+<h2 id="manager-and-technical-lead-reinforcement">Manager and technical-lead reinforcement</h2>
+<p>Requirements quality does not survive on artifact rules alone.</p>
+<p>Managers and technical leads need to reinforce these behaviors during normal delivery work.</p>
+<h3 id="managers-should-reinforce">Managers should reinforce</h3>
+<ul>
+<li>keep the current increment small enough to review honestly</li>
+<li>require visible scope boundaries, non-goals, and open questions</li>
+<li>stop giant generated requirement packs from being treated as progress by themselves</li>
+<li>treat clarification spikes, reopened work, and ambiguous criteria as workflow signals worth investigating</li>
+</ul>
+<h3 id="technical-leads-should-reinforce">Technical leads should reinforce</h3>
+<ul>
+<li>challenge buildability, reviewability, and testability before execution starts</li>
+<li>split oversized requirement artifacts before they become execution debt</li>
+<li>identify architectural or operational commitments hidden inside product wording</li>
+<li>make sure requirement changes are pushed back into canonical artifacts rather than left in chat threads</li>
+</ul>
+<h3 id="shared-prompts">Shared prompts</h3>
+<ul>
+<li>what is in scope now and what is explicitly later</li>
+<li>what is still unclear and where is it tracked</li>
+<li>what acceptance criteria can actually be reviewed or tested</li>
+<li>what changed recently and which canonical artifact was updated</li>
+</ul>
+<h2 id="lightweight-quality-signals">Lightweight quality signals</h2>
+<p>Do not build a bureaucracy around this.</p>
+<p>Just watch a small number of useful signals:</p>
+<ul>
+<li>number of mid-implementation requirement clarifications</li>
+<li>story or work-item spillover due to unclear scope</li>
+<li>reopened work due to requirement misunderstanding</li>
+<li>QA-found ambiguity in acceptance criteria</li>
+<li>number of open questions carried into execution</li>
+<li>duplicate or conflicting requirement artifacts found during refinement</li>
+</ul>
+<p>These are usually more useful than measuring document length or how many AI-generated artifacts were created.</p>
+<h2 id="good-pattern-examples">Good pattern examples</h2>
+<ul>
+<li>draft a short increment brief, then ask AI to identify what is still ambiguous</li>
+<li>ask AI to produce <code>three likely misunderstandings</code> of the current acceptance criteria</li>
+<li>ask AI to reduce a large requirement into the smallest releasable increment</li>
+<li>ask AI to summarize changes between version <code>n</code> and version <code>n+1</code></li>
+<li>ask AI what product, engineering, and QA would each still need clarified before execution</li>
+</ul>
+<h2 id="anti-patterns">Anti-patterns</h2>
+<ul>
+<li>kitchen-sink PRDs</li>
+<li>giant backlog epics with hidden sub-projects</li>
+<li>acceptance criteria that read precisely but hide unresolved assumptions</li>
+<li>using one endless chat as the memory of the requirement</li>
+<li>copying generated text across multiple artifacts and then forgetting which version is canonical</li>
+<li>using AI to make weak thinking look finished</li>
+</ul>
+<h2 id="working-default-for-agile-and-kanban-teams">Working default for agile and kanban teams</h2>
+<h3 id="scrum-style-teams">Scrum-style teams</h3>
+<p>Use AI during:</p>
+<ul>
+<li>backlog shaping</li>
+<li>refinement</li>
+<li>acceptance criteria critique</li>
+<li>sprint-scope sanity checks</li>
+</ul>
+<p>Do not let sprint planning become the first real review of a giant generated requirement pack.</p>
+<h3 id="kanban-style-teams">Kanban-style teams</h3>
+<p>Use AI during:</p>
+<ul>
+<li>intake clarification</li>
+<li>work-item readiness checks</li>
+<li>ambiguity detection before pull</li>
+<li>change summarization when scope evolves quickly</li>
+</ul>
+<p>Do not let AI-generated requirement speed flood the system with unready work.</p>
+<h2 id="recommended-operating-rule">Recommended operating rule</h2>
+<p>If a requirement artifact is too large for the responsible people to review in one focused sitting, it is probably too large to be the right working artifact for the current increment.</p>
+<h2 id="working-default-summary">Working default summary</h2>
+<ul>
+<li>one small increment at a time</li>
+<li>explicit scope boundaries</li>
+<li>acceptance-criteria precision</li>
+<li>artifact-first requirement management, not chat-history dependence</li>
+<li>periodic consolidation into canonical notes</li>
+<li>structured decomposition of large requirement spaces</li>
+</ul>
+<h2 id="connected-artifacts">Connected artifacts</h2>
+<ul>
+<li><a href="Manager%20and%20Technical-Lead%20Operating%20Model%20for%20AI%20Enablement.html">Manager and Technical-Lead Operating Model for AI Enablement</a></li>
+<li><a href="../guides/Manager%20Coaching%20Guide%20-%20AI%20Enablement%20in%20Delivery%20Teams.html">Manager Coaching Guide - AI Enablement in Delivery Teams</a></li>
+<li><a href="Verification%20Standards%20by%20Artifact%20and%20Work%20Type.html">Verification Standards by Artifact and Work Type</a></li>
+<li><a href="V1%20Rollout%20Playbook%20-%20Initial%20Pilot%20Cohort.html">V1 Rollout Playbook - Initial Pilot Cohort</a></li>
+</ul>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>

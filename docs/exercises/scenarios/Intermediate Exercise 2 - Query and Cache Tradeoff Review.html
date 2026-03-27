@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intermediate Exercise 2 - Query and Cache Tradeoff Review | Paired Engineering</title>
+  <meta name="description" content="Intermediate Exercise 2 - Query and Cache Tradeoff Review">
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-band"></div>
+      <div class="hero-body">
+        <p class="breadcrumbs"><a href="../../index.html">Home</a> / <a href="../index.html">Exercises</a> / <a href="index.html">Scenarios</a> / Intermediate Exercise 2 - Query and Cache Tradeoff Review</p>
+        <p class="eyebrow">Paired Engineering</p>
+        <h1>Intermediate Exercise 2 - Query and Cache Tradeoff Review</h1>
+        <p class="supporting">This page is generated from the published markdown artifact and keeps navigation inside the site where possible.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">Back to section</a>
+          <a class="button primary" href="https://github.com/nothingmn/paired-engineering/blob/main/exercises/scenarios/Intermediate%20Exercise%202%20-%20Query%20and%20Cache%20Tradeoff%20Review.md">Open source markdown in GitHub</a>
+        </div>
+        <nav class="subnav"><a href="../../guides/index.html">Guides</a><a href="../../framework/index.html">Framework</a><a href="../../leadership/index.html">Leadership</a><a href="../../workshops/index.html">Workshops</a><a href="../index.html">Exercises</a><a href="../../evidence/index.html">Evidence</a><a href="../../slides/index.html">Slides</a></nav>
+      </div>
+    </section>
+
+    <article class="section prose">
+      <h2 id="rating">Rating</h2>
+<ul>
+<li>size: <code>3</code></li>
+<li>complexity: <code>3</code></li>
+</ul>
+<h2 id="purpose">Purpose</h2>
+<p>Practice using AI for performance reasoning without letting it hide invalidation risk, observability gaps, or cost tradeoffs.</p>
+<h2 id="scenario">Scenario</h2>
+<p>An account-summary page is slow during peak load.</p>
+<p>Current facts:</p>
+<ul>
+<li>median response time is acceptable</li>
+<li>p95 is high</li>
+<li>most slow requests involve users with many transactions</li>
+<li>AI suggests caching the entire summary payload</li>
+</ul>
+<p>Known constraints:</p>
+<ul>
+<li>balances must stay fresh enough for user trust</li>
+<li>transaction history updates frequently</li>
+<li>support teams already struggle with stale-data complaints</li>
+</ul>
+<h2 id="task">Task</h2>
+<p>Use AI to compare:</p>
+<ul>
+<li>query optimization</li>
+<li>partial caching</li>
+<li>full payload caching</li>
+</ul>
+<p>Then decide which option deserves further investigation and what evidence is still missing.</p>
+<h2 id="expected-output">Expected output</h2>
+<ul>
+<li>option comparison</li>
+<li>risk and tradeoff list</li>
+<li>next data to collect before implementation</li>
+</ul>
+<h2 id="good-ai-uses">Good AI uses</h2>
+<ul>
+<li>structuring tradeoff analysis</li>
+<li>proposing performance questions</li>
+<li>surfacing invalidation concerns</li>
+</ul>
+<h2 id="verification-focus">Verification focus</h2>
+<ul>
+<li>do not accept performance advice without a measurement plan</li>
+<li>separate median improvement from tail-latency improvement</li>
+<li>treat cache freshness and invalidation as first-class concerns</li>
+</ul>
+<h2 id="anti-patterns-to-watch">Anti-patterns to watch</h2>
+<ul>
+<li>assuming cache equals improvement</li>
+<li>using AI benchmark-style language without local evidence</li>
+<li>treating stale data as a product problem instead of an engineering risk</li>
+</ul>
+<h2 id="debrief-prompts">Debrief prompts</h2>
+<ul>
+<li>what did AI help structure well</li>
+<li>where did AI simplify a messy tradeoff too aggressively</li>
+<li>what would you measure before and after any change</li>
+</ul>
+    </article>
+
+    <footer class="foot">
+      <p>Paired Engineering. A practical operating model for AI enablement in software delivery.</p>
+    </footer>
+  </main>
+</body>
+</html>
