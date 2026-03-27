@@ -1,10 +1,10 @@
-# Staff Engineer Enablement Deck Slide Copy - AI Enablement Through Influence
+# Staff Engineer Deck Slide Copy - Paired Engineering Through Influence
 
-[Download the deck (.pptx)](../slides/Staff%20Engineer%20Enablement%20Deck%20-%20AI%20Enablement%20Through%20Influence.pptx)
+[Download the deck (.pptx)](../slides/Staff%20Engineer%20Deck%20-%20Paired%20Engineering%20Through%20Influence.pptx)
 
 ## Usage note
 
-This note is the fuller slide-copy companion to Staff Engineer Enablement Deck Outline - AI Enablement Through Influence.
+This note is the fuller slide-copy companion to Staff Engineer Deck Outline - Paired Engineering Through Influence.
 
 Use it when the Staff Engineer deck needs more complete on-slide language and presenter notes before any final slideware is produced.
 
@@ -12,9 +12,9 @@ Use it when the Staff Engineer deck needs more complete on-slide language and pr
 
 ### On-slide copy
 
-**AI Enablement Through Influence**
+**Paired Engineering Through Influence**
 
-What Staff Engineers and technical leaders actually own in an AI rollout
+What Staff Engineers and technical leaders actually own in a paired-engineering rollout
 
 ### Presenter note
 

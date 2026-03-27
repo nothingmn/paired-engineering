@@ -1,22 +1,22 @@
-# Public-Facing Deck Slide Copy - AI Enablement
+# Public Overview Deck Slide Copy - Paired Engineering
 
-[Download the deck (.pptx)](../slides/Public-Facing%20Deck%20-%20AI%20Enablement.pptx)
+[Download the deck (.pptx)](../slides/Public%20Overview%20Deck%20-%20Paired%20Engineering.pptx)
 
 ## Usage note
 
-This note is the fuller slide-copy companion to [Public-Facing Deck Outline - AI Enablement](Public-Facing%20Deck%20Outline%20-%20AI%20Enablement.md).
+This note is the fuller slide-copy companion to [Public Overview Deck Outline - Paired Engineering](Public%20Overview%20Deck%20Outline%20-%20Paired%20Engineering.md).
 
-Use it when the public-facing deck needs more complete on-slide language and presenter notes before any final slideware is produced.
+Use it when the public overview deck needs more complete on-slide language and presenter notes before any final slideware is produced.
 
-This note is now treated as part of the accepted locked markdown baseline for the public-facing deck unless a substantive audience or content gap appears.
+This note is now treated as part of the accepted locked markdown baseline for the public overview deck unless a substantive audience or content gap appears.
 
 ## Slide 1. Title
 
 ### On-slide copy
 
-**AI Enablement**
+**Paired Engineering**
 
-A practical operating model for AI enablement in software delivery
+A practical delivery model for AI-enabled software teams
 
 ### Presenter note
 
@@ -34,7 +34,7 @@ Open with clarity, not jargon. This deck should feel like an entry point to the 
 
 ### Presenter note
 
-This is the core public problem statement. The goal is not to claim every rollout is bad. The goal is to say the operating design is often shallower than the tooling rollout.
+This is the core public problem statement. The goal is not to claim every rollout is bad. The goal is to say the rollout design is often shallower than the tooling rollout.
 
 ## Slide 3. The false choice
 
@@ -95,13 +95,13 @@ This is where the deck starts to separate itself from generic productivity disco
 
 Keep this evidence-aware and grounded. The deck should not overclaim causality. It should clearly name the risk and explain why it matters to long-term capability formation.
 
-## Slide 7. What this body of work includes
+## Slide 7. What this project includes
 
 ### On-slide copy
 
 **AI enablement needs more than a tool list.**
 
-This body of work includes:
+This project includes:
 
 - rollout lifecycle
 - oversight-readiness model
@@ -112,7 +112,7 @@ This body of work includes:
 
 ### Presenter note
 
-This slide is the project summary. It shows that the work is an operating model, not just a point of view.
+This slide is the project summary. It shows that the work is a delivery model, not just a point of view.
 
 ## Slide 8. What this is not
 
@@ -171,4 +171,4 @@ This is the main public takeaway. It gives the audience a practical next step wi
 
 ### Presenter note
 
-Close by routing people into the larger body of work in plain public language. This slide should feel like practical orientation, not like instructions to the deck author.
+Close by routing people into the broader project materials in plain public language. This slide should feel like practical orientation, not like instructions to the deck author.

@@ -1,16 +1,16 @@
-# Manager and Technical-Lead Operating Model for AI Enablement
+# Manager and Technical-Lead Responsibilities for AI Enablement
 
 This note defines what managers and technical leads should actually do to make AI enablement work in live software delivery.
 
 The project already has rollout phases, verification standards, and a capability model.
 
-This note fills the operational gap between those ideas and day-to-day team behavior.
+This note fills the day-to-day gap between those ideas and real team behavior.
 
 ## Evidence posture
 
 - `evidence-backed`: transfer of learning improves when managers and peers reinforce new practices in real work rather than treating training as a one-time event.
 - `evidence-backed`: software apprenticeship depends on social support, progressive responsibility, and guided practice, not only access to documents or tools.
-- `practice-based`: the exact weekly operating model for AI enablement inside software teams is still emerging, so some of the concrete role guidance below is principled operating design rather than settled science.
+- `practice-based`: the exact weekly manager-and-lead pattern for AI enablement inside software teams is still emerging, so some of the concrete role guidance below is principled delivery design rather than settled science.
 
 ## What this note is trying to prevent
 
@@ -102,7 +102,7 @@ That role should:
 - translate local findings into standards, templates, and guidance
 - help managers and leads stay aligned without owning their line responsibilities
 
-## Default weekly operating cadence
+## Default weekly delivery cadence
 
 This is the simplest useful cadence for an initial pilot cohort.
 
@@ -263,12 +263,12 @@ Managers and leads should both watch for:
 - seniors becoming permanent cleanup layers
 - weak qualitative signals that something feels off even before a stronger metric moves
 
-## What this operating model changes
+## What this manager-and-lead layer changes
 
 - AI enablement stops being only a tooling or training program.
 - Managers become responsible for the conditions that shape behavior.
 - Technical leads become responsible for the standards and habits that make AI use safe and useful.
-- The team gains a shared operating rhythm for learning, verification, and escalation.
+- The team gains a shared delivery rhythm for learning, verification, and escalation.
 
 ## Requirements-management touchpoints
 
@@ -299,7 +299,7 @@ Use [AI-Assisted Requirements Management](AI-Assisted%20Requirements%20Managemen
 
 ## Adapting cadence and language in a real workplace
 
-This operating model should fit into existing delivery rhythm before it creates new meetings.
+This manager-and-lead layer should fit into existing delivery rhythm before it creates new meetings.
 
 Use these defaults during pilot adaptation:
 
@@ -320,6 +320,6 @@ If the answer is mostly no, simplify the cadence before scaling the pilot.
 ## Connected artifacts
 
 - [AI-Assisted Requirements Management](AI-Assisted%20Requirements%20Management.md)
-- [Manager Coaching Guide - AI Enablement in Delivery Teams](../guides/Manager%20Coaching%20Guide%20-%20AI%20Enablement%20in%20Delivery%20Teams.md)
+- [Manager Coaching Guide - Paired Engineering in Delivery Teams](../guides/Manager%20Coaching%20Guide%20-%20Paired%20Engineering%20in%20Delivery%20Teams.md)
 - [V1 Rollout Playbook - Initial Pilot Cohort](V1%20Rollout%20Playbook%20-%20Initial%20Pilot%20Cohort.md)
 - [Pilot Evidence Model - Practical Metrics and Lightweight Collection](Pilot%20Evidence%20Model%20-%20Practical%20Metrics%20and%20Lightweight%20Collection.md)

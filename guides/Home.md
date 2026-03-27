@@ -1,15 +1,15 @@
 # Home
 
-`Paired Engineering` is a practical operating model for AI enablement in software delivery.
+`Paired Engineering` is a practical delivery model for AI-enabled software teams.
 
 Use this note as a simple orientation page inside the public package.
 
 ## Start Here
 
-- [Getting Started with AI Enablement](Getting%20Started%20with%20AI%20Enablement.md)
-- [Adopter Learning Path - AI Enablement](Adopter%20Learning%20Path%20-%20AI%20Enablement.md)
+- [Getting Started with Paired Engineering](Getting%20Started%20with%20Paired%20Engineering.md)
+- [Adopter Learning Path - Paired Engineering](Adopter%20Learning%20Path%20-%20Paired%20Engineering.md)
 - [Public Positioning Pack - Paired Engineering](Public%20Positioning%20Pack%20-%20Paired%20Engineering.md)
-- [One-Pager - AI Enablement at a Glance](One-Pager%20-%20AI%20Enablement%20at%20a%20Glance.md)
+- [One-Pager - Paired Engineering at a Glance](One-Pager%20-%20Paired%20Engineering%20at%20a%20Glance.md)
 
 ## Core Paths
 
@@ -21,7 +21,7 @@ Use this note as a simple orientation page inside the public package.
 ## Package Areas
 
 - `guides/` for orientation and adoption pathing
-- `framework/` for the core operating model
+- `framework/` for the core delivery model
 - `leadership/` for executive and public-facing narrative material
 - `workshops/` for facilitation and workshop design
 - `exercises/` for worksheet packs and scenario cards
@@ -31,5 +31,5 @@ Use this note as a simple orientation page inside the public package.
 ## Slideware
 
 - [Slide Deck Index](../SLIDES.md)
-- [Executive Deck - AI Enablement for an Initial Pilot Cohort](../slides/Executive%20Deck%20-%20AI%20Enablement%20for%20an%20Initial%20Pilot%20Cohort.pptx)
-- [Public-Facing Deck - AI Enablement](../slides/Public-Facing%20Deck%20-%20AI%20Enablement.pptx)
+- [Executive Deck - Paired Engineering for an Initial Pilot Cohort](../slides/Executive%20Deck%20-%20Paired%20Engineering%20for%20an%20Initial%20Pilot%20Cohort.pptx)
+- [Public Overview Deck - Paired Engineering](../slides/Public%20Overview%20Deck%20-%20Paired%20Engineering.pptx)

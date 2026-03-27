@@ -1,6 +1,6 @@
-# Executive Deck - AI Enablement for an Initial Pilot Cohort
+# Executive Deck - Paired Engineering for an Initial Pilot Cohort
 
-[Download the deck (.pptx)](../slides/Executive%20Deck%20-%20AI%20Enablement%20for%20an%20Initial%20Pilot%20Cohort.pptx)
+[Download the deck (.pptx)](../slides/Executive%20Deck%20-%20Paired%20Engineering%20for%20an%20Initial%20Pilot%20Cohort.pptx)
 
 ## Usage note
 
@@ -8,7 +8,7 @@ This is the primary `10-12` slide leadership deck.
 
 Use this note for the first executive presentation pass.
 
-Use Leadership Deck Outline - AI Enablement for an Initial Pilot Cohort and [Leadership Deck Slide Copy - AI Enablement for an Initial Pilot Cohort](Leadership%20Deck%20Slide%20Copy%20-%20AI%20Enablement%20for%20an%20Initial%20Pilot%20Cohort.md) as the modular reference deck when questions branch into evidence, verification, tooling, or pilot design details.
+Use Leadership Deck Outline - Paired Engineering for an Initial Pilot Cohort and [Leadership Deck Slide Copy - Paired Engineering for an Initial Pilot Cohort](Leadership%20Deck%20Slide%20Copy%20-%20Paired%20Engineering%20for%20an%20Initial%20Pilot%20Cohort.md) as the modular reference deck when questions branch into evidence, verification, tooling, or pilot design details.
 
 This deck is now treated as the accepted locked markdown baseline unless a substantive audience or content gap appears.
 
@@ -33,13 +33,13 @@ Title slide with a simple three-lane visual:
 
 ### On-slide copy
 
-**AI Enablement for an Initial Pilot Cohort**
+**Paired Engineering for an Initial Pilot Cohort**
 
 Paired engineering, capability growth, and workflow improvement across software delivery work
 
 ### Presenter note
 
-Open by framing this as an operating model for delivery improvement, not a generic AI initiative and not a pure tool rollout.
+Open by framing this as a delivery model for AI-enabled software teams, not a generic AI initiative and not a pure tool rollout.
 
 ## Slide 2. Why this matters now
 
@@ -73,7 +73,7 @@ Three-column comparison:
 
 This is not a choice between `ban AI` and `automate the humans away`.
 
-The useful middle path is:
+The better alternative is:
 
 **paired engineering with explicit review, verification, and guardrails**
 
@@ -109,7 +109,7 @@ Two-column slide:
 
 Show restraint here. The point is credible action, not claiming the evidence proves everything.
 
-## Slide 5. Our operating stance
+## Slide 5. Our delivery stance
 
 ### Suggested layout
 
@@ -129,7 +129,7 @@ Default pattern:
 
 ### Presenter note
 
-If leaders remember only one operating phrase, it should probably be `paired engineering`.
+If leaders remember only one repeatable phrase, it should probably be `paired engineering`.
 
 ## Slide 6. Guidance must vary by person and task
 
@@ -154,7 +154,7 @@ Safe usage changes with:
 
 This is the bridge from general AI language into the core model. In the underlying model, we call this `oversight readiness`, but the executive deck should lead with plain language rather than teach the term.
 
-## Slide 7. Verification is part of the operating model
+## Slide 7. Verification is part of the delivery model
 
 ### Suggested layout
 
@@ -188,7 +188,7 @@ Two-column contrast:
 
 ### On-slide copy
 
-AI enablement should be treated as **capability multiplication**, not simple headcount subtraction.
+Paired engineering should be treated as **capability multiplication**, not simple headcount subtraction.
 
 Cost-cutting is too shallow because it ignores:
 
@@ -213,7 +213,7 @@ Right: better signal examples.
 
 **Usage metrics are useful context.**
 
-They are weak evidence of enablement success.
+They are weak evidence of adoption success.
 
 Leadership should ask for:
 
@@ -310,5 +310,5 @@ End on the decision. The close should feel operational, not philosophical.
 
 For deeper follow-up:
 
-- use Leadership Deck Outline - AI Enablement for an Initial Pilot Cohort as the deck map
-- use [Leadership Deck Slide Copy - AI Enablement for an Initial Pilot Cohort](Leadership%20Deck%20Slide%20Copy%20-%20AI%20Enablement%20for%20an%20Initial%20Pilot%20Cohort.md) as the extended slide library
+- use Leadership Deck Outline - Paired Engineering for an Initial Pilot Cohort as the deck map
+- use [Leadership Deck Slide Copy - Paired Engineering for an Initial Pilot Cohort](Leadership%20Deck%20Slide%20Copy%20-%20Paired%20Engineering%20for%20an%20Initial%20Pilot%20Cohort.md) as the extended slide library

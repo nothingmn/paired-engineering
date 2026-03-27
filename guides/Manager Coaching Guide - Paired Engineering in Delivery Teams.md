@@ -1,6 +1,6 @@
-# Manager Coaching Guide - AI Enablement in Delivery Teams
+# Manager Coaching Guide - Paired Engineering in Delivery Teams
 
-This guide turns the manager operating model into a short working artifact for live delivery teams.
+This guide turns the manager side of the delivery model into a short working artifact for live delivery teams.
 
 Use it when a manager needs a practical weekly pattern, not the full framework.
 
@@ -106,7 +106,7 @@ If the cadence is too heavy, shrink the ritual before you shrink the honesty.
 
 ## Related artifacts
 
-- [Manager and Technical-Lead Operating Model for AI Enablement](../framework/Manager%20and%20Technical-Lead%20Operating%20Model%20for%20AI%20Enablement.md)
+- [Manager and Technical-Lead Responsibilities for AI Enablement](../framework/Manager%20and%20Technical-Lead%20Responsibilities%20for%20AI%20Enablement.md)
 - [AI-Assisted Requirements Management](../framework/AI-Assisted%20Requirements%20Management.md)
 - [Software-Specific Apprenticeship and Onboarding for AI-Enabled Teams](../framework/Software-Specific%20Apprenticeship%20and%20Onboarding%20for%20AI-Enabled%20Teams.md)
 - [V1 Rollout Playbook - Initial Pilot Cohort](../framework/V1%20Rollout%20Playbook%20-%20Initial%20Pilot%20Cohort.md)

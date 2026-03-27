@@ -223,7 +223,7 @@ This is the slide that turns the exercise layer into a real call to action. The 
 
 ### On-slide copy
 
-**The workshop is the start, not the full operating model.**
+**The workshop is the start, not the full delivery model.**
 
 Go deeper with:
 
@@ -236,7 +236,7 @@ Go deeper with:
 
 ### Presenter note
 
-Point participants toward the durable notes. This helps the workshop function as an entry point into the larger body of work rather than a standalone event.
+Point participants toward the durable notes. This helps the workshop function as an entry point into the broader project materials rather than a standalone event.
 
 The new exercise library is especially useful when teams want a more deliberate progression for junior and intermediate practitioners instead of repeating the same starter scenario.
 The same library now also includes advanced senior and Staff scenarios focused on standards, tooling, rollout judgment, and low-observability reasoning.

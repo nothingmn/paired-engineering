@@ -182,7 +182,7 @@ For a Staff Engineer or technical enablement lead, this lifecycle means:
 ## Current implementation layer
 
 - [V1 Rollout Playbook - Initial Pilot Cohort](V1%20Rollout%20Playbook%20-%20Initial%20Pilot%20Cohort.md) turns the lifecycle into a week-by-week pilot shape
-- [Executive Deck - AI Enablement for an Initial Pilot Cohort](../leadership/Executive%20Deck%20-%20AI%20Enablement%20for%20an%20Initial%20Pilot%20Cohort.md) and the related leadership material carry the sponsor-facing communication layer
+- [Executive Deck - Paired Engineering for an Initial Pilot Cohort](../leadership/Executive%20Deck%20-%20Paired%20Engineering%20for%20an%20Initial%20Pilot%20Cohort.md) and the related leadership material carry the sponsor-facing communication layer
 - [Practitioner Playbook - Paired Engineering with AI](../workshops/Practitioner%20Playbook%20-%20Paired%20Engineering%20with%20AI.md) plus the workshop and exercise pack carry the practitioner teaching layer
 - [Capability Model - Oversight Readiness x Task Familiarity x Risk](Capability%20Model%20-%20Oversight%20Readiness%20x%20Task%20Familiarity%20x%20Risk.md) and [Pilot Evidence Model - Practical Metrics and Lightweight Collection](Pilot%20Evidence%20Model%20-%20Practical%20Metrics%20and%20Lightweight%20Collection.md) carry the current model and measurement layer
 
@@ -195,5 +195,5 @@ For a Staff Engineer or technical enablement lead, this lifecycle means:
 - [Pilot Evidence Model - Practical Metrics and Lightweight Collection](Pilot%20Evidence%20Model%20-%20Practical%20Metrics%20and%20Lightweight%20Collection.md)
 - [Capability Model - Oversight Readiness x Task Familiarity x Risk](Capability%20Model%20-%20Oversight%20Readiness%20x%20Task%20Familiarity%20x%20Risk.md)
 - [Verification Standards by Artifact and Work Type](Verification%20Standards%20by%20Artifact%20and%20Work%20Type.md)
-- [Executive Deck - AI Enablement for an Initial Pilot Cohort](../leadership/Executive%20Deck%20-%20AI%20Enablement%20for%20an%20Initial%20Pilot%20Cohort.md)
+- [Executive Deck - Paired Engineering for an Initial Pilot Cohort](../leadership/Executive%20Deck%20-%20Paired%20Engineering%20for%20an%20Initial%20Pilot%20Cohort.md)
 - [Practitioner Playbook - Paired Engineering with AI](../workshops/Practitioner%20Playbook%20-%20Paired%20Engineering%20with%20AI.md)

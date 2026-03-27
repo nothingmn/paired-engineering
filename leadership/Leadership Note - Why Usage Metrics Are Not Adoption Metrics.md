@@ -1,10 +1,10 @@
-# Leadership Note - Why Usage Metrics Are Not Enablement Metrics
+# Leadership Note - Why Usage Metrics Are Not Adoption Metrics
 
 ## Executive message
 
 AI usage metrics can be useful context.
 
-They are weak evidence of enablement success.
+They are weak evidence of adoption success.
 
 Prompt counts, tool opens, active seats, and message volume mostly tell leadership that people touched the tool.
 
@@ -49,7 +49,7 @@ Usage metrics cannot reliably tell you:
 
 This is the central mistake:
 
-`activity` is not the same as `enablement`.
+`activity` is not the same as `adoption`.
 
 ## Why this matters in practice
 

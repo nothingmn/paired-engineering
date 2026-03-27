@@ -1,8 +1,8 @@
-# AI Enablement At A Glance
+# Paired Engineering at a Glance
 
 ## The simple idea
 
-This project is a practical operating model for AI enablement in software delivery.
+Paired Engineering is a practical delivery model for AI-enabled software teams.
 
 Use AI as paired engineering:
 
@@ -12,7 +12,7 @@ Use AI as paired engineering:
 - to design more thoughtfully
 - to move work forward without giving up judgment
 
-## What this body of work says
+## What this project says
 
 AI access is not the same as AI enablement.
 
@@ -77,4 +77,4 @@ Slow down where the task is unfamiliar, high risk, or hard to verify.
 
 ## One-sentence version
 
-A practical, research-aware approach for helping software delivery teams use AI as paired engineering, not blind delegation.
+Paired Engineering is a practical delivery model for helping software teams use AI without weakening judgment, verification, or capability growth.

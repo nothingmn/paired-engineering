@@ -1,16 +1,16 @@
-# Leadership Deck Slide Copy - AI Enablement for an Initial Pilot Cohort
+# Leadership Deck Slide Copy - Paired Engineering for an Initial Pilot Cohort
 
-[Download the deck (.pptx)](../slides/Leadership%20Reference%20Deck%20-%20AI%20Enablement%20for%20an%20Initial%20Pilot%20Cohort.pptx)
+[Download the deck (.pptx)](../slides/Leadership%20Reference%20Deck%20-%20Paired%20Engineering%20for%20an%20Initial%20Pilot%20Cohort.pptx)
 
 ## Usage note
 
-This note is the fuller slide-copy companion to Leadership Deck Outline - AI Enablement for an Initial Pilot Cohort.
+This note is the fuller slide-copy companion to Leadership Deck Outline - Paired Engineering for an Initial Pilot Cohort.
 
 Use it when a presenter needs more than headlines and talking prompts.
 
-Use [Executive Deck - AI Enablement for an Initial Pilot Cohort](Executive%20Deck%20-%20AI%20Enablement%20for%20an%20Initial%20Pilot%20Cohort.md) for the shorter primary leadership presentation.
+Use [Executive Deck - Paired Engineering for an Initial Pilot Cohort](Executive%20Deck%20-%20Paired%20Engineering%20for%20an%20Initial%20Pilot%20Cohort.md) for the shorter primary leadership presentation.
 
-Use Leadership Reference Deck Guide - AI Enablement for an Initial Pilot Cohort when deciding which supporting slides to pull for follow-up questions.
+Use Leadership Reference Deck Guide - Paired Engineering for an Initial Pilot Cohort when deciding which supporting slides to pull for follow-up questions.
 
 This note is now treated as part of the accepted locked markdown baseline for the leadership reference deck unless a substantive audience or content gap appears.
 
@@ -25,13 +25,13 @@ Do not treat every slide as mandatory in a single meeting.
 
 ### On-slide copy
 
-**AI Enablement for an Initial Pilot Cohort**
+**Paired Engineering for an Initial Pilot Cohort**
 
 Paired engineering, capability growth, and workflow improvement across software delivery work
 
 ### Presenter note
 
-Frame the work as an operating model for software delivery, not as a generic AI initiative and not as a tool rollout.
+Frame the work as a delivery model for AI-enabled software teams, not as a generic AI initiative and not as a tool rollout.
 
 ## Slide 2. Why this matters now
 
@@ -57,7 +57,7 @@ The opening move is urgency without fear. The point is that drift is already a s
 
 This is not a choice between `ban AI` and `automate the humans away`.
 
-The useful middle path is:
+The better alternative is:
 
 **paired engineering with explicit review, verification, and guardrails**
 
@@ -110,7 +110,7 @@ The evidence is mixed, but mixed does not mean unusable.
 
 This is where we show restraint. The evidence supports action with discipline, not reckless confidence and not paralysis.
 
-## Slide 6. Our operating stance
+## Slide 6. Our delivery stance
 
 ### On-slide copy
 
@@ -127,7 +127,7 @@ Default pattern:
 
 ### Presenter note
 
-This slide should sound repeatable. If leaders remember only one operating phrase, it should probably be `paired engineering`.
+This slide should sound repeatable. If leaders remember only one repeatable phrase, it should probably be `paired engineering`.
 
 ## Slide 7. Why one-size-fits-all rollout fails
 
@@ -171,7 +171,7 @@ Lower-observability work gets stricter treatment regardless of title.
 
 Keep this simple. The goal is not to turn executives into assessors of individuals. The goal is to make variable guidance feel legitimate and necessary.
 
-## Slide 9. Verification is part of the operating model
+## Slide 9. Verification is part of the delivery model
 
 ### On-slide copy
 
@@ -194,7 +194,7 @@ This slide matters because many organizations talk about “human in the loop”
 
 ### On-slide copy
 
-AI enablement should be treated as **capability multiplication**, not simple headcount subtraction.
+Paired engineering should be treated as **capability multiplication**, not simple headcount subtraction.
 
 Why the cost-cutting story is too shallow:
 
@@ -213,7 +213,7 @@ This is not anti-productivity. It is a more serious definition of productivity t
 
 Prompt counts and tool activity are useful context.
 
-They are weak evidence of enablement success.
+They are weak evidence of adoption success.
 
 Usage metrics do **not** reliably tell leadership:
 
@@ -306,7 +306,7 @@ Activity metrics can stay in the appendix as context only.
 
 This is the place to contrast thoughtful evidence collection with vanity metrics without making the pilot feel heavy or bureaucratic.
 
-## Slide 16. Manager and lead operating model
+## Slide 16. Manager and lead responsibilities
 
 ### On-slide copy
 
@@ -399,7 +399,7 @@ If the audience only gives `10-12` minutes, prioritize:
 - Slide 15
 - Slide 19
 
-For a fully rewritten short version instead of a selected subset, use [Executive Deck - AI Enablement for an Initial Pilot Cohort](Executive%20Deck%20-%20AI%20Enablement%20for%20an%20Initial%20Pilot%20Cohort.md).
+For a fully rewritten short version instead of a selected subset, use [Executive Deck - Paired Engineering for an Initial Pilot Cohort](Executive%20Deck%20-%20Paired%20Engineering%20for%20an%20Initial%20Pilot%20Cohort.md).
 
 ## Optional appendix directions
 

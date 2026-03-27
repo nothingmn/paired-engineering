@@ -1,8 +1,8 @@
-# Getting Started with AI Enablement
+# Getting Started with Paired Engineering
 
 ## Purpose
 
-This note is the first entry point for people who want to use this body of work.
+This note is the first entry point for people who want to use this project.
 
 It is not the internal project ramp-up note.
 
@@ -14,9 +14,11 @@ It is the adopter-facing starting guide for:
 - technical enablement leads
 - teams exploring an initial pilot cohort
 
-## What this package is
+## What this project is
 
-This body of work is a practical framework for using AI in software delivery without collapsing into either:
+This project is a practical delivery model for AI-enabled software teams.
+
+It is designed to help teams use AI without collapsing into either:
 
 - `no AI at all`
 - `blind delegation`
@@ -36,7 +38,7 @@ The core stance is:
 
 Start here if you are asking:
 
-- what this framework is
+- what this project is
 - whether it fits your context
 - where to begin without reading everything
 - which artifacts matter for your role
@@ -45,23 +47,23 @@ Start here if you are asking:
 
 If you only read four things first:
 
-1. [One-Pager - AI Enablement at a Glance](One-Pager%20-%20AI%20Enablement%20at%20a%20Glance.md)
+1. [One-Pager - Paired Engineering at a Glance](One-Pager%20-%20Paired%20Engineering%20at%20a%20Glance.md)
 2. [Project Charter](../framework/Project%20Charter.md)
-3. [Executive Deck - AI Enablement for an Initial Pilot Cohort](../leadership/Executive%20Deck%20-%20AI%20Enablement%20for%20an%20Initial%20Pilot%20Cohort.md)
+3. [Executive Deck - Paired Engineering for an Initial Pilot Cohort](../leadership/Executive%20Deck%20-%20Paired%20Engineering%20for%20an%20Initial%20Pilot%20Cohort.md)
 4. [Practitioner Playbook - Paired Engineering with AI](../workshops/Practitioner%20Playbook%20-%20Paired%20Engineering%20with%20AI.md)
 
 ## Choose your starting path
 
 If you are:
 
-- an executive or sponsor: start with [Executive Deck - AI Enablement for an Initial Pilot Cohort](../leadership/Executive%20Deck%20-%20AI%20Enablement%20for%20an%20Initial%20Pilot%20Cohort.md)
-- a manager: start with [Manager Enablement Deck Slide Copy - Leading AI Adoption in Delivery Teams](../leadership/Manager%20Enablement%20Deck%20Slide%20Copy%20-%20Leading%20AI%20Adoption%20in%20Delivery%20Teams.md) and [Manager Coaching Guide - AI Enablement in Delivery Teams](Manager%20Coaching%20Guide%20-%20AI%20Enablement%20in%20Delivery%20Teams.md)
-- a Staff Engineer or technical enablement lead: start with [Staff Engineer Enablement Deck Slide Copy - AI Enablement Through Influence](../leadership/Staff%20Engineer%20Enablement%20Deck%20Slide%20Copy%20-%20AI%20Enablement%20Through%20Influence.md)
+- an executive or sponsor: start with [Executive Deck - Paired Engineering for an Initial Pilot Cohort](../leadership/Executive%20Deck%20-%20Paired%20Engineering%20for%20an%20Initial%20Pilot%20Cohort.md)
+- a manager: start with [Manager Deck Slide Copy - Leading Paired Engineering in Delivery Teams](../leadership/Manager%20Deck%20Slide%20Copy%20-%20Leading%20Paired%20Engineering%20in%20Delivery%20Teams.md) and [Manager Coaching Guide - Paired Engineering in Delivery Teams](Manager%20Coaching%20Guide%20-%20Paired%20Engineering%20in%20Delivery%20Teams.md)
+- a Staff Engineer or technical enablement lead: start with [Staff Engineer Deck Slide Copy - Paired Engineering Through Influence](../leadership/Staff%20Engineer%20Deck%20Slide%20Copy%20-%20Paired%20Engineering%20Through%20Influence.md)
 - a practitioner: start with [Practitioner Playbook - Paired Engineering with AI](../workshops/Practitioner%20Playbook%20-%20Paired%20Engineering%20with%20AI.md)
 - a workshop facilitator: start with [Workshop Pack - Paired Engineering with AI](../workshops/Workshop%20Pack%20-%20Paired%20Engineering%20with%20AI.md) and [Exercise Worksheet Pack - Paired Engineering with AI](../workshops/Exercise%20Worksheet%20Pack%20-%20Paired%20Engineering%20with%20AI.md)
-- a public reader: start with [Public-Facing Deck Slide Copy - AI Enablement](../leadership/Public-Facing%20Deck%20Slide%20Copy%20-%20AI%20Enablement.md)
+- a public reader: start with [Public Overview Deck Slide Copy - Paired Engineering](../leadership/Public%20Overview%20Deck%20Slide%20Copy%20-%20Paired%20Engineering.md)
 
-Then continue with [Adopter Learning Path - AI Enablement](Adopter%20Learning%20Path%20-%20AI%20Enablement.md).
+Then continue with [Adopter Learning Path - Paired Engineering](Adopter%20Learning%20Path%20-%20Paired%20Engineering.md).
 
 ## Smallest useful adoption pattern
 
@@ -78,13 +80,13 @@ The smallest useful starting pattern is:
 
 ### If the problem is shallow rollout pressure
 
-- [Leadership Note - AI Enablement Versus AI Cost-Cutting](../leadership/Leadership%20Note%20-%20AI%20Enablement%20Versus%20AI%20Cost-Cutting.md)
-- [Leadership Note - Why Usage Metrics Are Not Enablement Metrics](../leadership/Leadership%20Note%20-%20Why%20Usage%20Metrics%20Are%20Not%20Enablement%20Metrics.md)
+- [Leadership Note - Capability Building Versus AI Cost-Cutting](../leadership/Leadership%20Note%20-%20Capability%20Building%20Versus%20AI%20Cost-Cutting.md)
+- [Leadership Note - Why Usage Metrics Are Not Adoption Metrics](../leadership/Leadership%20Note%20-%20Why%20Usage%20Metrics%20Are%20Not%20Adoption%20Metrics.md)
 
 ### If the problem is day-to-day team behavior
 
-- [Manager Coaching Guide - AI Enablement in Delivery Teams](Manager%20Coaching%20Guide%20-%20AI%20Enablement%20in%20Delivery%20Teams.md)
-- [Manager and Technical-Lead Operating Model for AI Enablement](../framework/Manager%20and%20Technical-Lead%20Operating%20Model%20for%20AI%20Enablement.md)
+- [Manager Coaching Guide - Paired Engineering in Delivery Teams](Manager%20Coaching%20Guide%20-%20Paired%20Engineering%20in%20Delivery%20Teams.md)
+- [Manager and Technical-Lead Responsibilities for AI Enablement](../framework/Manager%20and%20Technical-Lead%20Responsibilities%20for%20AI%20Enablement.md)
 - [Verification Standards by Artifact and Work Type](../framework/Verification%20Standards%20by%20Artifact%20and%20Work%20Type.md)
 
 ### If the problem is workshop or skills development
@@ -110,4 +112,4 @@ Start by asking:
 
 ## Next step
 
-Use [Adopter Learning Path - AI Enablement](Adopter%20Learning%20Path%20-%20AI%20Enablement.md) to choose a role-specific path through the package.
+Use [Adopter Learning Path - Paired Engineering](Adopter%20Learning%20Path%20-%20Paired%20Engineering.md) to choose a role-specific path through the project materials.

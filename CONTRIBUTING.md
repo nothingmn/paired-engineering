@@ -10,7 +10,7 @@ This repository is primarily a documentation and enablement project. Good contri
 - clarify wording that feels vague, confusing, or overly abstract
 - improve examples, guides, or deck/source alignment
 - improve the publication tooling or artifact generation
-- propose additions that strengthen the operating model without turning the project into vendor hype or generic AI futurism
+- propose additions that strengthen the delivery model without turning the project into vendor hype or generic AI futurism
 
 ## Before making larger changes
 

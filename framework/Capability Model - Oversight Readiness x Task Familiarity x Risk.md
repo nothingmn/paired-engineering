@@ -168,5 +168,5 @@ An engineer can move toward higher-leverage patterns when they can:
 
 - [Rollout Matrix - Capability Rules by Phase](Rollout%20Matrix%20-%20Capability%20Rules%20by%20Phase.md) applies the model to rollout stages
 - [Rollout Matrix - Role-Specific Workflows by Phase](Rollout%20Matrix%20-%20Role-Specific%20Workflows%20by%20Phase.md) applies it to concrete workflow choices
-- [Manager and Technical-Lead Operating Model for AI Enablement](Manager%20and%20Technical-Lead%20Operating%20Model%20for%20AI%20Enablement.md) and [Software-Specific Apprenticeship and Onboarding for AI-Enabled Teams](Software-Specific%20Apprenticeship%20and%20Onboarding%20for%20AI-Enabled%20Teams.md) use it to shape coaching, task ladders, and learning-mode defaults
+- [Manager and Technical-Lead Responsibilities for AI Enablement](Manager%20and%20Technical-Lead%20Responsibilities%20for%20AI%20Enablement.md) and [Software-Specific Apprenticeship and Onboarding for AI-Enabled Teams](Software-Specific%20Apprenticeship%20and%20Onboarding%20for%20AI-Enabled%20Teams.md) use it to shape coaching, task ladders, and learning-mode defaults
 - Capability Model Validation - Evidence and Edge Cases continues the validation lane

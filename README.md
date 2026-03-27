@@ -1,37 +1,35 @@
 # Paired Engineering
 
-Use AI without outsourcing judgment.
+A practical delivery model for AI-enabled software teams.
 
-A practical operating model for AI enablement in software delivery.
-
-Current public package version: `v1.0.0`
+Current public package version: `v2.0.0`
 
 ## What This Is
 
-`Paired Engineering` is a practical body of work for rolling out AI in software delivery with verification, judgment, and capability growth intact.
+`Paired Engineering` helps software teams use AI in real delivery work without weakening judgment, verification, or capability growth.
 
-It brings together the core operating model, rollout guidance, leadership material, workshop content, exercise packs, and pilot evidence tools.
+It brings together the core model, rollout guidance, leadership material, workshop content, exercise packs, and pilot evidence tools.
 
-It is designed to do two things well:
+It is designed to do two things:
 
-- start the conversation about better AI rollout in software delivery
-- help adopters implement the approach with practical materials
+- help people understand the approach quickly
+- help adopters put the approach into practice
 
 ## Why This Exists
 
-Most organizations are rolling out AI tools faster than they are designing good ways to work with them.
+Most organizations are rolling out AI tools faster than they are redesigning how teams actually work with them.
 
-This project argues for:
+This project starts from a few simple ideas:
 
-- paired engineering over blind delegation
-- verification over prompt-count theater
-- capability-building over shallow cost-cutting
-- apprenticeship-aware rollout instead of cutting the bottom rung and hoping the market sorts itself out
+- access is not enablement
+- speed is not capability
+- usage is not value
+- better output is not better judgment
 
 ## How This Repo Is Organized
 
 - `guides/` for orientation and adoption pathing
-- `framework/` for the core model and operating notes
+- `framework/` for the core model and supporting notes
 - `leadership/` for executive and public-facing narrative material
 - `workshops/` for facilitation and workshop design
 - `exercises/` for worksheet packs and scenario cards
@@ -40,17 +38,17 @@ This project argues for:
 
 ## Start Here
 
-If you want to understand the approach quickly:
+If you want the shortest introduction:
 
 - [Public Positioning Pack](guides/Public%20Positioning%20Pack%20-%20Paired%20Engineering.md)
-- [One-Pager](guides/One-Pager%20-%20AI%20Enablement%20at%20a%20Glance.md)
-- [Public-Facing Deck - AI Enablement](slides/Public-Facing%20Deck%20-%20AI%20Enablement.pptx)
+- [One-Pager](guides/One-Pager%20-%20Paired%20Engineering%20at%20a%20Glance.md)
+- [Public Overview Deck - Paired Engineering](slides/Public%20Overview%20Deck%20-%20Paired%20Engineering.pptx)
 
-If you want to adopt and use the approach:
+If you want to adopt the approach:
 
-- [Getting Started](guides/Getting%20Started%20with%20AI%20Enablement.md)
-- [Adopter Learning Path](guides/Adopter%20Learning%20Path%20-%20AI%20Enablement.md)
-- [Executive Deck - AI Enablement for an Initial Pilot Cohort](slides/Executive%20Deck%20-%20AI%20Enablement%20for%20an%20Initial%20Pilot%20Cohort.pptx)
+- [Getting Started](guides/Getting%20Started%20with%20Paired%20Engineering.md)
+- [Adopter Learning Path](guides/Adopter%20Learning%20Path%20-%20Paired%20Engineering.md)
+- [Executive Deck - Paired Engineering for an Initial Pilot Cohort](slides/Executive%20Deck%20-%20Paired%20Engineering%20for%20an%20Initial%20Pilot%20Cohort.pptx)
 
 ## Core Framework
 
@@ -63,9 +61,9 @@ If you want to adopt and use the approach:
 
 ## Leadership And Adoption
 
-- [Executive Deck - AI Enablement for an Initial Pilot Cohort](leadership/Executive%20Deck%20-%20AI%20Enablement%20for%20an%20Initial%20Pilot%20Cohort.md)
-- [Leadership Note - AI Enablement Versus AI Cost-Cutting](leadership/Leadership%20Note%20-%20AI%20Enablement%20Versus%20AI%20Cost-Cutting.md)
-- [Leadership Note - Why Usage Metrics Are Not Enablement Metrics](leadership/Leadership%20Note%20-%20Why%20Usage%20Metrics%20Are%20Not%20Enablement%20Metrics.md)
+- [Executive Deck - Paired Engineering for an Initial Pilot Cohort](leadership/Executive%20Deck%20-%20Paired%20Engineering%20for%20an%20Initial%20Pilot%20Cohort.md)
+- [Leadership Note - Capability Building Versus AI Cost-Cutting](leadership/Leadership%20Note%20-%20Capability%20Building%20Versus%20AI%20Cost-Cutting.md)
+- [Leadership Note - Why Usage Metrics Are Not Adoption Metrics](leadership/Leadership%20Note%20-%20Why%20Usage%20Metrics%20Are%20Not%20Adoption%20Metrics.md)
 
 ## Workshop And Practice
 
@@ -91,8 +89,8 @@ This release includes the full generated PowerPoint deck set under `slides/`.
 
 Use [SLIDES.md](SLIDES.md) for the deck index, or start with:
 
-- [Executive Deck - AI Enablement for an Initial Pilot Cohort](slides/Executive%20Deck%20-%20AI%20Enablement%20for%20an%20Initial%20Pilot%20Cohort.pptx)
-- [Public-Facing Deck - AI Enablement](slides/Public-Facing%20Deck%20-%20AI%20Enablement.pptx)
+- [Executive Deck - Paired Engineering for an Initial Pilot Cohort](slides/Executive%20Deck%20-%20Paired%20Engineering%20for%20an%20Initial%20Pilot%20Cohort.pptx)
+- [Public Overview Deck - Paired Engineering](slides/Public%20Overview%20Deck%20-%20Paired%20Engineering.pptx)
 
 ## Licensing
 

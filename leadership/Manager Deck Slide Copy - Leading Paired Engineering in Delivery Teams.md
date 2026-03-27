@@ -1,22 +1,22 @@
-# Manager Enablement Deck Slide Copy - Leading AI Adoption in Delivery Teams
+# Manager Deck Slide Copy - Leading Paired Engineering in Delivery Teams
 
-[Download the deck (.pptx)](../slides/Manager%20Enablement%20Deck%20-%20Leading%20AI%20Adoption%20in%20Delivery%20Teams.pptx)
+[Download the deck (.pptx)](../slides/Manager%20Deck%20-%20Leading%20Paired%20Engineering%20in%20Delivery%20Teams.pptx)
 
 ## Usage note
 
-This note is the fuller slide-copy companion to Manager Enablement Deck Outline - Leading AI Adoption in Delivery Teams.
+This note is the fuller slide-copy companion to Manager Deck Outline - Leading Paired Engineering in Delivery Teams.
 
 Use it when the manager deck needs more complete on-slide language and presenter notes before any final slideware is produced.
 
-This note is now treated as part of the accepted locked markdown baseline for the manager enablement deck unless a substantive audience or content gap appears.
+This note is now treated as part of the accepted locked markdown baseline for the manager deck unless a substantive audience or content gap appears.
 
 ## Slide 1. Title
 
 ### On-slide copy
 
-**Leading AI Adoption in Delivery Teams**
+**Leading Paired Engineering in Delivery Teams**
 
-What managers actually need to do to make AI enablement work in real software delivery
+What managers actually need to do to make paired engineering work in real software delivery
 
 ### Presenter note
 

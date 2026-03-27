@@ -108,8 +108,8 @@ This note turns the lifecycle into a practical first rollout model for an initia
 
 ## Supporting artifacts now in place
 
-- [Manager and Technical-Lead Operating Model for AI Enablement](Manager%20and%20Technical-Lead%20Operating%20Model%20for%20AI%20Enablement.md)
-- [Manager Coaching Guide - AI Enablement in Delivery Teams](../guides/Manager%20Coaching%20Guide%20-%20AI%20Enablement%20in%20Delivery%20Teams.md)
+- [Manager and Technical-Lead Responsibilities for AI Enablement](Manager%20and%20Technical-Lead%20Responsibilities%20for%20AI%20Enablement.md)
+- [Manager Coaching Guide - Paired Engineering in Delivery Teams](../guides/Manager%20Coaching%20Guide%20-%20Paired%20Engineering%20in%20Delivery%20Teams.md)
 - [AI-Assisted Requirements Management](AI-Assisted%20Requirements%20Management.md)
 - [Pilot Evidence Model - Practical Metrics and Lightweight Collection](Pilot%20Evidence%20Model%20-%20Practical%20Metrics%20and%20Lightweight%20Collection.md)
 

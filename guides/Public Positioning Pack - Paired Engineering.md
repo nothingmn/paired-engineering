@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This note defines a first public-facing positioning direction for the body of work.
+This note defines a first public-facing positioning direction for the project.
 
 It is intentionally a draft.
 
@@ -18,7 +18,7 @@ Keep:
 
 Why:
 
-- it is broad enough to describe the full body of work
+- it is broad enough to describe the larger project
 - it fits the current vault structure
 - it is accurate for internal planning and framework design
 
@@ -51,27 +51,23 @@ Why:
 
 ## Core message set
 
-### Primary tagline
+### Locked category line
 
-`Use AI without outsourcing judgment.`
-
-### Supporting line
-
-`A practical operating model for AI enablement in software delivery.`
+`A practical delivery model for AI-enabled software teams.`
 
 ### One-sentence explainer
 
-`Paired Engineering is a practical, research-aware approach for helping software teams use AI as a collaborator for delivery, learning, and quality instead of blind delegation.`
+`Paired Engineering is a practical delivery model for helping software teams use AI without weakening judgment, verification, or capability growth.`
 
 ## Short copy variants
 
 ### GitHub repository description
 
-`A practical, research-aware framework for helping software teams use AI without outsourcing judgment.`
+`A practical delivery model for AI-enabled software teams. Helping software teams use AI without weakening judgment, verification, or capability growth.`
 
 ### GitHub long description
 
-`Paired Engineering is a practical operating model for AI enablement in software delivery. It is built for teams that want to use AI seriously without drifting into either avoidance or blind delegation. The core idea is simple: AI should act as a collaborator that helps people think, compare, generate, inspect, and learn, while human judgment remains responsible for verification, decisions, and quality.`
+`Paired Engineering is a practical delivery model for AI-enabled software teams. It is built for teams that want to use AI seriously without drifting into either avoidance or blind delegation. The core idea is simple: AI should act as a collaborator that helps people think, compare, generate, inspect, and learn, while human judgment remains responsible for verification, decisions, and quality.`
 
 `The project brings together several layers that organizations often treat separately. It includes a public framing for the problem, leadership material for sponsoring an initial pilot, manager and Staff-engineer guidance for shaping workflows, workshop and exercise materials for building practitioner habits, and lightweight evidence tools for measuring whether adoption is actually helping. It also takes apprenticeship, onboarding, and capability-building seriously, rather than assuming AI rollout is only a tooling or productivity question.`
 
@@ -79,11 +75,11 @@ Why:
 
 `That makes the repository useful across several audiences at once. Leaders can use it to frame a credible pilot. Managers and technical leads can use it to shape expectations, review habits, and adoption cadence. Practitioners can use it to build better day-to-day habits through workshop material, scenario exercises, and worksheet packs. Teams that want something concrete can also use the evidence kit, workbook, surveys, and reference deployment patterns to test whether their rollout is improving quality, confidence, and learning in practice.`
 
-`The repository is designed to do two things well. First, it should help people start the conversation about better AI rollout in software teams. Second, it should help adopters implement that stance with practical materials they can use, adapt, and test. The result is a framework that is meant to be read, questioned, piloted, and improved in real delivery environments rather than admired as theory alone.`
+`The repository is designed to do two things well. First, it should help people start the conversation about better AI rollout in software teams. Second, it should help adopters implement that stance with practical materials they can use, adapt, and test. The result is a practical project that is meant to be read, questioned, piloted, and improved in real delivery environments rather than admired as theory alone.`
 
 ### Short intro paragraph
 
-`Most organizations are rolling out AI tools faster than they are designing good ways to work with them. Paired Engineering is a practical framework for using AI as a collaborator for understanding, debugging, testing, and delivery without giving up verification, learning, or engineering judgment.`
+`Most organizations are rolling out AI tools faster than they are redesigning how teams actually work with them. Paired Engineering is a practical delivery model for software teams that want to use AI without weakening verification, ownership, or capability growth.`
 
 ### Public blurb
 
@@ -99,7 +95,7 @@ This is not:
 - vibe-coding maximalism
 - a demand to reject modern tooling
 
-It is a more serious operating stance.
+It is a more serious delivery stance.
 
 ### 2. Judgment and verification
 
@@ -189,7 +185,7 @@ Memorable, but too vague by itself.
 
 `Judgment First`
 
-Strong theme, but too broad and abstract for a software-delivery body of work.
+Strong theme, but too broad and abstract for a software-delivery project.
 
 `Verified AI Work`
 
@@ -206,7 +202,7 @@ If published later:
 
 ## Suggested homepage or README opening
 
-`Paired Engineering is a practical operating model for AI enablement in software delivery. It helps software teams use AI without outsourcing judgment, verification, learning, or long-term capability building.`
+`Paired Engineering is a practical delivery model for AI-enabled software teams. It helps software teams use AI without weakening judgment, verification, or capability growth.`
 
 ## Critical caveat
 

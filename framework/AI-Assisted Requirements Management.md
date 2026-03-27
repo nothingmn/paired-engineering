@@ -451,7 +451,7 @@ If a requirement artifact is too large for the responsible people to review in o
 
 ## Connected artifacts
 
-- [Manager and Technical-Lead Operating Model for AI Enablement](Manager%20and%20Technical-Lead%20Operating%20Model%20for%20AI%20Enablement.md)
-- [Manager Coaching Guide - AI Enablement in Delivery Teams](../guides/Manager%20Coaching%20Guide%20-%20AI%20Enablement%20in%20Delivery%20Teams.md)
+- [Manager and Technical-Lead Responsibilities for AI Enablement](Manager%20and%20Technical-Lead%20Responsibilities%20for%20AI%20Enablement.md)
+- [Manager Coaching Guide - Paired Engineering in Delivery Teams](../guides/Manager%20Coaching%20Guide%20-%20Paired%20Engineering%20in%20Delivery%20Teams.md)
 - [Verification Standards by Artifact and Work Type](Verification%20Standards%20by%20Artifact%20and%20Work%20Type.md)
 - [V1 Rollout Playbook - Initial Pilot Cohort](V1%20Rollout%20Playbook%20-%20Initial%20Pilot%20Cohort.md)

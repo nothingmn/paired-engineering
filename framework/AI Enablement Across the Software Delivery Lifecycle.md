@@ -471,4 +471,4 @@ It should be:
 - [AI Tool Taxonomy by Job](AI%20Tool%20Taxonomy%20by%20Job.md) and [AI Tool Selection Framework](AI%20Tool%20Selection%20Framework.md) carry the tool-layer guidance for the lifecycle map
 - [AI-Assisted Requirements Management](AI-Assisted%20Requirements%20Management.md) expands the product and documentation layer
 - [Pilot Evidence Model - Practical Metrics and Lightweight Collection](Pilot%20Evidence%20Model%20-%20Practical%20Metrics%20and%20Lightweight%20Collection.md) defines where scope, time, review burden, and learning signals can be measured
-- [Manager and Technical-Lead Operating Model for AI Enablement](Manager%20and%20Technical-Lead%20Operating%20Model%20for%20AI%20Enablement.md) adds the people-leadership layer needed for the lifecycle to work in practice
+- [Manager and Technical-Lead Responsibilities for AI Enablement](Manager%20and%20Technical-Lead%20Responsibilities%20for%20AI%20Enablement.md) adds the people-leadership layer needed for the lifecycle to work in practice

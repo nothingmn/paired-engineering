@@ -1,8 +1,8 @@
-# Leadership Note - AI Enablement Versus AI Cost-Cutting
+# Leadership Note - Capability Building Versus AI Cost-Cutting
 
 ## Executive message
 
-AI enablement should not be framed as a simple labor-reduction program.
+Paired engineering should not be framed as a simple labor-reduction program.
 
 It should be framed as a capability-building program that improves workflow quality, increases leverage where verification is strong, and preserves the organizational ability to grow future expertise.
 
@@ -63,7 +63,7 @@ The better story is:
 - use AI to improve workflow quality and throughput where the work is observable and verifiable
 - redesign work, review, and apprenticeship deliberately rather than assuming the market will adapt for us
 - increase leverage without hollowing out the capability pipeline
-- treat enablement as an operating model, not a license-distribution event
+- treat enablement as a delivery model, not a license-distribution event
 
 This is not anti-productivity.
 
@@ -90,7 +90,7 @@ Do not optimize only for:
 
 ## What this means operationally
 
-A capability-building stance is only credible if leadership funds the operating model behind it.
+A capability-building stance is only credible if leadership funds the delivery model behind it.
 
 That usually means:
 
@@ -99,7 +99,7 @@ That usually means:
 - expecting managers and technical leads to shape workflow quality, not just tool usage
 - demanding smaller, reviewable requirement artifacts instead of large polished drafts that hide unresolved thinking
 
-The deeper operating pieces now live in [Software-Specific Apprenticeship and Onboarding for AI-Enabled Teams](../framework/Software-Specific%20Apprenticeship%20and%20Onboarding%20for%20AI-Enabled%20Teams.md), [Manager and Technical-Lead Operating Model for AI Enablement](../framework/Manager%20and%20Technical-Lead%20Operating%20Model%20for%20AI%20Enablement.md), and [Manager Coaching Guide - AI Enablement in Delivery Teams](../guides/Manager%20Coaching%20Guide%20-%20AI%20Enablement%20in%20Delivery%20Teams.md).
+The deeper operating pieces now live in [Software-Specific Apprenticeship and Onboarding for AI-Enabled Teams](../framework/Software-Specific%20Apprenticeship%20and%20Onboarding%20for%20AI-Enabled%20Teams.md), [Manager and Technical-Lead Responsibilities for AI Enablement](../framework/Manager%20and%20Technical-Lead%20Responsibilities%20for%20AI%20Enablement.md), and [Manager Coaching Guide - Paired Engineering in Delivery Teams](../guides/Manager%20Coaching%20Guide%20-%20Paired%20Engineering%20in%20Delivery%20Teams.md).
 
 ## Leadership questions worth asking
 
@@ -121,7 +121,7 @@ The deeper operating pieces now live in [Software-Specific Apprenticeship and On
 
 ## A more defensible executive stance
 
-AI enablement should be treated as capability multiplication, not simple headcount subtraction.
+Paired engineering should be treated as capability multiplication, not simple headcount subtraction.
 
 That means:
 
@@ -133,6 +133,6 @@ That means:
 
 ## Suggested close
 
-If leadership wants AI to improve software delivery without creating future capability debt, the organization needs a deliberate enablement model.
+If leadership wants AI to improve software delivery without creating future capability debt, the organization needs a deliberate delivery model.
 
 That model should aim for better outcomes now without eroding the people, practices, and learning systems it will need later.

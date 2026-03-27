@@ -16,7 +16,7 @@ Design a practical, evidence-aware approach for enabling software product delive
 - Roles: software developers first, with product owners, architects, QA, and SDET included as delivery partners and enablement stakeholders
 - Work types: discovery, planning, design, implementation, debugging, testing, review, documentation, onboarding, apprenticeship, internal advocacy, mentoring, and presentation to leadership
 - Technical focus: AI-powered engineering workflows, developer tooling, internal platforms, private and security-conscious adoption patterns, and evaluation of emerging engineering tools
-- Expected outputs: an operating model, rollout sequence, teaching material, leadership narratives, decision aids, workflow patterns, and a measurement approach
+- Expected outputs: a delivery model, rollout sequence, teaching material, leadership narratives, decision aids, workflow patterns, and a measurement approach
 
 ## Explicit non-goals for v1
 
@@ -122,4 +122,4 @@ If this charter feels directionally right, the next most useful artifacts are:
 - [V1 Rollout Playbook - Initial Pilot Cohort](V1%20Rollout%20Playbook%20-%20Initial%20Pilot%20Cohort.md) for the week-by-week pilot shape
 - [Capability Model - Oversight Readiness x Task Familiarity x Risk](Capability%20Model%20-%20Oversight%20Readiness%20x%20Task%20Familiarity%20x%20Risk.md) for capability-aware usage decisions
 - [Verification Standards by Artifact and Work Type](Verification%20Standards%20by%20Artifact%20and%20Work%20Type.md) for concrete verification expectations
-- [Getting Started with AI Enablement](../guides/Getting%20Started%20with%20AI%20Enablement.md) for a practical public entry path through the package
+- [Getting Started with Paired Engineering](../guides/Getting%20Started%20with%20Paired%20Engineering.md) for a practical public entry path through the package

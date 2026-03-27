@@ -322,4 +322,4 @@ Examples:
 
 - [Rollout Matrix - Role-Specific Workflows by Phase](Rollout%20Matrix%20-%20Role-Specific%20Workflows%20by%20Phase.md) and [Rollout Matrix - Capability Rules by Phase](Rollout%20Matrix%20-%20Capability%20Rules%20by%20Phase.md) apply these standards to rollout guidance
 - [AI-Assisted Requirements Management](AI-Assisted%20Requirements%20Management.md) applies them to requirement and backlog artifacts
-- [Manager and Technical-Lead Operating Model for AI Enablement](Manager%20and%20Technical-Lead%20Operating%20Model%20for%20AI%20Enablement.md) and [Manager Coaching Guide - AI Enablement in Delivery Teams](../guides/Manager%20Coaching%20Guide%20-%20AI%20Enablement%20in%20Delivery%20Teams.md) translate them into management and technical-lead reinforcement
+- [Manager and Technical-Lead Responsibilities for AI Enablement](Manager%20and%20Technical-Lead%20Responsibilities%20for%20AI%20Enablement.md) and [Manager Coaching Guide - Paired Engineering in Delivery Teams](../guides/Manager%20Coaching%20Guide%20-%20Paired%20Engineering%20in%20Delivery%20Teams.md) translate them into management and technical-lead reinforcement

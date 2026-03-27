@@ -1,22 +1,22 @@
-# Public-Facing Deck Outline - AI Enablement
+# Public Overview Deck Outline - Paired Engineering
 
 ## Usage note
 
-This outline and its slide-copy companion now form the accepted locked markdown baseline for the public-facing deck.
+This outline and its slide-copy companion now form the accepted locked markdown baseline for the public overview deck.
 
 Use this note as the deck map unless a substantive audience or content gap appears.
 
 ## Deck goal
 
-Introduce the core thesis of the body of work to an external audience in a way that is clear, credible, and safe for publication.
+Introduce the core thesis of the project to an external audience in a way that is clear, credible, and safe for publication.
 
 This deck should help an outside audience answer four questions:
 
 - what problem `AI enablement` is trying to solve
-- why the middle path of paired engineering matters
+- why paired engineering is a better alternative to the usual extremes
 - why the work is about capability growth and verification, not just speed
 - why apprenticeship and the junior path still matter in an AI-enabled world
-- what this body of work offers to technical leaders and teams
+- what this project offers to technical leaders and teams
 
 ## Recommended deck shape
 
@@ -29,28 +29,28 @@ This deck should help an outside audience answer four questions:
 ## Presentation layers
 
 - Outline deck: this note
-- Slide-copy companion: [Public-Facing Deck Slide Copy - AI Enablement](Public-Facing%20Deck%20Slide%20Copy%20-%20AI%20Enablement.md)
+- Slide-copy companion: [Public Overview Deck Slide Copy - Paired Engineering](Public%20Overview%20Deck%20Slide%20Copy%20-%20Paired%20Engineering.md)
 
 Use this note as the deck map.
 
-Use the slide-copy companion when the public-facing deck needs fuller on-slide language and presenter notes.
+Use the slide-copy companion when the public overview deck needs fuller on-slide language and presenter notes.
 
 ## Narrative arc
 
 1. AI rollout is being framed too often as either hype or fear.
 2. The more useful question is how teams should work with AI well.
 3. Good enablement treats AI as paired engineering with verification, learning, and apprenticeship built in.
-4. The body of work offers a practical operating model, not a vendor pitch.
+4. The project offers a practical delivery model, not a vendor pitch.
 
 ## Slide 1. Title
 
 Headline:
 
-AI Enablement
+Paired Engineering
 
 Subtitle:
 
-A practical operating model for AI enablement in software delivery
+A practical delivery model for AI-enabled software teams
 
 Slide goal:
 
@@ -80,7 +80,7 @@ This is not `ban AI` versus `let the model do the work`.
 
 Slide goal:
 
-Set up the middle-path positioning.
+Set up the better-alternative positioning.
 
 Speaker points:
 
@@ -96,7 +96,7 @@ Use AI to think with, compare with, and learn with, not just to draft faster.
 
 Slide goal:
 
-Explain the core operating stance in simple language.
+Explain the core delivery stance in simple language.
 
 Speaker points:
 
@@ -141,7 +141,7 @@ Speaker points:
 - forcing too much work upward does not remove the need for sustainable team design
 - this is an enablement-design problem, not just a hiring-market complaint
 
-## Slide 7. What this body of work includes
+## Slide 7. What this project includes
 
 Headline:
 
@@ -218,13 +218,13 @@ Use the package in the way that matches your need.
 
 Slide goal:
 
-Point people toward the larger body of work.
+Point people toward the broader project materials.
 
 Supporting notes:
 
-- [One-Pager - AI Enablement at a Glance](../guides/One-Pager%20-%20AI%20Enablement%20at%20a%20Glance.md)
-- [Getting Started with AI Enablement](../guides/Getting%20Started%20with%20AI%20Enablement.md)
-- [Executive Deck - AI Enablement for an Initial Pilot Cohort](Executive%20Deck%20-%20AI%20Enablement%20for%20an%20Initial%20Pilot%20Cohort.md)
+- [One-Pager - Paired Engineering at a Glance](../guides/One-Pager%20-%20Paired%20Engineering%20at%20a%20Glance.md)
+- [Getting Started with Paired Engineering](../guides/Getting%20Started%20with%20Paired%20Engineering.md)
+- [Executive Deck - Paired Engineering for an Initial Pilot Cohort](Executive%20Deck%20-%20Paired%20Engineering%20for%20an%20Initial%20Pilot%20Cohort.md)
 - [Workshop Pack - Paired Engineering with AI](../workshops/Workshop%20Pack%20-%20Paired%20Engineering%20with%20AI.md)
 - [Exercise Library - Paired Engineering with AI](../workshops/Exercise%20Library%20-%20Paired%20Engineering%20with%20AI.md)
 - [Pilot Evidence Kit - Initial Pilot Cohort](../evidence/Pilot%20Evidence%20Kit%20-%20Initial%20Pilot%20Cohort.md)

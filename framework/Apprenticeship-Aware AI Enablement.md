@@ -186,8 +186,8 @@ The concrete operating guidance now starts in [Software-Specific Apprenticeship 
 ## Operational follow-through now in place
 
 - [Software-Specific Apprenticeship and Onboarding for AI-Enabled Teams](Software-Specific%20Apprenticeship%20and%20Onboarding%20for%20AI-Enabled%20Teams.md) translates the apprenticeship concern into newcomer task ladders, learning-mode defaults, and mentor expectations
-- [Manager and Technical-Lead Operating Model for AI Enablement](Manager%20and%20Technical-Lead%20Operating%20Model%20for%20AI%20Enablement.md) makes capability preservation part of weekly operating rhythm rather than a side concern
-- [Manager Coaching Guide - AI Enablement in Delivery Teams](../guides/Manager%20Coaching%20Guide%20-%20AI%20Enablement%20in%20Delivery%20Teams.md) gives managers a short working artifact for protecting lower-rung growth in live delivery teams
+- [Manager and Technical-Lead Responsibilities for AI Enablement](Manager%20and%20Technical-Lead%20Responsibilities%20for%20AI%20Enablement.md) makes capability preservation part of weekly delivery rhythm rather than a side concern
+- [Manager Coaching Guide - Paired Engineering in Delivery Teams](../guides/Manager%20Coaching%20Guide%20-%20Paired%20Engineering%20in%20Delivery%20Teams.md) gives managers a short working artifact for protecting lower-rung growth in live delivery teams
 - [AI-Assisted Requirements Management](AI-Assisted%20Requirements%20Management.md) now treats ambiguity review, scope reduction, and acceptance-criteria critique as part of learning-rich work, not only product hygiene
 
 ## What remains uncertain

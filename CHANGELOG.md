@@ -2,6 +2,21 @@
 
 This file tracks public-package level changes over time.
 
+## [2.0.0] - 2026-03-27
+
+### Changed
+
+- Repositioned the public package around the locked `v2` language architecture for `Paired Engineering`
+- Adopted `A practical delivery model for AI-enabled software teams.` as the current public category phrase baseline
+- Harmonized public-facing, executive, leadership, manager, and Staff artifact titles around the updated naming system
+- Refreshed the public README, landing-page copy, release notes, and generated HTML mirror so the public package reads consistently end to end
+- Renamed several public-facing markdown and slide artifacts, making this a breaking package-surface change rather than only a content refresh
+
+### Notes
+
+- This release is versioned as `2.0.0` because the public terminology, title system, and package-facing artifact names changed substantially enough to behave like a new public interface layer.
+- The package still passes the full `full-v1` publication audit, but now presents that material through the stronger `v2` language layer.
+
 ## [1.0.0] - 2026-03-25
 
 ### Added

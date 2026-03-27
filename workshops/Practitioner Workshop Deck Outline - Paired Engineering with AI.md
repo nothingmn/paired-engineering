@@ -256,7 +256,7 @@ Speaker points:
 
 Headline:
 
-The workshop is the start, not the full operating model.
+The workshop is the start, not the full delivery model.
 
 Slide goal:
 

@@ -10,7 +10,7 @@ That makes reuse easier, but it also helps to state how this work should be cred
 
 When reusing the framework notes, decks, or written artifacts, prefer an attribution in this shape:
 
-`Paired Engineering. A practical operating model for AI enablement in software delivery.`
+`Paired Engineering. A practical delivery model for AI-enabled software teams.`
 
 If the public repository URL is available, include it.
 

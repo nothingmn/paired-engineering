@@ -1,6 +1,6 @@
 # Software-Specific Apprenticeship and Onboarding for AI-Enabled Teams
 
-This note turns the project's apprenticeship concern into a practical operating model for software teams.
+This note turns the project's apprenticeship concern into practical delivery-model guidance for software teams.
 
 The central idea is simple:
 
@@ -16,7 +16,7 @@ It can reduce friction, but it can also create passive dependence if the work is
 - `evidence-backed`: onboarding in software teams works better with newcomer-friendly documentation, safe help-seeking, mentor support, clear learning goals, and a gradual increase in task complexity.
 - `evidence-backed`: apprenticeship in complex software environments is practice-based and socially supported, not just document-based.
 - `evidence-backed`: AI-assisted learning can create learning debt when people rely on it to finish unfamiliar tasks without building mental models.
-- `practice-based`: the exact redesign of junior work for AI-enabled teams is still emerging, so some of the concrete operating guidance below is principled design rather than fully settled evidence.
+- `practice-based`: the exact redesign of junior work for AI-enabled teams is still emerging, so some of the concrete design guidance below is principled design rather than fully settled evidence.
 
 ## What this note is trying to solve
 
@@ -330,7 +330,7 @@ Technical leads and Staff Engineers should:
 - shape task ladders so newcomers build one real domain foothold before being spread too widely
 - prevent opaque generation on unfamiliar, high-risk, or weakly observable work from becoming the default
 
-Use [Manager and Technical-Lead Operating Model for AI Enablement](Manager%20and%20Technical-Lead%20Operating%20Model%20for%20AI%20Enablement.md) and [Manager Coaching Guide - AI Enablement in Delivery Teams](../guides/Manager%20Coaching%20Guide%20-%20AI%20Enablement%20in%20Delivery%20Teams.md) for the concrete operating cadence around these responsibilities.
+Use [Manager and Technical-Lead Responsibilities for AI Enablement](Manager%20and%20Technical-Lead%20Responsibilities%20for%20AI%20Enablement.md) and [Manager Coaching Guide - Paired Engineering in Delivery Teams](../guides/Manager%20Coaching%20Guide%20-%20Paired%20Engineering%20in%20Delivery%20Teams.md) for the concrete delivery cadence around these responsibilities.
 
 ## Requirements and product work as onboarding surfaces
 
@@ -360,11 +360,11 @@ That means:
 - resisting cost-cutting stories that assume AI has already replaced apprenticeship
 - asking whether the organization is still producing future independent engineers and technical leads
 
-The broader executive framing lives in [Apprenticeship-Aware AI Enablement](Apprenticeship-Aware%20AI%20Enablement.md) and [Leadership Note - AI Enablement Versus AI Cost-Cutting](../leadership/Leadership%20Note%20-%20AI%20Enablement%20Versus%20AI%20Cost-Cutting.md).
+The broader executive framing lives in [Apprenticeship-Aware AI Enablement](Apprenticeship-Aware%20AI%20Enablement.md) and [Leadership Note - Capability Building Versus AI Cost-Cutting](../leadership/Leadership%20Note%20-%20Capability%20Building%20Versus%20AI%20Cost-Cutting.md).
 
 ## Connected artifacts
 
 - [Apprenticeship-Aware AI Enablement](Apprenticeship-Aware%20AI%20Enablement.md)
-- [Manager and Technical-Lead Operating Model for AI Enablement](Manager%20and%20Technical-Lead%20Operating%20Model%20for%20AI%20Enablement.md)
-- [Manager Coaching Guide - AI Enablement in Delivery Teams](../guides/Manager%20Coaching%20Guide%20-%20AI%20Enablement%20in%20Delivery%20Teams.md)
+- [Manager and Technical-Lead Responsibilities for AI Enablement](Manager%20and%20Technical-Lead%20Responsibilities%20for%20AI%20Enablement.md)
+- [Manager Coaching Guide - Paired Engineering in Delivery Teams](../guides/Manager%20Coaching%20Guide%20-%20Paired%20Engineering%20in%20Delivery%20Teams.md)
 - [AI-Assisted Requirements Management](AI-Assisted%20Requirements%20Management.md)
