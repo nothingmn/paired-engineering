@@ -34,13 +34,7 @@ body {
 }
 
 .site-nav {
-  display: block;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  padding: 12px 24px;
-  background: var(--surface);
-  border-bottom: 1px solid var(--border);
+  display: inline-block;
   font-family: var(--font-display);
   font-size: 11px;
   font-weight: 700;
@@ -49,6 +43,7 @@ body {
   text-decoration: none;
   color: var(--dim);
   transition: color 150ms ease;
+  margin-bottom: 24px;
 }
 
 .site-nav:hover {
